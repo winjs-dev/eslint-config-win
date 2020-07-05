@@ -1,0 +1,11 @@
+{
+  "name": "eslint-config-win",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/WorldMVP/eslint-config-win.git",
+  "author": "windraxb <xiaobin_0007@163.com>",
+  "license": "MIT",
+  "keywords": [
+    "eslint"
+  ]
+}
