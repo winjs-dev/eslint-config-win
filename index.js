@@ -15,6 +15,7 @@ module.exports = {
   },
   rules: {
     'accessor-pairs': 2,                          // 强制 getter 和 setter 在对象中成对出现
+    'array-bracket-newline': 'never',             //
     'arrow-spacing': [2, {                        // 强制箭头函数的箭头前后使用一致的空格
       'before': true,
       'after': true
@@ -39,9 +40,7 @@ module.exports = {
       'after': true
     }],
     'handle-callback-err': [2, '^(err|error)$'],  // 要求回调函数中有容错处理
-    'indent': [2, 4, {                            // 强制使用一致的缩进
-      'SwitchCase': 2
-    }],
+    'indent': [2, 2],
     'jsx-quotes': [2, 'prefer-single'],           // 强制在 JSX 属性中一致地使用双引号或单引号
     'key-spacing': [2, {                          // 强制在对象字面量的属性中键和值之间使用一致的间距
       'beforeColon': false,
@@ -155,13 +154,13 @@ module.exports = {
       'avoidEscape': true,                      // 允许字符串使用单引号或双引号，只要字符串中包含了一个其它引号，否则需要转义
       'allowTemplateLiterals': true             // 允许字符串使用反勾号
     }],
-    'semi': [2, 'never'],                         // 要求或禁止使用分号代替 ASI (always|never)
+    'semi': [2, 'always'],                         // 要求或禁止使用分号代替 ASI (always|never)
     'semi-spacing': [2, {                         // 强制分号之前和之后使用一致的空格。 false: 禁止有空格 | true: 强制有空格
       'before': false,
       'after': true
     }],
     'space-before-blocks': [2, 'always'],         // 强制在块之前使用一致的空格
-    'space-before-function-paren': [2, 'never'],  // 强制在 function的左括号之前使用一致的空格
+    'space-before-function-paren': [2, 'always'],  // 强制在 function的左括号之前使用一致的空格
     'space-in-parens': [2, 'never'],              // 强制在圆括号内使用一致的空格
     'space-infix-ops': 2,                         // 要求操作符周围有空格
     'space-unary-ops': [2, {                      // 要求或禁止在一元操作符之前或之后存在空格
