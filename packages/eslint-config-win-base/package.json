@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-win-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "windraxb <xiaobin_0007@163.com>",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "cloudwin",
+    "javascript"
+  ],
+  "peerDependencies": {
+    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.9"
+  }
+}
