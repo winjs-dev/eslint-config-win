@@ -1,11 +1,40 @@
 {
-  "name": "eslint-config-win",
+  "name": "@winner-fed/eslint-config-win",
   "version": "1.0.0",
-  "repository": "https://github.com/WorldMVP/eslint-config-win.git",
-  "author": "windraxb <xiaobin_0007@163.com>",
+  "main": "index.js",
   "license": "MIT",
+  "author": "windraxb <xiaobin_0007@163.com>",
   "keywords": [
-    "lint",
+    "eslint",
+    "eslintconfig",
+    "config",
     "cloudwin",
-  ]
+    "javascript"
+  ],
+  "files": [
+    "index.js",
+    "package.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloud-templates/eslint-config-win.git"
+  },
+  "peerDependencies": {
+    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.9"
+  },
+  "bugs": {
+    "url": "https://github.com/cloud-templates/eslint-config-win/issues"
+  },
+  "homepage": "https://github.com/cloud-templates/eslint-config-win#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
