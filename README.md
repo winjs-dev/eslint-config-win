@@ -24,7 +24,7 @@ eslint-plugin-vue ^6.2.2
 ```js
 module.exports = {
     extends: [
-        '@winner-fed/eslint-config-win',
+        '@winner-fed/win',
     ],
     env: {
         // 你的环境变量（包含多个预定义的全局变量）
@@ -57,8 +57,8 @@ npm install --save-dev eslint babel-eslint vue-eslint-parser eslint-plugin-vue @
 ```js
 module.exports = {
     extends: [
-        '@winner-fed/eslint-config-win',
-        '@winner-fed/eslint-config-win/vue',
+        '@winner-fed/win',
+        '@winner-fed/win/vue',
     ],
     env: {
         // 你的环境变量（包含多个预定义的全局变量）
