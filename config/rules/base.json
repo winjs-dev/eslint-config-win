@@ -307,11 +307,11 @@
     },
     "func-call-spacing": {
         "name": "func-call-spacing",
-        "value": ["error", "never"],
+        "value": ["error", "always"],
         "description": "强制函数名和括号左侧有一个空格",
         "reason": "",
-        "badExample": "<span class=\"token function\">fn</span><mark class=\"eslint-error\" data-tip=\"Unexpected whitespace between function name and paren.<br/><span class='eslint-error-rule-id'>eslint(func-call-spacing)</span>\"> </mark><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\r\n\r\n<span class=\"token function\">fn</span><mark class=\"eslint-error\" data-tip=\"Unexpected whitespace between function name and paren.<br/><span class='eslint-error-rule-id'>eslint(func-call-spacing)</span>\">\r\n<span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span></mark>",
-        "goodExample": "<span class=\"token function\">fn</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>",
+        "badExample": "<span class=\"token function\">f<mark class=\"eslint-error\" data-tip=\"Missing space between function name and paren.<br/><span class='eslint-error-rule-id'>eslint(func-call-spacing)</span>\">n</mark></span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\r\n\r\n<span class=\"token function\">fn</span><mark class=\"eslint-error\" data-tip=\"Unexpected newline between function name and paren.<br/><span class='eslint-error-rule-id'>eslint(func-call-spacing)</span>\">\r\n</mark><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>",
+        "goodExample": "<span class=\"token function\">fn</span> <span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>",
         "fixable": false,
         "extendsBaseRule": "",
         "requiresTypeChecking": false

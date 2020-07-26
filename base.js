@@ -194,7 +194,7 @@ module.exports = {
         /**
          * 强制函数名和括号左侧有一个空格
          */
-        'func-call-spacing': ['error', 'never'],
+        'func-call-spacing': ['error', 'always'],
         /**
          * 函数赋值给变量的时候，函数名必须与变量名一致
          */

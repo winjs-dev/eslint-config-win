@@ -43,7 +43,7 @@ module.exports = {
         /**
          * 标签属性必须按规则排序
          */
-        'vue/attributes-order': 'error',
+        'vue/attributes-order': 'off',
         /**
          * 变量名必须是 camelcase 风格的
          * @reason 很多 api 或文件名都不是 camelcase 风格的
@@ -63,13 +63,12 @@ module.exports = {
          */
         'vue/component-name-in-template-casing': 'off',
         /**
-         * 组件中必须按照 <script>, <template>, <style> 排序
-         * @reason 这是官方建议的顺序
+         * 组件中必须按照 <template>, <script>, <style> 排序
          */
         'vue/component-tags-order': [
             'error',
             {
-                order: ['script', 'template', 'style']
+                order: ['template', 'script', 'style']
             }
         ],
         /**
@@ -203,7 +202,7 @@ module.exports = {
         /**
          * 组件的属性必须为一定的顺序
          */
-        'vue/order-in-components': 'error',
+        'vue/order-in-components': 'off',
         /**
          * <template> <script> <style> 之间必须由空行
          * @reason 代码格式问题，最好由 Prettier 解决
