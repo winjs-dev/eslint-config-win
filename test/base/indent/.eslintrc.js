@@ -11,14 +11,15 @@ module.exports = {
          *
          * @reason  编译报错
          */
-        "indent": ["off", 2, {
-            "SwitchCase": 1,
-            "VariableDeclarator": 1,
-            "outerIIFEBody": 1,
-            "MemberExpression": 1,
-            "FunctionDeclaration": { "parameters": 1, "body": 1 },
-            "FunctionExpression": { "parameters": 1, "body": 1 },
-            "CallExpression": { "arguments": 1 }
-        }],
+        // "indent": ["off", 2, {
+        //     "SwitchCase": 1,
+        //     "VariableDeclarator": 1,
+        //     "outerIIFEBody": 1,
+        //     "MemberExpression": 1,
+        //     "FunctionDeclaration": { "parameters": 1, "body": 1 },
+        //     "FunctionExpression": { "parameters": 1, "body": 1 },
+        //     "CallExpression": { "arguments": 1 }
+        // }],
+        'indent': 'off'
     }
 };

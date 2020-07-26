@@ -257,27 +257,7 @@ module.exports = {
          * 三元表达式缩进为1
          * @reason 编译报错
          */
-        indent: [
-            'off',
-            2,
-            {
-                SwitchCase: 1,
-                VariableDeclarator: 1,
-                outerIIFEBody: 1,
-                MemberExpression: 1,
-                FunctionDeclaration: {
-                    parameters: 1,
-                    body: 1
-                },
-                FunctionExpression: {
-                    parameters: 1,
-                    body: 1
-                },
-                CallExpression: {
-                    arguments: 1
-                }
-            }
-        ],
+        indent: 'off',
         /**
          * 变量必须在定义的时候赋值
          */
