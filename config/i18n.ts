@@ -1,14 +1,14 @@
 import en_US from './locale/en-US.json';
 
-export type Languages = 'en-US' | 'zh-CN';
-export const avaliableLanguages: Languages[] = ['en-US', 'zh-CN'];
+export type Languages = 'zh-CN' | 'en-US';
+export const avaliableLanguages: Languages[] = ['zh-CN', 'en-US'];
 
 export const languageOptions = {
-    'en-US': 'English',
-    'zh-CN': '简体中文'
+  'zh-CN': '简体中文',
+  'en-US': 'English'
 };
 
 export const locale = {
-    'en-US': en_US,
-    'zh-CN': {}
+  'zh-CN': {},
+  'en-US': en_US
 };
