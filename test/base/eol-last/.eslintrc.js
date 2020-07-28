@@ -3,6 +3,6 @@ module.exports = {
         /**
          * 强制文件结尾有一个空行
          */
-        "eol-last": "error",
+        'eol-last': 'error'
     }
 };

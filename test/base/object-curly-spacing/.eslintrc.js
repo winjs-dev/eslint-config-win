@@ -3,6 +3,6 @@ module.exports = {
         /**
          * 大括号内需要空格
          */
-        "object-curly-spacing": ["error", "always"]
+        'object-curly-spacing': ['error', 'always']
     }
 };

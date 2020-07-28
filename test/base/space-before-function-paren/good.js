@@ -1,28 +1,28 @@
 /*eslint space-before-function-paren: "error"*/
 /*eslint-env es6*/
 
-function foo () {
-  // ...
+function foo() {
+    // ...
 }
 
 var bar = function () {
-  // ...
+    // ...
 };
 
-var bar = function foo () {
-  // ...
+var bar = function foo() {
+    // ...
 };
 
 class Foo {
-  constructor () {
-    // ...
-  }
+    constructor() {
+        // ...
+    }
 }
 
 var foo = {
-  bar () {
-    // ...
-  }
+    bar() {
+        // ...
+    }
 };
 
-var foo = async () => 1
+var foo = async () => 1;

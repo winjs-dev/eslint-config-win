@@ -1,25 +1,25 @@
 function foo() {
-  // ...
+    // ...
 }
 
-var bar = function() {
-  // ...
+var bar = function () {
+    // ...
 };
 
 var bar = function foo() {
-  // ...
+    // ...
 };
 
 class Foo {
-  constructor() {
-    // ...
-  }
+    constructor() {
+        // ...
+    }
 }
 
 var foo = {
-  bar() {
-    // ...
-  }
+    bar() {
+        // ...
+    }
 };
 
-var foo = async() => 1
+var foo = async () => 1;

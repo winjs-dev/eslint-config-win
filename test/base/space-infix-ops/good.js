@@ -1,9 +1,9 @@
-a + b
+a + b;
 
-a ? b : c
+a ? b : c;
 
-const a = {b:1};
+const a = { b: 1 };
 
-var {a = 0} = bar;
+var { a = 0 } = bar;
 
-function foo(a = 0) { }
+function foo(a = 0) {}

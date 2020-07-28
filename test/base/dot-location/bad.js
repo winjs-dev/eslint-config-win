@@ -1,2 +1,1 @@
-var foo = object.
-  property;
+var foo = object.property;

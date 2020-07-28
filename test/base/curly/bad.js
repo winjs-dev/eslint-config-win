@@ -1,8 +1,4 @@
-if (foo)
-  doSomething();
-else
-  doSomethingElse();
+if (foo) doSomething();
+else doSomethingElse();
 
-if (foo) foo(
-  bar,
-  baz);
+if (foo) foo(bar, baz);

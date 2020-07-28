@@ -3,6 +3,6 @@ module.exports = {
         /**
          * 逗号在行尾
          */
-        "comma-style": ["error", "last"]
+        'comma-style': ['error', 'last']
     }
 };

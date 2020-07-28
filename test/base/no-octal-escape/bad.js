@@ -1,1 +1,1 @@
-var foo = "Copyright \251";
+var foo = 'Copyright \251';

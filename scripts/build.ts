@@ -298,4 +298,10 @@ class Builder {
 }
 
 const builder = new Builder();
-NAMESPACES.forEach((namespace) => builder.build(namespace));
+NAMESPACES.forEach((namespace) => {
+    // TODO
+    // style 暂时不由此规则生成
+    if (namespace !== 'style') {
+        builder.build(namespace);
+    }
+});

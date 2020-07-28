@@ -1,8 +1,12 @@
 /**
+ * winner-fed 前端编码规范文档
+ * https://github.com/cloud-templates/eslint-config-win#readme
  *
+ * 贡献者：
+ *     winner-fed
  *
  * 依赖版本：
- *     eslint ^7.2.0
+ *     eslint ^7.3.1
  *     babel-eslint ^10.1.0
  *     vue-eslint-parser ^7.1.0
  *     eslint-plugin-vue ^6.2.2

@@ -3,6 +3,6 @@ module.exports = {
         /**
          * 小括号内部无空格
          */
-        "space-in-parens": ["error", "never"]
+        'space-in-parens': ['error', 'never']
     }
 };

@@ -3,6 +3,6 @@ module.exports = {
         /**
          * 不允许点操作符和后面的属性换行显示
          */
-        "dot-location": ["error", "property"]
+        'dot-location': ['error', 'property']
     }
 };

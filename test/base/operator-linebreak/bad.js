@@ -1,3 +1,1 @@
-var fullHeight = borderTop
-  + innerHeight
-  + borderBottom;
+var fullHeight = borderTop + innerHeight + borderBottom;

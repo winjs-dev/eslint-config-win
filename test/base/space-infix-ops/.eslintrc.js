@@ -3,6 +3,6 @@ module.exports = {
         /**
          * 操作符左右两边有空格
          */
-        "space-infix-ops": "error"
+        'space-infix-ops': 'error'
     }
 };

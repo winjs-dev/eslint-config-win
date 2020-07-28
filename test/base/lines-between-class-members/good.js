@@ -1,8 +1,8 @@
-class Foo{
-  bar(){} // single line class member
-  baz(){
-    // multi line class member
-  }
+class Foo {
+    bar() {} // single line class member
+    baz() {
+        // multi line class member
+    }
 
-  qux(){}
+    qux() {}
 }

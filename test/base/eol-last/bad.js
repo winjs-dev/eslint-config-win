@@ -1,3 +1,3 @@
 function doSmth() {
-  var foo = 2;
+    var foo = 2;
 }

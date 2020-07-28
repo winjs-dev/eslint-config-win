@@ -3,6 +3,6 @@ module.exports = {
         /**
          *  不允许在行尾有空白
          */
-        "no-trailing-spaces": "error"
+        'no-trailing-spaces': 'error'
     }
 };

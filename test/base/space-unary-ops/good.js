@@ -1,6 +1,6 @@
 delete foo.bar;
 
-new Foo;
+new Foo();
 
 void 0;
 
@@ -10,4 +10,4 @@ foo--;
 
 -foo;
 
-+"3";
++'3';
