@@ -131,8 +131,8 @@
         "value": "off",
         "description": "在块的大括号关闭前必须有一个换行符",
         "reason": "",
-        "badExample": "a {\ncolor: #000;}",
-        "goodExample": "a { color: #000; }\na { color: #000;\n}",
+        "badExample": "a { color: #000;\n}",
+        "goodExample": "a { color: #000;}",
         "fixable": true,
         "extendsBaseRule": "",
         "requiresTypeChecking": false
@@ -153,8 +153,8 @@
         "value": "off",
         "description": "在块的左大括号之后必须有换行符",
         "reason": "",
-        "badExample": "a{color: #000;\n}",
-        "goodExample": "a { color: #000; }\na {\ncolor: #000; }",
+        "badExample": "a {\ncolor: #000; }",
+        "goodExample": "a{ color: #000; }",
         "fixable": true,
         "extendsBaseRule": "",
         "requiresTypeChecking": false
@@ -194,11 +194,11 @@
     },
     "color-no-invalid-hex": {
         "name": "color-no-invalid-hex",
-        "value": "off",
+        "value": "never",
         "description": "禁止使用无效的十六进制颜色",
         "reason": "",
-        "badExample": "a { color: white; }",
-        "goodExample": "a { color: #fff; }",
+        "badExample": "a { color: #y3; }",
+        "goodExample": "a { color: #000; }",
         "fixable": false,
         "extendsBaseRule": "",
         "requiresTypeChecking": false
@@ -208,8 +208,8 @@
         "value": "off",
         "description": "在注释之前必须有空行",
         "reason": "",
-        "badExample": "a { color: white; }",
-        "goodExample": "a { color: #fff; }",
+        "badExample": "a {}\n/* comment */",
+        "goodExample": "a {} /* comment */",
         "fixable": true,
         "extendsBaseRule": "",
         "requiresTypeChecking": false
@@ -269,14 +269,14 @@
         "value": "never",
         "description": "在声明的块中禁止出现重复的属性",
         "reason": "",
-        "badExample": "a { color: #000; color: orange; }\na { color: #000; background: orange; color: orange }",
-        "goodExample": "a { color: #000; }\na { color: #000; background: orange; }",
+        "badExample": "a { color: #000; color: #fff; }\na { color: #000; background: #fff; color: #fff }",
+        "goodExample": "a { color: #000; }\na { color: #000; background: #fff; }",
         "fixable": false,
         "extendsBaseRule": "",
         "requiresTypeChecking": false
     },
-    "declaration-block-no-#000undant-longhand-properties": {
-        "name": "declaration-block-no-#000undant-longhand-properties",
+    "declaration-block-no-redundant-longhand-properties": {
+        "name": "declaration-block-no-redundant-longhand-properties",
         "value": [
             "never",
             {
@@ -351,8 +351,8 @@
         "value": "off",
         "description": "声明块内必须有尾随分号",
         "reason": "",
-        "badExample": "a { color: #000 }\na { background: orange; color: #000 }\na { @include foo }",
-        "goodExample": "a { color: #000; }\na { background: orange; color: #000; }\na { @include foo; }",
+        "badExample": "a { background: orange; color: #000 }",
+        "goodExample": "a { background: orange; color: #000; }",
         "fixable": true,
         "extendsBaseRule": "",
         "requiresTypeChecking": false
@@ -1099,8 +1099,8 @@
         "value": "never",
         "description": "选择器列表的逗号之前禁止有换行符",
         "reason": "",
-        "badExample": "a, b { color: #000; }\na\n, b { color: #000; }",
-        "goodExample": "a,\nb { color: #000; }\na\n,\nb { color: #000; }",
+        "badExample": "a\n, b { color: #000; }",
+        "goodExample": "a,\nb { color: #000; }",
         "fixable": true,
         "extendsBaseRule": "",
         "requiresTypeChecking": false
@@ -1165,8 +1165,8 @@
         "value": "off",
         "description": "一个选择器中 ID 选择器的最大数量为5",
         "reason": "",
-        "badExample": "a\n\nb {\n  color: #000;\n}",
-        "goodExample": "a b {\n  color: #000;\n}",
+        "badExample": "",
+        "goodExample": "",
         "fixable": false,
         "extendsBaseRule": "",
         "requiresTypeChecking": false
@@ -1375,7 +1375,7 @@
         "description": "在多行值列表的逗号之后必须有一个换行符",
         "reason": "",
         "badExample": "a { background-size: 0\n    , 0; }",
-        "goodExample": "a { background-size: 0, 0; }\na { background-size: 0,0; }",
+        "goodExample": "a { background-size: 0, 0; }",
         "fixable": true,
         "extendsBaseRule": "",
         "requiresTypeChecking": false
