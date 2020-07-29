@@ -1,19 +1,24 @@
-function foo() {
+function foo()
+{
     return true;
 }
 
-if (foo) {
+if (foo)
+{
     bar();
 }
 
-try {
+try
+{
     somethingRisky();
-} catch (e) {
+} catch(e)
+{
     handleError();
 }
 
 if (foo) {
     bar();
-} else {
+}
+else {
     baz();
 }

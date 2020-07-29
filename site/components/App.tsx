@@ -39,17 +39,17 @@ export const App: React.SFC = () => {
                             </option>
                         ))}
                     </select>
-                    <label>
-                        <input
-                            type="checkbox"
-                            checked={hideOff}
-                            onChange={(e) => {
-                                toggleHideOff(e.target.checked);
-                                replaceUrl(newUrl({ query: { hideOff: e.target.checked } }));
-                            }}
-                        />
-                        {t('隐藏已禁用的规则')}
-                    </label>
+                    {/*<label>*/}
+                    {/*    <input*/}
+                    {/*        type="checkbox"*/}
+                    {/*        checked={hideOff}*/}
+                    {/*        onChange={(e) => {*/}
+                    {/*            toggleHideOff(e.target.checked);*/}
+                    {/*            replaceUrl(newUrl({ query: { hideOff: e.target.checked } }));*/}
+                    {/*        }}*/}
+                    {/*    />*/}
+                    {/*    {t('隐藏已禁用的规则')}*/}
+                    {/*</label>*/}
                 </form>
             </div>
         </div>
@@ -58,7 +58,7 @@ export const App: React.SFC = () => {
     return (
         <>
             {Header}
-            <RuleTable namespace={namespace} hideOff={hideOff} />
+            <RuleTable namespace={namespace} />
             <ReactTooltip
                 className="site-react-tooltip"
                 place="top"

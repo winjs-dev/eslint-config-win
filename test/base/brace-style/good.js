@@ -1,5 +1,5 @@
-function nop() {
-    return;
+function foo() {
+    return true;
 }
 
 if (foo) {
@@ -14,6 +14,14 @@ if (foo) {
 
 try {
     somethingRisky();
-} catch (e) {
+} catch(e) {
     handleError();
 }
+
+function nop() { return; }
+
+if (foo) { bar(); }
+
+if (foo) { bar(); } else { baz(); }
+
+try { somethingRisky(); } catch(e) { handleError(); }
