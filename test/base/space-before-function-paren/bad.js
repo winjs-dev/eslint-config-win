@@ -2,7 +2,7 @@ function foo() {
     // ...
 }
 
-var bar = function () {
+var bar = function() {
     // ...
 };
 
@@ -16,10 +16,4 @@ class Foo {
     }
 }
 
-var foo = {
-    bar() {
-        // ...
-    }
-};
-
-var foo = async () => 1;
+var func = async ()=> 1;

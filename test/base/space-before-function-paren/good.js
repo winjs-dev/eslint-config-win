@@ -1,7 +1,7 @@
 /*eslint space-before-function-paren: "error"*/
 /*eslint-env es6*/
 
-function foo() {
+function foo1 () {
     // ...
 }
 
@@ -9,18 +9,18 @@ var bar = function () {
     // ...
 };
 
-var bar = function foo() {
+var bar2 = function foo () {
     // ...
 };
 
 class Foo {
-    constructor() {
+    constructor () {
         // ...
     }
 }
 
 var foo = {
-    bar() {
+    bar () {
         // ...
     }
 };

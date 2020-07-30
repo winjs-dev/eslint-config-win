@@ -550,5 +550,6 @@
     "换行时操作符必须在行尾\r\n其中，？ ：可以放到行首": "换行时操作符必须在行尾\r\n其中，？ ：可以放到行首",
     "这样会导致不符合预期的结果\r\nhttps://github.com/eslint/eslint/issues/11899\r\n在上面 issue 修复之前，关闭此规则": "这样会导致不符合预期的结果\r\nhttps://github.com/eslint/eslint/issues/11899\r\n在上面 issue 修复之前，关闭此规则",
     "组件中必须按照 <template>, <script>, <style> 排序": "组件中必须按照 <template>, <script>, <style> 排序",
-    "组件的 name 属性禁止使用保留字": "组件的 name 属性禁止使用保留字"
+    "组件的 name 属性禁止使用保留字": "组件的 name 属性禁止使用保留字",
+    "变量必须先定义后使用, 方法除外（考虑到递归的情况）": "变量必须先定义后使用, 方法除外（考虑到递归的情况）"
 }

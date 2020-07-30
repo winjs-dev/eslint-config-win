@@ -1,4 +1,1 @@
-function* foo() {
-    yield 1;
-    return 2;
-}
+var a = 1;
