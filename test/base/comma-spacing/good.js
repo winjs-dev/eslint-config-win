@@ -6,5 +6,5 @@ var arr = [1, , 3];
 var obj = { foo: 'bar', baz: 'qur' };
 foo(a, b);
 new Foo(a, b);
-function foo(a, b) {}
+function func(a, b) {}
 a, b;
