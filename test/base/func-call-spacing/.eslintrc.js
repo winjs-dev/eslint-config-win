@@ -1,7 +1,7 @@
 module.exports = {
     rules: {
         /**
-         * 强制函数名和括号左侧有一个空格
+         * 调用函数时，函数名和左括号之间无空格
          */
         'func-call-spacing': ['error', 'never']
     }

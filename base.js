@@ -156,9 +156,9 @@ module.exports = {
          */
         'for-direction': 'error',
         /**
-         * 强制函数名和括号左侧有一个空格
+         * 调用函数时，函数名和左括号之间无空格
          */
-        'func-call-spacing': ['error', 'always'],
+        'func-call-spacing': ['error', 'never'],
         /**
          * 函数赋值给变量的时候，函数名必须与变量名一致
          */
@@ -754,7 +754,7 @@ module.exports = {
          */
         semi: ['error', 'always'],
         /**
-         * 匿名函数和左括号之间有空格
+         * 声明函数时，函数名和左括号之间有空格
          */
         'space-before-function-paren': ['error', 'always'],
         /**

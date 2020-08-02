@@ -1,6 +1,6 @@
 {
     "name": "@winner-fed/eslint-config-win",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "winner-fed 前端编码规范文档",
     "main": "index.js",
     "scripts": {
