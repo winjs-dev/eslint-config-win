@@ -1,3 +1,2 @@
-function* foo() {
-    return 1;
-}
+var a = 1
+var b = 2

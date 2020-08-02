@@ -63,7 +63,7 @@ class Builder {
             const fullRuleName = rulePrefix + ruleName;
             const meta = ruleValue.meta;
             prev[fullRuleName] = {
-                fixable: meta.fixable === 'code',
+                fixable: meta.hasOwnProperty('fixable'),
                 extendsBaseRule:
                     // 若为 string，则表示继承的规则，若为 true，则提取继承的规则的名称
                     meta.docs.extendsBaseRule === true
@@ -77,7 +77,7 @@ class Builder {
 
     /** 获取规则列表，根据字母排序 */
     private getRuleList() {
-        const ruleList = fs
+        let ruleList = fs
             .readdirSync(path.resolve(__dirname, '../test', this.namespace))
             .filter((ruleName) =>
                 fs
@@ -85,6 +85,8 @@ class Builder {
                     .isDirectory()
             )
             .map((ruleName) => this.getRule(ruleName));
+
+        ruleList = ruleList.filter(rule => rule.value !== 'off')
 
         return ruleList;
     }

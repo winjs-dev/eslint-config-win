@@ -1,5 +1,15 @@
-console.log(foo);
-const foo = 1;
+alert(a);
+var a = 10;
 
-new Baz();
-class Baz {}
+f();
+function f() {}
+
+function g() {
+  return b;
+}
+var b = 1;
+
+{
+  alert(c);
+  let c = 1;
+}
