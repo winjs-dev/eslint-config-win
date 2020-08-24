@@ -1,7 +1,7 @@
 module.exports = {
     rules: {
         /**
-         * 禁止在 v-on 的值中调用函数
+         * 在 v-on 指令中，禁止调用没有参数的函数
          */
         'vue/v-on-function-call': 'error'
     }
