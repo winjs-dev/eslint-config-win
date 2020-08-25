@@ -89,13 +89,7 @@ module.exports = {
         /**
          * 禁止出现重复的属性
          */
-        'vue/no-duplicate-attributes': [
-            'error',
-            {
-                allowCoexistClass: false,
-                allowCoexistStyle: false
-            }
-        ],
+        'vue/no-duplicate-attributes': ['error'],
         /**
          * 禁止解构赋值中出现空 {} 或 []
          */
@@ -170,7 +164,7 @@ module.exports = {
          */
         'vue/v-bind-style': 'error',
         /**
-         * 禁止在 v-on 的值中调用函数
+         * 在 v-on 指令中，禁止调用没有参数的函数
          */
         'vue/v-on-function-call': 'error',
         /**
