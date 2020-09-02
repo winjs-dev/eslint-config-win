@@ -841,7 +841,7 @@
         "value": "never",
         "description": "禁止在样式表中使用重复的 @import 规则",
         "reason": "",
-        "badExample": "@import 'a.css';\n@import 'a.css';",
+        "badExample": "@import \"a.css\";\n@import \"a.css\";",
         "goodExample": "@import \"a.css\";\n@import \"b.css\";",
         "fixable": false,
         "extendsBaseRule": "",
