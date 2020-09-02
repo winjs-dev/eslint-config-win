@@ -482,7 +482,7 @@
   "function-calc-no-invalid": {
     "name": "function-calc-no-invalid",
     "value": "never",
-    "description": "禁止在 `calc` 函数内使用无效的表达式",
+    "description": "禁止在 calc 函数内使用无效的表达式",
     "reason": "",
     "badExample": ".foo {width: calc();}\n.foo {width: calc(100% 80px);}",
     "goodExample": ".foo {width: calc(100% - 80px);}",
@@ -493,7 +493,7 @@
   "function-calc-no-unspaced-operator": {
     "name": "function-calc-no-unspaced-operator",
     "value": "never",
-    "description": "禁止在 `calc` 函数内使用不加空格的操作符",
+    "description": "禁止在 calc 函数内使用不加空格的操作符",
     "reason": "",
     "badExample": "a { top: calc(1px+2px); }\na { top: calc(1px+ 2px); }",
     "goodExample": "a { top: calc(1px + 2px); }\na { top: calc(calc(1em * 2) / 3); }",
