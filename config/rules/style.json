@@ -1352,8 +1352,8 @@
     "value": "off",
     "description": "关闭 Unicode 字节顺序标志",
     "reason": "",
-    "badExample": "a { animation: 80ms; }\na { transition-duration: 0.08s; }",
-    "goodExample": "a { animation: 8s; }\na { transition-duration: 0.8s; }",
+    "badExample": "U+FEFF\na {}",
+    "goodExample": "a {}",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
