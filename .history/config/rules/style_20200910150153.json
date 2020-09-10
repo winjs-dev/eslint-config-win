@@ -1160,6 +1160,17 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
+  "selector-max-id": {
+    "name": "selector-max-id",
+    "value": "off",
+    "description": "一个选择器中 ID 选择器的最大数量为5",
+    "reason": "",
+    "badExample": "",
+    "goodExample": "",
+    "fixable": false,
+    "extendsBaseRule": "",
+    "requiresTypeChecking": false
+  },
   "selector-max-universal": {
     "name": "selector-max-universal",
     "value": "off",
@@ -1284,7 +1295,7 @@
   "time-min-milliseconds": {
     "name": "time-min-milliseconds",
     "value": "off",
-    "description": "指定时间值的最小毫秒数推荐为100",
+    "description": "指定时间值的最小毫秒数为100",
     "reason": "",
     "badExample": "a { animation: 80ms; }\na { transition-duration: 0.08s; }",
     "goodExample": "a { animation: 8s; }\na { transition-duration: 0.8s; }",
@@ -1314,7 +1325,7 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
-  "value-keyword-case": {
+  "value-keyword-case'": {
     "name": "value-keyword-case'",
     "value": "never",
     "description": "指定关键字的值的必须为小写",
@@ -1383,7 +1394,7 @@
   "value-list-max-empty-lines": {
     "name": "value-list-max-empty-lines",
     "value": "off",
-    "description": "值列表中允许的最大相邻空行数量为 0",
+    "description": "值列表中允许的最大相邻空行数量",
     "reason": "",
     "badExample": "a {\n  padding: 10px\n\n    10px\n    10px\n    10px\n}",
     "goodExample": "a {\n  padding: 10px 10px 10px 10px\n}",

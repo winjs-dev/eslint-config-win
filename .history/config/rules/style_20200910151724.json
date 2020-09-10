@@ -1314,7 +1314,7 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
-  "value-keyword-case": {
+  "value-keyword-case'": {
     "name": "value-keyword-case'",
     "value": "never",
     "description": "指定关键字的值的必须为小写",
@@ -1383,7 +1383,7 @@
   "value-list-max-empty-lines": {
     "name": "value-list-max-empty-lines",
     "value": "off",
-    "description": "值列表中允许的最大相邻空行数量为 0",
+    "description": "值列表中允许的最大相邻空行数量",
     "reason": "",
     "badExample": "a {\n  padding: 10px\n\n    10px\n    10px\n    10px\n}",
     "goodExample": "a {\n  padding: 10px 10px 10px 10px\n}",

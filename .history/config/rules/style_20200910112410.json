@@ -449,7 +449,7 @@
   "font-family-no-missing-generic-family-keyword": {
     "name": "font-family-no-missing-generic-family-keyword",
     "value": "never",
-    "description": "推荐在字体系列名称列表中使用通用字体系列",
+    "description": "禁止在字体系列名称列表中缺少通用系列",
     "reason": "",
     "badExample": "a { font-family: Helvetica, Arial, Verdana, Tahoma; }",
     "goodExample": "a { font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif; }",
@@ -581,7 +581,7 @@
   "function-url-no-scheme-relative": {
     "name": "function-url-no-scheme-relative",
     "value": "never",
-    "description": "推荐使用相对协议 URL",
+    "description": "禁止相对协议 URL",
     "reason": "",
     "badExample": "a {\n  background: url(\"//www.google.com/file.jpg\");\n}",
     "goodExample": "a {\n  background: url(\"../file.jpg\");\n}\na {\n  background: url(\"http://www.google.com/file.jpg\");\n}\na {\n  background: url(\"/path/to/file.jpg\");\n}",
@@ -677,6 +677,17 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
+  "max-line-length": {
+    "name": "max-line-length",
+    "value": "off",
+    "description": "限制行的长度为500",
+    "reason": "",
+    "badExample": "",
+    "goodExample": "",
+    "fixable": false,
+    "extendsBaseRule": "",
+    "requiresTypeChecking": false
+  },
   "max-nesting-depth": {
     "name": "max-nesting-depth",
     "value": "off",
@@ -724,7 +735,7 @@
   "media-feature-name-no-unknown": {
     "name": "media-feature-name-no-unknown",
     "value": "never",
-    "description": "禁止出现未知的 media 特性名称",
+    "description": "禁止出现未知的媒体特性名称",
     "reason": "",
     "badExample": "@media screen and (unknown) {}",
     "goodExample": "@media all and (monochrome) {}",
@@ -746,7 +757,7 @@
   "media-feature-parentheses-space-inside": {
     "name": "media-feature-parentheses-space-inside",
     "value": "never",
-    "description": "media 媒体功能的括号内侧禁止出现空白符",
+    "description": "media 媒体功能 的括号内侧禁止出现空白符",
     "reason": "",
     "badExample": "@media ( max-width: 300px ) {}\n@media ( max-width: 300px) {}",
     "goodExample": "@media (max-width: 300px) {}",
@@ -933,7 +944,7 @@
   "number-max-precision": {
     "name": "number-max-precision",
     "value": "off",
-    "description": "数字中允许最大的小数位数推荐为3位",
+    "description": "数字中允许最大的小数位数为3位",
     "reason": "",
     "badExample": "a { top: 3.245px; }\na { top: 3.245634px; }",
     "goodExample": "a { top: 3.241px; }\n@media (min-width: 3.223em) {}",
@@ -1160,6 +1171,17 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
+  "selector-max-id": {
+    "name": "selector-max-id",
+    "value": "off",
+    "description": "一个选择器中 ID 选择器的最大数量为5",
+    "reason": "",
+    "badExample": "",
+    "goodExample": "",
+    "fixable": false,
+    "extendsBaseRule": "",
+    "requiresTypeChecking": false
+  },
   "selector-max-universal": {
     "name": "selector-max-universal",
     "value": "off",
@@ -1284,7 +1306,7 @@
   "time-min-milliseconds": {
     "name": "time-min-milliseconds",
     "value": "off",
-    "description": "指定时间值的最小毫秒数推荐为100",
+    "description": "指定时间值的最小毫秒数为100",
     "reason": "",
     "badExample": "a { animation: 80ms; }\na { transition-duration: 0.08s; }",
     "goodExample": "a { animation: 8s; }\na { transition-duration: 0.8s; }",
@@ -1314,7 +1336,7 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
-  "value-keyword-case": {
+  "value-keyword-case'": {
     "name": "value-keyword-case'",
     "value": "never",
     "description": "指定关键字的值的必须为小写",
@@ -1383,7 +1405,7 @@
   "value-list-max-empty-lines": {
     "name": "value-list-max-empty-lines",
     "value": "off",
-    "description": "值列表中允许的最大相邻空行数量为 0",
+    "description": "值列表中允许的最大相邻空行数量",
     "reason": "",
     "badExample": "a {\n  padding: 10px\n\n    10px\n    10px\n    10px\n}",
     "goodExample": "a {\n  padding: 10px 10px 10px 10px\n}",

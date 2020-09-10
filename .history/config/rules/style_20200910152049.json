@@ -1383,7 +1383,7 @@
   "value-list-max-empty-lines": {
     "name": "value-list-max-empty-lines",
     "value": "off",
-    "description": "值列表中允许的最大相邻空行数量为 0",
+    "description": "值列表中允许的最大相邻空行数量",
     "reason": "",
     "badExample": "a {\n  padding: 10px\n\n    10px\n    10px\n    10px\n}",
     "goodExample": "a {\n  padding: 10px 10px 10px 10px\n}",
