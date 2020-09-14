@@ -132,17 +132,9 @@ module.exports = {
          */
         'constructor-super': 'error',
         /**
-         * 只允许if等其他需要大括号包裹的语句在单行内不需要使用大括号
-         */
-        curly: ['error', 'multi-line'],
-        /**
          * switch 语句中的 default 必须在最后
          */
         'default-case-last': 'error',
-        /**
-         * 不允许点操作符和后面的属性换行显示
-         */
-        'dot-location': ['error', 'property'],
         /**
          * 强制文件结尾有一个空行
          */
@@ -155,10 +147,6 @@ module.exports = {
          * 禁止方向错误的 for 循环
          */
         'for-direction': 'error',
-        /**
-         * 调用函数时，函数名和左括号之间无空格
-         */
-        'func-call-spacing': ['error', 'never'],
         /**
          * 函数赋值给变量的时候，函数名必须与变量名一致
          */
@@ -245,7 +233,7 @@ module.exports = {
             }
         ],
         /**
-         * new 后面的构造器不允许省略括号
+         * 当使用 new 关键字调用没有参数的构造函数时，该规则禁止使用括号
          */
         'new-parens': 'error',
         /**
@@ -454,10 +442,6 @@ module.exports = {
          * @reason 某些特殊字符很难看出差异，最好不要在正则中使用
          */
         'no-misleading-character-class': 'error',
-        /**
-         * 不允许用混合空格和制表符表示缩进
-         */
-        'no-mixed-spaces-and-tabs': 'error',
         /**
          * 禁止在逻辑表达式，条件表达式，声明，数组元素，对象属性，序列和函数参数周围使用多个空格。
          */
@@ -672,7 +656,7 @@ module.exports = {
          */
         'no-useless-rename': 'error',
         /**
-         * 禁止使用 var
+         * 定义变量时禁止使用 var
          */
         'no-var': 'error',
         /**
@@ -753,10 +737,6 @@ module.exports = {
          * 结尾必须带分号
          */
         semi: ['error', 'always'],
-        /**
-         * 声明函数时，函数名和左括号之间有空格
-         */
-        'space-before-function-paren': ['error', 'always'],
         /**
          * 小括号内部无空格
          */
