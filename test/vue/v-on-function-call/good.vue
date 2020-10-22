@@ -1,5 +1,5 @@
 <template>
-    <button v-on:click="closeModal">
+    <button @:click="closeModal">
         Close
     </button>
 </template>

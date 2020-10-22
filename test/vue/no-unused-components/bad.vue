@@ -1,3 +1,7 @@
+<template>
+  <Bar />
+</template>
+
 <script>
 import Foo from 'components/Foo.vue';
 
@@ -7,7 +11,3 @@ export default {
     }
 };
 </script>
-
-<template>
-    <Bar />
-</template>

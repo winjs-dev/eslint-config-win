@@ -1,3 +1,3 @@
 <template>
-    <button v-on:click.exact="foo" v-on:click.ctrl="foo"></button>
+    <button @:click.exact="foo" @:click.ctrl="foo"></button>
 </template>
