@@ -403,11 +403,6 @@ module.exports = {
          */
         'no-invalid-regexp': 'error',
         /**
-         * 禁止在类之外的地方使用 this
-         * @reason 只允许在 class 中使用 this
-         */
-        'no-invalid-this': 'error',
-        /**
          * 禁止使用特殊空白符（比如全角空格），除非是出现在字符串、正则表达式或模版字符串中
          */
         'no-irregular-whitespace': [
@@ -695,9 +690,9 @@ module.exports = {
             }
         ],
         /**
-         * 必须使用 ... 而不是 Object.assign，除非 Object.assign 的第一个参数是一个变量
+         * 建议使用 ... 而不是 Object.assign，除非 Object.assign 的第一个参数是一个变量
          */
-        'prefer-object-spread': 'error',
+        'prefer-object-spread': 'warn',
         /**
          * Promise 的 reject 中必须传入 Error 对象，而不是字面量
          */
