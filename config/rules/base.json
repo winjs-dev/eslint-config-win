@@ -682,7 +682,7 @@
     "no-implied-eval": {
         "name": "no-implied-eval",
         "value": "error",
-        "description": "禁止在 setTimeout 或 setInterval 中传入字符串",
+        "description": "禁用隐式的eval()",
         "reason": "",
         "badExample": "<mark class=\"eslint-error\" data-tip=\"Implied eval. Consider passing a function instead of a string.<br/><span class='eslint-error-rule-id'>eslint(no-implied-eval)</span>\"><span class=\"token function\">setTimeout</span><span class=\"token punctuation\">(</span><span class=\"token string\">'alert(\"Hello World\");'</span><span class=\"token punctuation\">,</span> <span class=\"token number\">1000</span><span class=\"token punctuation\">)</span></mark><span class=\"token punctuation\">;</span>",
         "goodExample": "<span class=\"token function\">setTimeout</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token operator\">=></span> <span class=\"token punctuation\">{</span>\r\n    <span class=\"token function\">alert</span><span class=\"token punctuation\">(</span><span class=\"token string\">'Hello World'</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\r\n<span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span> <span class=\"token number\">1000</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>",
