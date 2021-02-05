@@ -387,7 +387,7 @@ module.exports = {
             }
         ],
         /**
-         * 禁止在 setTimeout 或 setInterval 中传入字符串
+         * 禁用隐式的eval()
          */
         'no-implied-eval': 'error',
         /**
@@ -634,7 +634,7 @@ module.exports = {
          */
         'no-useless-computed-key': 'error',
         /**
-         * 禁止出现没必要的字符串连接
+         * 禁止没必要的字符拼接
          */
         'no-useless-concat': 'error',
         /**

@@ -86,4 +86,7 @@ module.exports = {
 - [ESlint Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs)
 - [eslint-config-alloy](https://github.com/AlloyTeam/eslint-config-alloy)
 
+## 开发维护
+- 以测试开发驱动，config/rules/*.json 文件都是根据 test/ 文件夹对应的生成的
+
 
