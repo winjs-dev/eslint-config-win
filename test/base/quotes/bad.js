@@ -1,1 +1,1 @@
-var double = "double";
+var double = 'double';

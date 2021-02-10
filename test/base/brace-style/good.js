@@ -1,27 +1,39 @@
 function foo() {
-    return true;
+  return true;
 }
 
 if (foo) {
-    bar();
+  bar();
 }
 
 if (foo) {
-    bar();
+  bar();
 } else {
-    baz();
+  baz();
 }
 
 try {
-    somethingRisky();
-} catch(e) {
-    handleError();
+  somethingRisky();
+} catch (e) {
+  handleError();
 }
 
-function nop() { return; }
+function nop() {
+  return;
+}
 
-if (foo) { bar(); }
+if (foo) {
+  bar();
+}
 
-if (foo) { bar(); } else { baz(); }
+if (foo) {
+  bar();
+} else {
+  baz();
+}
 
-try { somethingRisky(); } catch(e) { handleError(); }
+try {
+  somethingRisky();
+} catch (e) {
+  handleError();
+}

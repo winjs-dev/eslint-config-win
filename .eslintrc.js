@@ -1,6 +1,6 @@
 module.exports = {
-    extends: ['./index.js'],
-    globals: {
-        Prism: false
-    }
+  extends: ['./index.js'],
+  globals: {
+    Prism: false,
+  },
 };

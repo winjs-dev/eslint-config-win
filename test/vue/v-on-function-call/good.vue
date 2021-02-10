@@ -1,5 +1,3 @@
 <template>
-    <button @:click="closeModal">
-        Close
-    </button>
+  <button @:click="closeModal">Close</button>
 </template>

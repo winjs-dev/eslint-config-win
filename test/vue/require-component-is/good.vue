@@ -1,3 +1,3 @@
 <template>
-    <component :is="currentComponnet" />
+  <component :is="currentComponnet" />
 </template>

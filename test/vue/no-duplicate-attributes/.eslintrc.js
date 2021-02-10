@@ -1,8 +1,8 @@
 module.exports = {
-    rules: {
-        /**
-         * 禁止出现重复的属性
-         */
-        'vue/no-duplicate-attributes': ['error']
-    }
+  rules: {
+    /**
+     * 禁止出现重复的属性
+     */
+    'vue/no-duplicate-attributes': ['error'],
+  },
 };

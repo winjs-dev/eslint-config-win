@@ -7,10 +7,10 @@ f(1);
 
 var b = 1;
 function g() {
-    return b;
+  return b;
 }
 
 {
-    let c;
-    c++;
+  let c;
+  c++;
 }

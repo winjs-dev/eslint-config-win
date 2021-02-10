@@ -1,2 +1,2 @@
-obj[foo]
-obj['foo']
+obj[foo];
+obj['foo'];

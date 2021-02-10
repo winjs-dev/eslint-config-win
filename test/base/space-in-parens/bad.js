@@ -1,6 +1,6 @@
-foo( 'bar');
-foo('bar' );
+foo('bar');
+foo('bar');
 
 (function () {
-    return 'bar';
-} )();
+  return 'bar';
+})();

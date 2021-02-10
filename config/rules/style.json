@@ -240,15 +240,7 @@
     "name": "comment-word-blacklist",
     "value": [
       "never",
-      [
-        "/^TODO:/",
-        "/^FIXME:/",
-        "fuck",
-        "shit",
-        "damn",
-        "twerk",
-        "egg yolk"
-      ],
+      ["/^TODO:/", "/^FIXME:/", "fuck", "shit", "damn", "twerk", "egg yolk"],
       {
         "severity": "warning"
       }
@@ -277,9 +269,7 @@
     "value": [
       "never",
       {
-        "ignoreShorthands": [
-          "grid-template"
-        ]
+        "ignoreShorthands": ["grid-template"]
       }
     ],
     "description": "禁止使用可以缩写却不缩写的属性",
@@ -405,15 +395,8 @@
     "value": [
       "never",
       {
-        "/^border(?!-(width|spacing))/": [
-          "/thin/",
-          "/medium/",
-          "/thick/",
-          "0"
-        ],
-        "/^transition/": [
-          "/all/"
-        ]
+        "/^border(?!-(width|spacing))/": ["/thin/", "/medium/", "/thick/", "0"],
+        "/^transition/": ["/all/"]
       }
     ],
     "description": "指定声明内禁止用的属性和值对的黑名单",
@@ -979,12 +962,7 @@
     "value": [
       "never",
       {
-        "ignoreProperties": [
-          "app-region",
-          "appearance",
-          "mask",
-          "tab-size"
-        ]
+        "ignoreProperties": ["app-region", "appearance", "mask", "tab-size"]
       }
     ],
     "description": "禁止属性使用浏览器引擎前缀",
