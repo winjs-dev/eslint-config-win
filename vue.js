@@ -41,6 +41,10 @@ module.exports = {
     plugins: ['vue'],
     rules: {
         /**
+         * 标签属性必须按规则排序
+         */
+        'vue/attributes-order': 'error',
+        /**
          * 支持在模版中使用 eslint-disable-next-line 等注释
          */
         'vue/comment-directive': 'error',

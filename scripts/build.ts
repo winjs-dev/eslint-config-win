@@ -63,7 +63,7 @@ class Builder {
             const fullRuleName = rulePrefix + ruleName;
             const meta = ruleValue.meta;
             prev[fullRuleName] = {
-                fixable: meta.hasOwnProperty('fixable'),
+                fixable: meta.fixable === 'code',
                 extendsBaseRule:
                     // 若为 string，则表示继承的规则，若为 true，则提取继承的规则的名称
                     meta.docs.extendsBaseRule === true
