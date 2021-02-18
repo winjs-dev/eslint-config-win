@@ -1,14 +1,16 @@
-var foo = 1,
+var foo = 1
+  ,
   bar = 2;
 
-var foo = 1,
-  bar = 2;
+var foo = 1
+  , bar = 2;
 
-var foo = ['apples', 'oranges'];
+var foo = ["apples"
+  , "oranges"];
 
-function func() {
+function func () {
   return {
-    a: 1,
-    'b:': 2,
+    "a": 1
+    ,"b:": 2
   };
 }

@@ -1,2 +1,2 @@
-var obj = { foo: 'bar' };
-var obj1 = { foo: 'bar' };
+var obj = {foo: 'bar' };
+var obj1 = { foo: 'bar'};

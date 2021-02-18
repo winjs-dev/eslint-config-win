@@ -1,7 +1,7 @@
-if (foo) {
+if(foo) {
   //...
-} else if (bar) {
+}else if (bar) {
   //...
-} else {
+}else{
   //...
 }
