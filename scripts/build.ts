@@ -60,7 +60,9 @@ class Builder {
       const fullRuleName = rulePrefix + ruleName;
       const meta = ruleValue.meta;
       prev[fullRuleName] = {
-        fixable: meta.fixable === 'code',
+        // 可以自动修复可见下面链接
+        // https://eslint.org/docs/developer-guide/working-with-rules#rule-basics -> fixable
+        fixable: meta.fixable === 'code' || meta.fixable === 'whitespace',
         extendsBaseRule:
           // 若为 string，则表示继承的规则，若为 true，则提取继承的规则的名称
           // meta.docs.extendsBaseRule 若为 string，则表示继承的规则，若为 true，则提取继承的规则的名称

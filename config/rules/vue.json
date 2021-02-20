@@ -411,7 +411,7 @@
     "reason": "代码格式问题，最好由 Prettier 解决",
     "badExample": "",
     "goodExample": "",
-    "fixable": false,
+    "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
