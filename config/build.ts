@@ -12,7 +12,16 @@ export const NAMESPACE_CONFIG = {
     /** 规则配置 */
     ruleConfig: require('./rules/style.json'),
     /** 各插件的文档地址 */
-    getDocsUrl: (rule: string) => `https://stylelint.io/user-guide/rules/${rule}`,
+    getDocsUrl: (rule: string) => {
+      if(rule.includes('declaration-block-no-ignored-properties')) {
+        return `https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties`;
+      }
+      if(rule.includes('z-index-value-constraint')) {
+         return `https://github.com/kristerkari/stylelint-z-index-value-constraint`;
+      }
+
+      return `https://stylelint.io/user-guide/rules/${rule}`
+    },
     /** 插件的名称 */
     pluginName: undefined,
   },

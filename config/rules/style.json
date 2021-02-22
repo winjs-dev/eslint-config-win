@@ -155,7 +155,7 @@
     "reason": "",
     "badExample": "a {}\na { }",
     "goodExample": "@media print { a { color: #000; } }",
-    "fixable": true,
+    "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
@@ -236,8 +236,8 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
-  "comment-word-blacklist": {
-    "name": "comment-word-blacklist",
+  "comment-word-disallowed-list": {
+    "name": "comment-word-disallowed-list",
     "value": [
       "never",
       ["/^TODO:/", "/^FIXME:/", "fuck", "shit", "damn", "twerk", "egg yolk"],
@@ -390,8 +390,8 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
-  "declaration-property-value-blacklist": {
-    "name": "declaration-property-value-blacklist",
+  "declaration-property-value-disallowed-list": {
+    "name": "declaration-property-value-disallowed-list",
     "value": [
       "never",
       {
@@ -502,7 +502,7 @@
     "reason": "",
     "badExample": "a { transform: translate(1,1) }\na { transform: translate(1 ,1) }",
     "goodExample": "a { transform: translate(1 , 1) }",
-    "fixable": true,
+    "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
@@ -513,7 +513,7 @@
     "reason": "",
     "badExample": ".foo { background: linear-gradient(top, #fff, #000); }",
     "goodExample": ".foo { background: linear-gradient(to top, #fff, #000); }",
-    "fixable": true,
+    "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
@@ -722,7 +722,7 @@
     "reason": "",
     "badExample": "@media (-webkit-min-device-pixel-ratio: 1) {}",
     "goodExample": "@media (min-device-pixel-ratio: 1) {}",
-    "fixable": false,
+    "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
@@ -847,8 +847,8 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
-  "no-eol-whitespac": {
-    "name": "no-eol-whitespac",
+  "no-eol-whitespace": {
+    "name": "no-eol-whitespace",
     "value": "never",
     "description": "禁止行尾空格",
     "reason": "",
@@ -891,8 +891,8 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
-  "no-unknown-animation": {
-    "name": "no-unknown-animation",
+  "no-unknown-animations": {
+    "name": "no-unknown-animations",
     "value": "never",
     "description": "禁止未知的动画",
     "reason": "",
@@ -969,7 +969,7 @@
     "reason": "",
     "badExample": "a { -webkit-transform: scale(1); }\na { -moz-columns: 2; }",
     "goodExample": "a { transform: scale(1); }\na {\ncolumns: 2; }\na { -webkit-touch-callout: none; }",
-    "fixable": false,
+    "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
@@ -1293,7 +1293,7 @@
     "requiresTypeChecking": false
   },
   "value-keyword-case": {
-    "name": "value-keyword-case'",
+    "name": "value-keyword-case",
     "value": "never",
     "description": "指定关键字的值的必须为小写",
     "reason": "",
@@ -1376,7 +1376,7 @@
     "reason": "",
     "badExample": "a { display: inline; width: 100px; }\na { display: inline; height: 100px; }",
     "goodExample": "",
-    "fixable": true,
+    "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
@@ -1387,7 +1387,7 @@
     "reason": "",
     "badExample": "a { position: relative; z-index: 99999; }",
     "goodExample": "a { position: relative; z-index: 1; }",
-    "fixable": true,
+    "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   }
