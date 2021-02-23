@@ -100,7 +100,7 @@
     "reason": "",
     "badExample": "a { color: #000 ! important; } \na { color: #000! important; }",
     "goodExample": "a { color: #000 !important; } \na { color:#000!important; }",
-    "fixable": false,
+    "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
@@ -773,11 +773,11 @@
   "media-query-list-comma-newline-before": {
     "name": "media-query-list-comma-newline-before",
     "value": "never",
-    "description": "media 媒体功能的列表的逗号之前禁止有空白符",
+    "description": "media 媒体功能的列表中，逗号前永远不能有空格",
     "reason": "",
     "badExample": "@media screen and (color)\n,projection and (color) {}\n@media screen and (color)\n,\nprojection and (color) {}",
     "goodExample": "@media screen and (color), projection and (color) {}\n@media screen and (color),\nprojection and (color) {}",
-    "fixable": true,
+    "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
