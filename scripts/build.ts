@@ -112,6 +112,7 @@ class Builder {
       // 解析其他的注释内容，如 @reason
       rule.reason = commentsAST.tags.find(({ title }) => title === 'reason')?.description ?? '';
     }
+    console.log('rule', rule);
     // 若没有描述，并且有继承的规则，则使用继承的规则的描述
     if (!rule.description && rule.extendsBaseRule) {
       rule.description = this.baseRuleConfig[rule.extendsBaseRule].description;

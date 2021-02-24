@@ -1,6 +1,6 @@
 {
   "name": "@winner-fed/eslint-config-win",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "winner-fed 前端编码规范文档",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,7 @@
     "index.js",
     "base.js",
     "vue.js",
+    "typescript.js",
     "README.md",
     "package.json"
   ],

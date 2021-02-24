@@ -13,11 +13,11 @@ export const NAMESPACE_CONFIG = {
     ruleConfig: require('./rules/style.json'),
     /** 各插件的文档地址 */
     getDocsUrl: (rule: string) => {
-      if(rule.includes('declaration-block-no-ignored-properties')) {
+      if (rule.includes('declaration-block-no-ignored-properties')) {
         return `https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties`;
       }
-      if(rule.includes('z-index-value-constraint')) {
-         return `https://github.com/kristerkari/stylelint-z-index-value-constraint`;
+      if (rule.includes('z-index-value-constraint')) {
+        return `https://github.com/kristerkari/stylelint-z-index-value-constraint`;
       }
 
       return `https://stylelint.io/user-guide/rules/${rule}`
@@ -47,6 +47,18 @@ export const NAMESPACE_CONFIG = {
     getDocsUrl: (rule: string) => `https://eslint.vuejs.org/rules/${rule.replace(/.*\//, '')}.html`,
     pluginName: 'eslint-plugin-vue',
   },
+  typescript: {
+    exampleExtension: 'ts',
+    prismLanguage: 'ts',
+    rulePrefix: '@typescript-eslint/',
+    ruleConfig: require('./rules/typescript.json'),
+    getDocsUrl: (rule: string) =>
+      `https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/${rule.replace(
+        /.*\//,
+        ''
+      )}.md`,
+    pluginName: '@typescript-eslint/eslint-plugin'
+  }
 };
 
 export type Namespace = keyof typeof NAMESPACE_CONFIG;
@@ -64,15 +76,15 @@ export function buildEslintrcMeta() {
  *
  * 依赖版本：
  *     ${[
-   'eslint',
-   'babel-eslint',
-   'vue-eslint-parser',
-   'eslint-plugin-vue',
-   '@typescript-eslint/parser',
-   '@typescript-eslint/eslint-plugin',
- ]
-   .map((key) => `${key} ${(pkg as any).devDependencies[key]}`)
-   .join('\n *   ')}
+    'eslint',
+    'babel-eslint',
+    'vue-eslint-parser',
+    'eslint-plugin-vue',
+    '@typescript-eslint/parser',
+    '@typescript-eslint/eslint-plugin',
+  ]
+    .map((key) => `${key} ${(pkg as any).devDependencies[key]}`)
+    .join('\n *   ')}
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
  *
