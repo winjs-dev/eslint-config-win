@@ -115,7 +115,13 @@ class Builder {
     console.log('rule', rule);
     // 若没有描述，并且有继承的规则，则使用继承的规则的描述
     if (!rule.description && rule.extendsBaseRule) {
-      rule.description = this.baseRuleConfig[rule.extendsBaseRule].description;
+      try {
+        rule.description = this.baseRuleConfig[rule.extendsBaseRule].description;
+      } catch (e) {
+        console.log(Object.keys(this.baseRuleConfig));
+        console.log('errRule:', rule);
+      }
+
     }
     // 若没有原因，并且有继承的规则，并且本规则的配置项与继承的规则的配置项一致，则使用继承的规则的原因
     if (
