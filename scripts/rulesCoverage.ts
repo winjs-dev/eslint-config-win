@@ -15,7 +15,7 @@ const prettierRules = [
   ...Object.keys(require('eslint-config-prettier/react').rules),
   ...Object.keys(require('eslint-config-prettier/standard').rules),
   ...Object.keys(require('eslint-config-prettier/unicorn').rules),
-  ...Object.keys(require('eslint-config-prettier/vue').rules),
+  ...Object.keys(require('eslint-config-prettier/vue').rules)
 ];
 
 // 填充 deprecatedRules 和 activeRules

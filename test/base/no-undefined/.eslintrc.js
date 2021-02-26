@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 undefined
      */
-    'no-undefined': 'off',
-  },
+    'no-undefined': 'off'
+  }
 };

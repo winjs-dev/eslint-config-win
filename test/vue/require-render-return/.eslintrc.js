@@ -3,6 +3,6 @@ module.exports = {
     /**
      * render 函数必须有返回值
      */
-    'vue/require-render-return': 'error',
-  },
+    'vue/require-render-return': 'error'
+  }
 };

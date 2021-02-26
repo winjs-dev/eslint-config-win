@@ -1,18 +1,18 @@
 <script>
 export default {
   props: {
-    foo: String,
+    foo: String
   },
   computed: {
     foo: {
-      get() {},
-    },
+      get() {}
+    }
   },
   data: {
-    foo: null,
+    foo: null
   },
   methods: {
-    foo() {},
-  },
+    foo() {}
+  }
 };
 </script>

@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止方向错误的 for 循环
      */
-    'for-direction': 'error',
-  },
+    'for-direction': 'error'
+  }
 };

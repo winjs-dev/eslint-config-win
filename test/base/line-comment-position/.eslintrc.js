@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 单行注释必须写在上一行
      */
-    'line-comment-position': 'off',
-  },
+    'line-comment-position': 'off'
+  }
 };

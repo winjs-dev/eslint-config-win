@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 label
      */
-    'no-labels': 'error',
-  },
+    'no-labels': 'error'
+  }
 };

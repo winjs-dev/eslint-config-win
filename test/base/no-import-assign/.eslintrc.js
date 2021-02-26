@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止对导入的模块进行赋值
      */
-    'no-import-assign': 'error',
-  },
+    'no-import-assign': 'error'
+  }
 };

@@ -3,10 +3,10 @@
  * https://github.com/cloud-templates/eslint-config-win#readme
  *
  * 贡献者：
- *     winner-fed
+ *   winner-fed
  *
  * 依赖版本：
- *     eslint ^7.16.0
+ *   eslint ^7.16.0
  *   babel-eslint ^10.1.0
  *   vue-eslint-parser ^7.3.0
  *   eslint-plugin-vue ^7.3.0
@@ -31,12 +31,12 @@ module.exports = {
       globalReturn: false,
       // 开启全局 script 模式
       impliedStrict: true,
-      jsx: true,
+      jsx: true
     },
     // 即使没有 babelrc 配置文件，也使用 babel-eslint 来解析
     requireConfigFile: false,
     // 仅允许 import export 语句出现在模块的顶层
-    allowImportExportEverywhere: false,
+    allowImportExportEverywhere: false
   },
   plugins: ['vue'],
   rules: {
@@ -73,8 +73,8 @@ module.exports = {
     'vue/component-tags-order': [
       'error',
       {
-        order: ['template', 'script', 'style'],
-      },
+        order: ['template', 'script', 'style']
+      }
     ],
     /**
      * 必须使用 === 或 !==，禁止使用 == 或 !=
@@ -138,8 +138,8 @@ module.exports = {
         skipComments: false,
         skipRegExps: true,
         skipTemplates: true,
-        skipHTMLTextContents: true,
-      },
+        skipHTMLTextContents: true
+      }
     ],
     /**
      * 禁止出现语法错误
@@ -354,6 +354,6 @@ module.exports = {
     /**
      * v-text 指令必须合法
      */
-    'vue/valid-v-text': 'error',
-  },
+    'vue/valid-v-text': 'error'
+  }
 };

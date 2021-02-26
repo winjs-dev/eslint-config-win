@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 debugger
      */
-    'no-debugger': 'error',
-  },
+    'no-debugger': 'error'
+  }
 };

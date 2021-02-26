@@ -5,6 +5,6 @@ module.exports = {
      * @reason __iterator__ 是一个已废弃的属性
      * 使用 [Symbol.iterator] 替代它
      */
-    'no-iterator': 'error',
-  },
+    'no-iterator': 'error'
+  }
 };

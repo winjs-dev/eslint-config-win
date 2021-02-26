@@ -20,6 +20,6 @@ module.exports = {
     //     "FunctionExpression": { "parameters": 1, "body": 1 },
     //     "CallExpression": { "arguments": 1 }
     // }],
-    indent: 'off',
-  },
+    indent: 'off'
+  }
 };

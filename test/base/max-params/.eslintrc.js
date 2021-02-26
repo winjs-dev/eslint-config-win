@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 函数的参数禁止超过 3 个
      */
-    'max-params': ['error', 3],
-  },
+    'max-params': ['error', 3]
+  }
 };

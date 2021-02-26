@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止重复定义变量
      */
-    'no-redeclare': 'error',
-  },
+    'no-redeclare': 'error'
+  }
 };

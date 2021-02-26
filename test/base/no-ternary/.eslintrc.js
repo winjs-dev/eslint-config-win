@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用三元表达式
      */
-    'no-ternary': 'off',
-  },
+    'no-ternary': 'off'
+  }
 };

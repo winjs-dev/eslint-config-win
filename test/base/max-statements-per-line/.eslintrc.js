@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 限制一行中的语句数量
      */
-    'max-statements-per-line': 'off',
-  },
+    'max-statements-per-line': 'off'
+  }
 };

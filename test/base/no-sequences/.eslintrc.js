@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用逗号操作符
      */
-    'no-sequences': 'error',
-  },
+    'no-sequences': 'error'
+  }
 };

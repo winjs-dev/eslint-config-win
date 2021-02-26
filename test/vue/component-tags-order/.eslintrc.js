@@ -6,8 +6,8 @@ module.exports = {
     'vue/component-tags-order': [
       'error',
       {
-        order: ['template', 'script', 'style'],
-      },
-    ],
-  },
+        order: ['template', 'script', 'style']
+      }
+    ]
+  }
 };

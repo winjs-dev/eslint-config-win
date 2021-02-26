@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 导入必须按规则排序
      */
-    'sort-imports': 'off',
-  },
+    'sort-imports': 'off'
+  }
 };

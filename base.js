@@ -3,10 +3,10 @@
  * https://github.com/cloud-templates/eslint-config-win#readme
  *
  * 贡献者：
- *     winner-fed
+ *   winner-fed
  *
  * 依赖版本：
- *     eslint ^7.16.0
+ *   eslint ^7.16.0
  *   babel-eslint ^10.1.0
  *   vue-eslint-parser ^7.3.0
  *   eslint-plugin-vue ^7.3.0
@@ -28,18 +28,18 @@ module.exports = {
       globalReturn: false,
       // 开启全局 script 模式
       impliedStrict: true,
-      jsx: true,
+      jsx: true
     },
     // 即使没有 babelrc 配置文件，也使用 babel-eslint 来解析
     requireConfigFile: false,
     // 仅允许 import export 语句出现在模块的顶层
-    allowImportExportEverywhere: false,
+    allowImportExportEverywhere: false
   },
   env: {
     browser: true,
     node: true,
     commonjs: true,
-    es6: true,
+    es6: true
   },
   // 以当前目录为根目录，不再向上查找 .eslintrc.js
   root: true,
@@ -51,8 +51,8 @@ module.exports = {
       'error',
       {
         setWithoutGet: true,
-        getWithoutSet: false,
-      },
+        getWithoutSet: false
+      }
     ],
     /**
      * 不允许数组括号和其他标记之间的空格
@@ -69,8 +69,8 @@ module.exports = {
       'error',
       {
         before: true,
-        after: true,
-      },
+        after: true
+      }
     ],
     /**
      * 将 var 定义的变量视为块作用域，禁止在块外使用
@@ -88,8 +88,8 @@ module.exports = {
       'error',
       '1tbs',
       {
-        allowSingleLine: true,
-      },
+        allowSingleLine: true
+      }
     ],
     /**
      * 变量名必须是 camelcase 风格的
@@ -114,8 +114,8 @@ module.exports = {
         objects: 'never',
         imports: 'never',
         exports: 'never',
-        functions: 'never',
-      },
+        functions: 'never'
+      }
     ],
     /**
      * 逗号前无空格，后需有空格
@@ -124,8 +124,8 @@ module.exports = {
       'error',
       {
         before: false,
-        after: true,
-      },
+        after: true
+      }
     ],
     /**
      * 逗号在行尾
@@ -138,8 +138,8 @@ module.exports = {
     complexity: [
       'error',
       {
-        max: 20,
-      },
+        max: 20
+      }
     ],
     /**
      * 属性括号内强制不允许有空格
@@ -194,8 +194,8 @@ module.exports = {
       'error',
       'always',
       {
-        includeCommonJSModuleExports: false,
-      },
+        includeCommonJSModuleExports: false
+      }
     ],
     /**
      * 函数必须有名字
@@ -212,8 +212,8 @@ module.exports = {
       'error',
       {
         before: false,
-        after: true,
-      },
+        after: true
+      }
     ],
     /**
      * getter 必须有返回值，并且禁止返回空
@@ -261,8 +261,8 @@ module.exports = {
       'error',
       {
         beforeColon: false,
-        afterColon: true,
-      },
+        afterColon: true
+      }
     ],
     /**
      * 关键字前后都要有空格
@@ -271,8 +271,8 @@ module.exports = {
       'error',
       {
         before: true,
-        after: true,
-      },
+        after: true
+      }
     ],
     /**
      * 单行注释必须写在上一行
@@ -285,8 +285,8 @@ module.exports = {
       'error',
       'always',
       {
-        exceptAfterSingleLine: true,
-      },
+        exceptAfterSingleLine: true
+      }
     ],
     /**
      * 限制一个文件中类的数量
@@ -333,8 +333,8 @@ module.exports = {
       {
         newIsCap: true,
         capIsNew: false,
-        properties: true,
-      },
+        properties: true
+      }
     ],
     /**
      * 当使用 new 关键字调用没有参数的构造函数时，该规则禁止使用括号
@@ -399,8 +399,8 @@ module.exports = {
     'no-constant-condition': [
       'error',
       {
-        checkLoops: false,
-      },
+        checkLoops: false
+      }
     ],
     /**
      * 禁止在构造函数中返回值
@@ -465,8 +465,8 @@ module.exports = {
     'no-empty': [
       'error',
       {
-        allowEmptyCatch: true,
-      },
+        allowEmptyCatch: true
+      }
     ],
     /**
      * 禁止在正则表达式中使用空的字符集 []
@@ -533,8 +533,8 @@ module.exports = {
     'no-implicit-coercion': [
       'error',
       {
-        allow: ['!!'],
-      },
+        allow: ['!!']
+      }
     ],
     /**
      * 禁止在全局作用域下定义变量或申明函数
@@ -562,6 +562,10 @@ module.exports = {
      */
     'no-invalid-regexp': 'error',
     /**
+     * 禁止无效的this，只能用在构造器，类，对象字面量
+     */
+    'no-invalid-this': 'off',
+    /**
      * 禁止使用特殊空白符（比如全角空格），除非是出现在字符串、正则表达式或模版字符串中
      */
     'no-irregular-whitespace': [
@@ -570,8 +574,8 @@ module.exports = {
         skipStrings: true,
         skipComments: false,
         skipRegExps: true,
-        skipTemplates: true,
-      },
+        skipTemplates: true
+      }
     ],
     /**
      * 禁止使用 __iterator__
@@ -634,8 +638,8 @@ module.exports = {
       'error',
       {
         max: 1,
-        maxEOF: 1,
-      },
+        maxEOF: 1
+      }
     ],
     /**
      * 禁止 if 里有否定的表达式
@@ -840,8 +844,8 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTernary: true,
-        allowTaggedTemplates: true,
-      },
+        allowTaggedTemplates: true
+      }
     ],
     /**
      * 禁止出现没用到的 label
@@ -857,8 +861,8 @@ module.exports = {
         vars: 'all',
         args: 'none',
         ignoreRestSiblings: false,
-        caughtErrors: 'none',
-      },
+        caughtErrors: 'none'
+      }
     ],
     /**
      * 变量必须先定义后使用, 方法除外（考虑到递归的情况）
@@ -868,8 +872,8 @@ module.exports = {
       {
         variables: false,
         functions: true,
-        classes: false,
-      },
+        classes: false
+      }
     ],
     /**
      * 禁止正则表达式中出现无用的回溯引用
@@ -958,9 +962,9 @@ module.exports = {
       {
         overrides: {
           '?': 'before',
-          ':': 'before',
-        },
-      },
+          ':': 'before'
+        }
+      }
     ],
     /**
      * 限制语句之间的空行规则，比如变量定义完之后必须要空行
@@ -972,8 +976,8 @@ module.exports = {
     'prefer-const': [
       'error',
       {
-        destructuring: 'all',
-      },
+        destructuring: 'all'
+      }
     ],
     /**
      * 必须使用解构赋值
@@ -1028,8 +1032,8 @@ module.exports = {
       'single',
       {
         avoidEscape: true,
-        allowTemplateLiterals: true,
-      },
+        allowTemplateLiterals: true
+      }
     ],
     /**
      * parseInt 必须传入第二个参数
@@ -1089,8 +1093,8 @@ module.exports = {
       'error',
       {
         words: true,
-        nonwords: false,
-      },
+        nonwords: false
+      }
     ],
     /**
      * 注释的斜线或 * 后必须有空格
@@ -1101,9 +1105,9 @@ module.exports = {
       {
         block: {
           exceptions: ['*'],
-          balanced: true,
-        },
-      },
+          balanced: true
+        }
+      }
     ],
     /**
      * 禁止使用 'strict';
@@ -1137,8 +1141,8 @@ module.exports = {
       'error',
       'never',
       {
-        onlyEquality: true,
-      },
-    ],
-  },
+        onlyEquality: true
+      }
+    ]
+  }
 };

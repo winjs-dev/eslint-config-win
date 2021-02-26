@@ -15,7 +15,7 @@ const prettierRules = [
   ...Object.keys(require('eslint-config-prettier/react').rules),
   ...Object.keys(require('eslint-config-prettier/standard').rules),
   ...Object.keys(require('eslint-config-prettier/unicorn').rules),
-  ...Object.keys(require('eslint-config-prettier/vue').rules),
+  ...Object.keys(require('eslint-config-prettier/vue').rules)
 ];
 
 // 填充 deprecatedRules 和 activeRules
@@ -70,7 +70,7 @@ if (remainingRules.length > 0) {
   errors.push(
     `Missing rules: ${remainingRules
       .map((ruleName) => `\n  - ${ruleName} ${getDocsUrlFromRuleName(ruleName)}`)
-      .join('')}`,
+      .join('')}`
   );
 
   let missingRules: any = {};
@@ -100,7 +100,7 @@ if (remainingRules.length > 0) {
     '${fullRuleName}': 'error',
   },
 };
-`,
+`
     );
   });
 }

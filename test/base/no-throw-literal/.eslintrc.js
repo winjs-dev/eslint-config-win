@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止 throw 字面量，必须 throw 一个 Error 对象
      */
-    'no-throw-literal': 'error',
-  },
+    'no-throw-literal': 'error'
+  }
 };

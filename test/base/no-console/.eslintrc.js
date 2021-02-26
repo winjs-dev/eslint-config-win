@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 console
      */
-    'no-console': 'off',
-  },
+    'no-console': 'off'
+  }
 };

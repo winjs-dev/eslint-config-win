@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止在代码后添加单行注释
      */
-    'no-inline-comments': 'off',
-  },
+    'no-inline-comments': 'off'
+  }
 };

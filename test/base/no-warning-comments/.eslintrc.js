@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止注释中出现 TODO 和 FIXME
      */
-    'no-warning-comments': 'off',
-  },
+    'no-warning-comments': 'off'
+  }
 };

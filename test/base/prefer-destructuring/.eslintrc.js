@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 必须使用解构赋值
      */
-    'prefer-destructuring': 'off',
-  },
+    'prefer-destructuring': 'off'
+  }
 };

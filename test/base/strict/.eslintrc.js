@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 'strict';
      */
-    strict: ['error', 'never'],
-  },
+    strict: ['error', 'never']
+  }
 };

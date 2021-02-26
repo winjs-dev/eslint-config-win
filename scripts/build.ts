@@ -10,7 +10,7 @@ const eslintInstance = new ESLint({});
 import insertTag from 'insert-tag';
 import xmlEscape from 'xml-escape';
 
-import { NAMESPACE_CONFIG, NAMESPACES, buildEslintrcMeta, Namespace, Rule, locale } from '../config';
+import { NAMESPACE_CONFIG, NAMESPACES, buildEslintrcMeta, Namespace, Rule } from '../config';
 
 import '../site/vendor/prism';
 
@@ -28,6 +28,7 @@ class Builder {
       requiresTypeChecking: boolean;
     };
   } = {};
+
   /** 当前 namespace 的规则列表 */
   private ruleList: Rule[] = [];
   /** 当前 namespace 的所有规则合并后的文本，包含注释 */
@@ -46,7 +47,6 @@ class Builder {
     this.rulesContent = this.getRulesContent();
     this.initialEslintrcContent = this.getInitialEslintrc();
     this.buildRulesJson();
-    this.buildLocaleJson();
     this.buildEslintrc();
   }
 
@@ -69,7 +69,7 @@ class Builder {
           meta.docs.extensionRule === true || meta.docs.extendsBaseRule === true
             ? ruleName.replace(NAMESPACE_CONFIG[this.namespace].rulePrefix, '')
             : meta.docs.extendsBaseRule ?? '',
-        requiresTypeChecking: meta.docs.requiresTypeChecking ?? false,
+        requiresTypeChecking: meta.docs.requiresTypeChecking ?? false
       };
       return prev;
     }, {});
@@ -82,7 +82,7 @@ class Builder {
         .readdirSync(path.resolve(__dirname, '../test', this.namespace))
         .filter((ruleName) => fs.lstatSync(path.resolve(__dirname, '../test', this.namespace, ruleName)).isDirectory())
         // .filter((ruleName) => DEBUT_WHITELIST.includes(ruleName))
-        .map((ruleName) => this.getRule(ruleName)),
+        .map((ruleName) => this.getRule(ruleName))
     );
 
     return ruleList;
@@ -102,7 +102,7 @@ class Builder {
       reason: '',
       badExample: '',
       goodExample: '',
-      ...this.ruleMetaMap[fullRuleName],
+      ...this.ruleMetaMap[fullRuleName]
     };
     if (comments !== null) {
       // 通过 doctrine 解析注释
@@ -112,7 +112,6 @@ class Builder {
       // 解析其他的注释内容，如 @reason
       rule.reason = commentsAST.tags.find(({ title }) => title === 'reason')?.description ?? '';
     }
-    console.log('rule', rule);
     // 若没有描述，并且有继承的规则，则使用继承的规则的描述
     if (!rule.description && rule.extendsBaseRule) {
       try {
@@ -121,7 +120,6 @@ class Builder {
         console.log(Object.keys(this.baseRuleConfig));
         console.log('errRule:', rule);
       }
-
     }
     // 若没有原因，并且有继承的规则，并且本规则的配置项与继承的规则的配置项一致，则使用继承的规则的原因
     if (
@@ -133,11 +131,11 @@ class Builder {
     }
     const badFilePath = path.resolve(
       path.dirname(filePath),
-      `bad.${NAMESPACE_CONFIG[this.namespace].exampleExtension}`,
+      `bad.${NAMESPACE_CONFIG[this.namespace].exampleExtension}`
     );
     const goodFilePath = path.resolve(
       path.dirname(filePath),
-      `good.${NAMESPACE_CONFIG[this.namespace].exampleExtension}`,
+      `good.${NAMESPACE_CONFIG[this.namespace].exampleExtension}`
     );
 
     if (fs.existsSync(badFilePath)) {
@@ -147,16 +145,16 @@ class Builder {
         Prism.highlight(
           fs.readFileSync(badFilePath, 'utf-8'),
           Prism.languages[NAMESPACE_CONFIG[this.namespace].prismLanguage],
-          NAMESPACE_CONFIG[this.namespace].prismLanguage,
+          NAMESPACE_CONFIG[this.namespace].prismLanguage
         ),
-        results[0].messages,
+        results[0].messages
       ).trim();
     }
     if (fs.existsSync(goodFilePath)) {
       rule.goodExample = Prism.highlight(
         fs.readFileSync(goodFilePath, 'utf-8'),
         Prism.languages[NAMESPACE_CONFIG[this.namespace].prismLanguage],
-        NAMESPACE_CONFIG[this.namespace].prismLanguage,
+        NAMESPACE_CONFIG[this.namespace].prismLanguage
       ).trim();
     }
     return rule;
@@ -179,7 +177,7 @@ class Builder {
         if (rule.reason) {
           content = [
             ...content,
-            ...rule.reason.split('\n').map((line, index) => (index === 0 ? ` * @reason ${line}` : ` * ${line}`)),
+            ...rule.reason.split('\n').map((line, index) => (index === 0 ? ` * @reason ${line}` : ` * ${line}`))
           ];
         }
         content.push(' */');
@@ -209,24 +207,8 @@ class Builder {
     this.writeWithPrettier(
       path.resolve(__dirname, `../config/rules/${this.namespace}.json`),
       JSON.stringify(ruleConfig),
-      'json',
+      'json'
     );
-  }
-
-  /** 写入 config/locale/*.json */
-  private buildLocaleJson() {
-    const current: any = locale['en-US'];
-
-    Object.values(this.ruleList).forEach((rule) => {
-      if (!current[rule.description]) {
-        current[rule.description] = rule.description;
-      }
-      if (rule.reason && !current[rule.reason]) {
-        current[rule.reason] = rule.reason;
-      }
-    });
-
-    this.writeWithPrettier(path.resolve(__dirname, '../config/locale/en-US.json'), JSON.stringify(current), 'json');
   }
 
   /** 写入各插件的 eslintrc 文件 */
@@ -237,6 +219,7 @@ class Builder {
         // 去掉 extends
         .replace(/extends:.*],/, '')
         // 将 rulesContent 写入 rules
+        // 必须具有尾逗号，否则写不进去
         .replace(/(,\s*rules: {([\s\S]*?)})?,\s*};/, (_match, _p1, p2) => {
           const rules = p2 ? `${p2}${this.rulesContent}` : this.rulesContent;
           return `,rules:{${rules}}};`;
@@ -252,9 +235,9 @@ class Builder {
       // 使用 prettier 格式化文件内容
       prettier.format(content, {
         ...require('../.prettierrc'),
-        parser,
+        parser
       }),
-      'utf-8',
+      'utf-8'
     );
   }
 
@@ -272,15 +255,16 @@ class Builder {
       insertedBadExample = insertTag(
         insertedBadExample,
         `<mark class="eslint-error" data-tip="${`${xmlEscape(
-          xmlEscape(message),
+          xmlEscape(message)
         )}&lt;br/&gt;&lt;span class='eslint-error-rule-id'&gt;eslint(${ruleId})&lt;/span&gt;`}">`,
-        [insertLine, insertColumn, insertLineEnd, insertColumnEnd],
+        [insertLine, insertColumn, insertLineEnd, insertColumnEnd]
       );
     });
     return insertedBadExample;
   }
-
 }
+
+main();
 
 async function main() {
   const builder = new Builder();
@@ -291,4 +275,3 @@ async function main() {
     }
   }
 }
-main();

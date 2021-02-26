@@ -3,6 +3,6 @@ module.exports = {
     /**
      * props 的键名必须排好序
      */
-    'vue/sort-keys': 'off',
-  },
+    'vue/sort-keys': 'off'
+  }
 };

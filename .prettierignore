@@ -48,6 +48,10 @@ test/base/space-unary-ops/bad.js
 test/vue/no-irregular-whitespace/bad.vue
 test/vue/no-irregular-whitespace/good.vue
 
+test/base/.eslintrc.js
+test/typescript/.eslintrc.js
+test/vue/.eslintrc.js
+
 ## Built-files
 .cache
 dist

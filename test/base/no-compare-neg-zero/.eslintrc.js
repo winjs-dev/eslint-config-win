@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止与负零进行比较
      */
-    'no-compare-neg-zero': 'error',
-  },
+    'no-compare-neg-zero': 'error'
+  }
 };

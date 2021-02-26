@@ -3,6 +3,6 @@ module.exports = {
     /**
      * for in 内部必须有 hasOwnProperty
      */
-    'guard-for-in': 'error',
-  },
+    'guard-for-in': 'error'
+  }
 };

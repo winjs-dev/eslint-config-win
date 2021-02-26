@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 style 属性
      */
-    'vue/no-static-inline-styles': 'off',
-  },
+    'vue/no-static-inline-styles': 'off'
+  }
 };

@@ -8,8 +8,8 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTernary: true,
-        allowTaggedTemplates: true,
-      },
-    ],
-  },
+        allowTaggedTemplates: true
+      }
+    ]
+  }
 };

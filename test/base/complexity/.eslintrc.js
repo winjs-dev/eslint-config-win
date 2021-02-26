@@ -7,8 +7,8 @@ module.exports = {
     complexity: [
       'error',
       {
-        max: 20,
-      },
-    ],
-  },
+        max: 20
+      }
+    ]
+  }
 };

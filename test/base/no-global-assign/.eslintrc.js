@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止对全局变量赋值
      */
-    'no-global-assign': 'error',
-  },
+    'no-global-assign': 'error'
+  }
 };

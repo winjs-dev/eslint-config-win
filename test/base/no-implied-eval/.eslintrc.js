@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁用隐式的eval()
      */
-    'no-implied-eval': 'error',
-  },
+    'no-implied-eval': 'error'
+  }
 };

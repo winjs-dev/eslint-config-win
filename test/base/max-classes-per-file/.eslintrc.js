@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 限制一个文件中类的数量
      */
-    'max-classes-per-file': 'off',
-  },
+    'max-classes-per-file': 'off'
+  }
 };
