@@ -16,10 +16,10 @@ babel-eslint ^10.1.0
 vue-eslint-parser ^7.1.0
 eslint-plugin-vue ^6.2.2
 ```
-
+*Tips*：如果项目中没有安装此依赖包或者版本不一致，请安装或者升级。 
 
 ## 用法
-在你的项目的根目录下创建一个 `.eslintrc.js` 文件，并将以下内容复制进去：
+- 在你的项目的根目录下创建一个 `.eslintrc.js` 文件，并将以下内容复制进去：
 
 ```js
 module.exports = {
@@ -44,7 +44,18 @@ module.exports = {
         // 自定义你的规则
     }
 };
-```
+```  
+
+- 项目目录下的 `package.json` 添加检测指令，举个例子
+```diff
+{
+ ...
+ "scripts": {
++    "lint:es": "eslint \"src/**/*.{vue,js,jsx}\" --fix",
+ }
+ ...
+}
+``` 
 
 ### Vue
 
