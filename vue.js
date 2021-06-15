@@ -103,17 +103,17 @@ module.exports = {
      */
     'vue/no-boolean-default': 'off',
     /**
-     * 禁用已废弃的 scope 属性
+     * 在 Vue.js 2.5.0+ 版本中，推荐使用 v-slot 代替已移除的 scope 属性
      */
-    'vue/no-deprecated-scope-attribute': 'error',
+    'vue/no-deprecated-scope-attribute': 'warn',
     /**
-     * 使用 v-slot 替代已废弃的 slot
+     * 在 Vue2.6 中，推荐使用 v-slot 替代已废弃的 slot 属性
      */
-    'vue/no-deprecated-slot-attribute': 'error',
+    'vue/no-deprecated-slot-attribute': 'warn',
     /**
-     * 禁用已废弃的 slot-scope
+     * 在 Vue.js 2.6 中，推荐使用 v-slot 代替已废弃的 slot-scope 属性
      */
-    'vue/no-deprecated-slot-scope-attribute': 'error',
+    'vue/no-deprecated-slot-scope-attribute': 'warn',
     /**
      * 禁止重复的键名
      */

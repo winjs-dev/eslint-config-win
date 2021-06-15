@@ -627,5 +627,8 @@
   "参数为一个时表示创建一个指定长度的数组，比较常用\r\n参数为多个时表示创建一个指定内容的数组，此时可以用数组字面量实现，不必使用构造函数": "参数为一个时表示创建一个指定长度的数组，比较常用\r\n参数为多个时表示创建一个指定内容的数组，此时可以用数组字面量实现，不必使用构造函数",
   "__iterator__ 是一个已废弃的属性\r\n使用 [Symbol.iterator] 替代它": "__iterator__ 是一个已废弃的属性\r\n使用 [Symbol.iterator] 替代它",
   "换行时操作符必须在行尾\r\n其中，？ ：可以放到行首": "换行时操作符必须在行尾\r\n其中，？ ：可以放到行首",
-  "这样会导致不符合预期的结果\r\nhttps://github.com/eslint/eslint/issues/11899\r\n在上面 issue 修复之前，关闭此规则": "这样会导致不符合预期的结果\r\nhttps://github.com/eslint/eslint/issues/11899\r\n在上面 issue 修复之前，关闭此规则"
+  "这样会导致不符合预期的结果\r\nhttps://github.com/eslint/eslint/issues/11899\r\n在上面 issue 修复之前，关闭此规则": "这样会导致不符合预期的结果\r\nhttps://github.com/eslint/eslint/issues/11899\r\n在上面 issue 修复之前，关闭此规则",
+  "在 Vue.js 2.5.0+ 版本中，推荐使用 v-slot 代替已移除的 scope 属性": "在 Vue.js 2.5.0+ 版本中，推荐使用 v-slot 代替已移除的 scope 属性",
+  "在 Vue2.6 中，推荐使用 v-slot 替代已废弃的 slot 属性": "在 Vue2.6 中，推荐使用 v-slot 替代已废弃的 slot 属性",
+  "在 Vue.js 2.6 中，推荐使用 v-slot 代替已废弃的 slot-scope 属性": "在 Vue.js 2.6 中，推荐使用 v-slot 代替已废弃的 slot-scope 属性"
 }
