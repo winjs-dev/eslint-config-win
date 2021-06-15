@@ -1,8 +1,8 @@
 module.exports = {
   rules: {
     /**
-     * 使用 v-slot 替代已废弃的 slot
+     * 在 Vue2.6 中，推荐使用 v-slot 替代已废弃的 slot 属性
      */
-    'vue/no-deprecated-slot-attribute': 'error',
+    'vue/no-deprecated-slot-attribute': 'warn',
   },
 };
