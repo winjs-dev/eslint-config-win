@@ -630,5 +630,6 @@
   "这样会导致不符合预期的结果\r\nhttps://github.com/eslint/eslint/issues/11899\r\n在上面 issue 修复之前，关闭此规则": "这样会导致不符合预期的结果\r\nhttps://github.com/eslint/eslint/issues/11899\r\n在上面 issue 修复之前，关闭此规则",
   "在 Vue.js 2.5.0+ 版本中，推荐使用 v-slot 代替已移除的 scope 属性": "在 Vue.js 2.5.0+ 版本中，推荐使用 v-slot 代替已移除的 scope 属性",
   "在 Vue2.6 中，推荐使用 v-slot 替代已废弃的 slot 属性": "在 Vue2.6 中，推荐使用 v-slot 替代已废弃的 slot 属性",
-  "在 Vue.js 2.6 中，推荐使用 v-slot 代替已废弃的 slot-scope 属性": "在 Vue.js 2.6 中，推荐使用 v-slot 代替已废弃的 slot-scope 属性"
+  "在 Vue.js 2.6 中，推荐使用 v-slot 代替已废弃的 slot-scope 属性": "在 Vue.js 2.6 中，推荐使用 v-slot 代替已废弃的 slot-scope 属性",
+  "当使用 new 关键字调用没有参数的构造函数时，该规则需要使用括号": "当使用 new 关键字调用没有参数的构造函数时，该规则需要使用括号"
 }

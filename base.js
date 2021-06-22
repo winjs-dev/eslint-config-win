@@ -337,9 +337,9 @@ module.exports = {
       },
     ],
     /**
-     * 当使用 new 关键字调用没有参数的构造函数时，该规则禁止使用括号
+     * 当使用 new 关键字调用没有参数的构造函数时，该规则需要使用括号
      */
-    'new-parens': ['error', 'never'],
+    'new-parens': ['error', 'always'],
     /**
      * 禁止使用 alert
      */
