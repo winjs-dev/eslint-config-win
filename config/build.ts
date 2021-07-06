@@ -56,14 +56,14 @@ export const NAMESPACES = Object.keys(NAMESPACE_CONFIG) as Namespace[];
 export function buildEslintrcMeta() {
   return `
 /**
-* ${pkg.description}
+ * ${pkg.description}
  * ${pkg.homepage}
  *
  * 贡献者：
- *     ${pkg.author}
+ *   ${pkg.author}
  *
  * 依赖版本：
- *     ${[
+ *   ${[
    'eslint',
    'babel-eslint',
    'vue-eslint-parser',

@@ -3,10 +3,10 @@
  * https://github.com/cloud-templates/eslint-config-win#readme
  *
  * 贡献者：
- *     winner-fed
+ *   winner-fed
  *
  * 依赖版本：
- *     eslint ^7.16.0
+ *   eslint ^7.16.0
  *   babel-eslint ^10.1.0
  *   vue-eslint-parser ^7.3.0
  *   eslint-plugin-vue ^7.3.0
