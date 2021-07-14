@@ -47,6 +47,14 @@ export const NAMESPACE_CONFIG = {
     getDocsUrl: (rule: string) => `https://eslint.vuejs.org/rules/${rule.replace(/.*\//, '')}.html`,
     pluginName: 'eslint-plugin-vue',
   },
+  vue3: {
+    exampleExtension: 'vue',
+    prismLanguage: 'html',
+    rulePrefix: 'vue/',
+    ruleConfig: require('./rules/vue3.json'),
+    getDocsUrl: (rule: string) => `https://eslint.vuejs.org/rules/${rule.replace(/.*\//, '')}.html`,
+    pluginName: 'eslint-plugin-vue',
+  },
 };
 
 export type Namespace = keyof typeof NAMESPACE_CONFIG;

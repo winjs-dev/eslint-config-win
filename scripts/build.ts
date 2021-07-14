@@ -5,14 +5,14 @@ import path from 'path';
 import doctrine from 'doctrine';
 import prettier from 'prettier';
 import { ESLint, Linter } from 'eslint';
-
-const eslintInstance = new ESLint({});
 import insertTag from 'insert-tag';
 import xmlEscape from 'xml-escape';
 
-import { NAMESPACE_CONFIG, NAMESPACES, buildEslintrcMeta, Namespace, Rule, locale } from '../config';
+import { buildEslintrcMeta, locale, Namespace, NAMESPACE_CONFIG, NAMESPACES, Rule } from '../config';
 
 import '../site/vendor/prism';
+
+const eslintInstance = new ESLint({});
 
 declare const Prism: any;
 
@@ -77,15 +77,13 @@ class Builder {
 
   /** 获取规则列表，根据字母排序 */
   private async getRuleList() {
-    const ruleList = await Promise.all(
+    return await Promise.all(
       fs
         .readdirSync(path.resolve(__dirname, '../test', this.namespace))
         .filter((ruleName) => fs.lstatSync(path.resolve(__dirname, '../test', this.namespace, ruleName)).isDirectory())
         // .filter((ruleName) => DEBUT_WHITELIST.includes(ruleName))
         .map((ruleName) => this.getRule(ruleName)),
     );
-
-    return ruleList;
   }
 
   /** 解析单条规则为一个规则对象 */
