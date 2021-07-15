@@ -446,7 +446,7 @@ module.exports = {
     /**
      * 禁止给 v-model 属性添加参数
      */
-    'vue/no-v-model-argument': 'error',
+    'vue/no-v-model-argument': 'off',
     /**
      * 禁止在 await 之后调用 watch
      */
