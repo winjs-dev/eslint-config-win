@@ -1,6 +1,8 @@
 # eslint-config-win
 
-团队内部的ESLint配置
+此规则适用于 JavaScript/Vue 项目的 ESLint 配置规范。
+
+**目前已支持 Vue 3.0，需要指定 extends 配置vue3**
 
 ## 安装
 
@@ -14,7 +16,7 @@ yarn add @winner-fed/eslint-config-win -D
 eslint ^7.2.0
 babel-eslint ^10.1.0
 vue-eslint-parser ^7.1.0
-eslint-plugin-vue ^6.2.2
+eslint-plugin-vue ^7.13.0
 ```
 *Tips*：如果项目中没有安装此依赖包或者版本不一致，请安装或者升级。 
 
@@ -69,7 +71,10 @@ npm install --save-dev eslint babel-eslint vue-eslint-parser eslint-plugin-vue @
 module.exports = {
     extends: [
         '@winner-fed/win',
-        '@winner-fed/win/vue',
+        // 这里是针对 vue2 的配置
+        '@winner-fed/win/vue', 
+        // 如果是 vue3 的项目工程，则推荐下面配置
+        // '@winner-fed/win/vue3',
     ],
     env: {
         // 你的环境变量（包含多个预定义的全局变量）
