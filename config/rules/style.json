@@ -390,23 +390,6 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
-  "declaration-property-value-disallowed-list": {
-    "name": "declaration-property-value-disallowed-list",
-    "value": [
-      "never",
-      {
-        "/^border(?!-(width|spacing))/": ["/thin/", "/medium/", "/thick/", "0"],
-        "/^transition/": ["/all/"]
-      }
-    ],
-    "description": "指定声明内禁止用的属性和值对的黑名单",
-    "reason": "",
-    "badExample": "a { transition: all 2s linear; }",
-    "goodExample": "a { position: relative; }\na { transform: scale(2); }",
-    "fixable": false,
-    "extendsBaseRule": "",
-    "requiresTypeChecking": false
-  },
   "font-family-name-quotes": {
     "name": "font-family-name-quotes",
     "value": "off",
@@ -443,7 +426,7 @@
   "font-weight-notation": {
     "name": "font-weight-notation",
     "value": "off",
-    "description": "当有效的关键字（normal、bold、bolder 和 lighter）可用时，font-weight 的值必须是关键字",
+    "description": "只有 400 和 700 不允许使用，因为这些是唯一有等价关键字的数字（normal 和 bold）",
     "reason": "",
     "badExample": "a { font-weight: 700; }\na { font: italic 400 20px sans-serif; }",
     "goodExample": "a { font-weight: bold; }\na { font: italic normal 20px sans-serif; }",
