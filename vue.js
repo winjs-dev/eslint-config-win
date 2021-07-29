@@ -6,23 +6,21 @@
  *   winner-fed
  *
  * 依赖版本：
- *   eslint ^7.24.0
- *   babel-eslint ^10.1.0
- *   vue-eslint-parser ^7.6.0
- *   eslint-plugin-vue ^7.9.0
- *   @typescript-eslint/parser ^4.22.0
- *   @typescript-eslint/eslint-plugin ^4.22.0
+ *   eslint ^7.31.0
+ *   @babel/eslint-parser ^7.14.7
+ *   vue-eslint-parser ^7.9.0
+ *   eslint-plugin-vue ^7.14.0
+ *   @typescript-eslint/parser ^4.28.3
+ *   @typescript-eslint/eslint-plugin ^4.28.3
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
- *
- * @reason 为什么要开启（关闭）此规则
  */
 module.exports = {
   parser: 'vue-eslint-parser',
   parserOptions: {
-    // 设置 js 的解析器为 babel-eslint
+    // 设置 js 的解析器为 @babel/eslint-parser
     // https://github.com/mysticatea/vue-eslint-parser#-options
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     ecmaVersion: 2019,
     // ECMAScript modules 模式
     sourceType: 'module',

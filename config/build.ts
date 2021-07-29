@@ -72,8 +72,8 @@ export function buildEslintrcMeta() {
  *
  * 依赖版本：
  *   ${[
-   'eslint',
-   'babel-eslint',
+   'eslint', 
+   '@babel/eslint-parser',
    'vue-eslint-parser',
    'eslint-plugin-vue',
    '@typescript-eslint/parser',
@@ -83,8 +83,6 @@ export function buildEslintrcMeta() {
    .join('\n *   ')}
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
- *
- * @reason 为什么要开启（关闭）此规则
  */
 `;
 }
