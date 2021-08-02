@@ -698,17 +698,6 @@
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
-  "media-feature-name-no-vendor-prefix": {
-    "name": "media-feature-name-no-vendor-prefix",
-    "value": "never",
-    "description": "禁止 media 特性名称带有浏览器引擎前缀",
-    "reason": "",
-    "badExample": "@media (-webkit-min-device-pixel-ratio: 1) {}",
-    "goodExample": "@media (min-device-pixel-ratio: 1) {}",
-    "fixable": true,
-    "extendsBaseRule": "",
-    "requiresTypeChecking": false
-  },
   "media-feature-parentheses-space-inside": {
     "name": "media-feature-parentheses-space-inside",
     "value": "never",
@@ -937,22 +926,6 @@
     "badExample": "a {\n  colr: #000;\n}\na {\n  my-property: 1;\n}",
     "goodExample": "a {\n  color: #000;\n}\na {\n  fill: #333;\n}",
     "fixable": false,
-    "extendsBaseRule": "",
-    "requiresTypeChecking": false
-  },
-  "property-no-vendor-prefix": {
-    "name": "property-no-vendor-prefix",
-    "value": [
-      "never",
-      {
-        "ignoreProperties": ["app-region", "appearance", "mask", "tab-size"]
-      }
-    ],
-    "description": "禁止属性使用浏览器引擎前缀",
-    "reason": "",
-    "badExample": "a { -webkit-transform: scale(1); }\na { -moz-columns: 2; }",
-    "goodExample": "a { transform: scale(1); }\na {\ncolumns: 2; }\na { -webkit-touch-callout: none; }",
-    "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },
@@ -1282,17 +1255,6 @@
     "reason": "",
     "badExample": "a {\n  display: Block;\n}\na {\n  display: bLoCk;\n}",
     "goodExample": "a {\n  display: block;\n}\na {\n  transition: -webkit-transform 2s;\n}",
-    "fixable": true,
-    "extendsBaseRule": "",
-    "requiresTypeChecking": false
-  },
-  "value-no-vendor-prefix": {
-    "name": "value-no-vendor-prefix",
-    "value": "never",
-    "description": "禁止值的浏览器引擎前缀",
-    "reason": "",
-    "badExample": "a { display: -webkit-flex; }\na { max-width: -moz-max-content; }",
-    "goodExample": "a { display: flex; }\na { max-width: max-content; }",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
