@@ -19,7 +19,7 @@ module.exports = {
   parser: 'vue-eslint-parser',
   parserOptions: {
     // 设置 js 的解析器为 @babel/eslint-parser
-    // https://github.com/mysticatea/vue-eslint-parser#-options
+    // https://github.com/vuejs/vue-eslint-parser#-options
     parser: '@babel/eslint-parser',
     ecmaVersion: 2019,
     // ECMAScript modules 模式
