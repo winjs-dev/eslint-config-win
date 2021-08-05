@@ -6,19 +6,17 @@
  *   winner-fed
  *
  * 依赖版本：
- *   eslint ^7.16.0
- *   babel-eslint ^10.1.0
- *   vue-eslint-parser ^7.3.0
- *   eslint-plugin-vue ^7.3.0
- *   @typescript-eslint/parser ^4.11.0
- *   @typescript-eslint/eslint-plugin ^4.11.0
+ *   eslint ^7.31.0
+ *   @babel/eslint-parser ^7.14.7
+ *   vue-eslint-parser ^7.9.0
+ *   eslint-plugin-vue ^7.14.0
+ *   @typescript-eslint/parser ^4.28.3
+ *   @typescript-eslint/eslint-plugin ^4.28.3
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
- *
- * @reason 为什么要开启（关闭）此规则
  */
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2019,
     // ECMAScript modules 模式
@@ -337,9 +335,9 @@ module.exports = {
       }
     ],
     /**
-     * 当使用 new 关键字调用没有参数的构造函数时，该规则禁止使用括号
+     * 当使用 new 关键字调用没有参数的构造函数时，该规则必须使用括号
      */
-    'new-parens': ['error', 'never'],
+    'new-parens': ['error', 'always'],
     /**
      * 禁止使用 alert
      */

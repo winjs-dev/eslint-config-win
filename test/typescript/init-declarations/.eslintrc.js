@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    '@typescript-eslint/init-declarations': 'off'
-  }
+    '@typescript-eslint/init-declarations': 'off',
+  },
 };

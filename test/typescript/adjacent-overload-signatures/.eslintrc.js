@@ -4,6 +4,6 @@ module.exports = {
      * 重载的函数必须写在一起
      * @reason 增加可读性
      */
-    '@typescript-eslint/adjacent-overload-signatures': 'error'
-  }
+    '@typescript-eslint/adjacent-overload-signatures': 'error',
+  },
 };

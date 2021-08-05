@@ -6,23 +6,21 @@
  *   winner-fed
  *
  * 依赖版本：
- *   eslint ^7.16.0
- *   babel-eslint ^10.1.0
- *   vue-eslint-parser ^7.3.0
- *   eslint-plugin-vue ^7.3.0
- *   @typescript-eslint/parser ^4.11.0
- *   @typescript-eslint/eslint-plugin ^4.11.0
+ *   eslint ^7.31.0
+ *   @babel/eslint-parser ^7.14.7
+ *   vue-eslint-parser ^7.9.0
+ *   eslint-plugin-vue ^7.14.0
+ *   @typescript-eslint/parser ^4.28.3
+ *   @typescript-eslint/eslint-plugin ^4.28.3
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
- *
- * @reason 为什么要开启（关闭）此规则
  */
 module.exports = {
   parser: 'vue-eslint-parser',
   parserOptions: {
-    // 设置 js 的解析器为 babel-eslint
-    // https://github.com/mysticatea/vue-eslint-parser#-options
-    parser: 'babel-eslint',
+    // 设置 js 的解析器为 @babel/eslint-parser
+    // https://github.com/vuejs/vue-eslint-parser#-options
+    parser: '@babel/eslint-parser',
     ecmaVersion: 2019,
     // ECMAScript modules 模式
     sourceType: 'module',
@@ -33,7 +31,7 @@ module.exports = {
       impliedStrict: true,
       jsx: true
     },
-    // 即使没有 babelrc 配置文件，也使用 babel-eslint 来解析
+    // 即使没有 babelrc 配置文件，也使用 @babel/eslint-parser 来解析
     requireConfigFile: false,
     // 仅允许 import export 语句出现在模块的顶层
     allowImportExportEverywhere: false
@@ -103,17 +101,17 @@ module.exports = {
      */
     'vue/no-boolean-default': 'off',
     /**
-     * 禁用已废弃的 scope 属性
+     * 在 Vue.js 2.5.0+ 版本中，推荐使用 v-slot 代替已移除的 scope 属性
      */
-    'vue/no-deprecated-scope-attribute': 'error',
+    'vue/no-deprecated-scope-attribute': 'warn',
     /**
-     * 使用 v-slot 替代已废弃的 slot
+     * 在 Vue2.6 中，推荐使用 v-slot 替代已废弃的 slot 属性
      */
-    'vue/no-deprecated-slot-attribute': 'error',
+    'vue/no-deprecated-slot-attribute': 'warn',
     /**
-     * 禁用已废弃的 slot-scope
+     * 在 Vue.js 2.6 中，推荐使用 v-slot 代替已废弃的 slot-scope 属性
      */
-    'vue/no-deprecated-slot-scope-attribute': 'error',
+    'vue/no-deprecated-slot-scope-attribute': 'warn',
     /**
      * 禁止重复的键名
      */

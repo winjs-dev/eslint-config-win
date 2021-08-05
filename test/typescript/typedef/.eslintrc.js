@@ -12,8 +12,8 @@ module.exports = {
         objectDestructuring: false,
         parameter: false,
         propertyDeclaration: true,
-        variableDeclaration: false
-      }
-    ]
-  }
+        variableDeclaration: false,
+      },
+    ],
+  },
 };
