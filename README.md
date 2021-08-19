@@ -145,8 +145,6 @@ module.exports = {
 | [vue/v-on-event-hyphenation](https://eslint.vuejs.org/rules/v-on-event-hyphenation.html) | 禁止在 v-on 的事件名使用横杠                         |
 | [vue/valid-v-is ](https://eslint.vuejs.org/rules/valid-v-is.html) | v-is 指令必须合法                                    |
 
-## Vue2 与 Vue3 的异同
-
 ## 参考
 
 - [ESlint Code Guide](http://eslint.org/docs/user-guide/configuring)
