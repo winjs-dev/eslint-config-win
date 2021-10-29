@@ -425,8 +425,8 @@
   },
   "font-weight-notation": {
     "name": "font-weight-notation",
-    "value": "off",
-    "description": "只有 400 和 700 不允许使用，因为这些是唯一有等价关键字的数字（normal 和 bold）",
+    "value": "never",
+    "description": "推荐只有 400 和 700 不允许使用，因为这些是唯一有等价关键字的数字（normal 和 bold）",
     "reason": "",
     "badExample": "a { font-weight: 700; }\na { font: italic 400 20px sans-serif; }",
     "goodExample": "a { font-weight: bold; }\na { font: italic normal 20px sans-serif; }",
