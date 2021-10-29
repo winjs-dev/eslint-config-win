@@ -1,6 +1,7 @@
 dist
 site/public
 test/vue3
+test/base/comma-dangle/bad.js
 test/base/comma-style/good.js
 test/base/generator-star-spacing/good.js
 test/base/no-useless-escape/good.js
