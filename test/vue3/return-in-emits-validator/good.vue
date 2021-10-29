@@ -15,7 +15,7 @@ export default {
       if (evt) {
         return true;
       }
-    },
-  },
+    }
+  }
 };
 </script>

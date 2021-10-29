@@ -1,6 +1,6 @@
 <script>
-const foo　= ''
+const foo = '';
 </script>
 <template>
-    <div class="foo　bar"></div>
+  <div class="foo bar"></div>
 </template>

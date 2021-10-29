@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止给 scoped slots 传递多个参数
      */
-    'vue/no-multiple-slot-args': 'error',
-  },
+    'vue/no-multiple-slot-args': 'error'
+  }
 };

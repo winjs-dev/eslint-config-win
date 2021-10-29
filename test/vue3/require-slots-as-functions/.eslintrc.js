@@ -3,6 +3,6 @@ module.exports = {
     /**
      * this.$slots.default 必须被当作方法使用
      */
-    'vue/require-slots-as-functions': 'error',
-  },
+    'vue/require-slots-as-functions': 'error'
+  }
 };

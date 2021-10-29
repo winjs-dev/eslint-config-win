@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 eval
      */
-    '@typescript-eslint/no-implied-eval': 'off',
-  },
+    '@typescript-eslint/no-implied-eval': 'off'
+  }
 };

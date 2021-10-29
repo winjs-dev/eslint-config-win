@@ -3,6 +3,6 @@ module.exports = {
     /**
      * button 标签必须有 type 属性
      */
-    'vue/html-button-has-type': 'off',
-  },
+    'vue/html-button-has-type': 'off'
+  }
 };

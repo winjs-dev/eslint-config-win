@@ -7,8 +7,8 @@ module.exports = {
       'error',
       {
         allowCoexistClass: false,
-        allowCoexistStyle: false,
-      },
-    ],
-  },
+        allowCoexistStyle: false
+      }
+    ]
+  }
 };

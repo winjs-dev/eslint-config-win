@@ -6,8 +6,8 @@ export default {
       default(props) {
         /* ✓ GOOD */
         return props.a;
-      },
-    },
-  },
+      }
+    }
+  }
 };
 </script>

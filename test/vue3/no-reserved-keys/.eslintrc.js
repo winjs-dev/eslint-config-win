@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止覆盖保留字
      */
-    'vue/no-reserved-keys': 'error',
-  },
+    'vue/no-reserved-keys': 'error'
+  }
 };

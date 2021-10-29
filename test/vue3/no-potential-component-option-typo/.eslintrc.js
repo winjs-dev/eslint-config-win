@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止潜在的拼写错误
      */
-    'vue/no-potential-component-option-typo': 'off',
-  },
+    'vue/no-potential-component-option-typo': 'off'
+  }
 };

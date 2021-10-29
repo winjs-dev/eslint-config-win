@@ -1,18 +1,18 @@
 <script>
 export default {
   props: {
-    $el: String,
+    $el: String
   },
   computed: {
     $on: {
-      get() {},
-    },
+      get() {}
+    }
   },
   data: {
-    _foo: null,
+    _foo: null
   },
   methods: {
-    $nextTick() {},
-  },
+    $nextTick() {}
+  }
 };
 </script>

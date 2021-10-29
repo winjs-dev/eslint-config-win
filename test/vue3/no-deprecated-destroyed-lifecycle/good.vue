@@ -3,6 +3,6 @@ export default {
   beforeMount() {},
   mounted() {},
   beforeUnmount() {},
-  unmounted() {},
+  unmounted() {}
 };
 </script>

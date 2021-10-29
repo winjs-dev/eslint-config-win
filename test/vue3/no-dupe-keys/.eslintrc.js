@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止重复的键名
      */
-    'vue/no-dupe-keys': 'error',
-  },
+    'vue/no-dupe-keys': 'error'
+  }
 };

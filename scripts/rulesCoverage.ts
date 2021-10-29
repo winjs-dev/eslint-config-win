@@ -5,8 +5,8 @@ import path from 'path';
 import { NAMESPACE_CONFIG, NAMESPACES } from '../config';
 
 /** 可用的规则（去除废弃的和 Prettier 的规则） */
-let activeRules: string[] = [];
-let deprecatedRules: string[] = [];
+const activeRules: string[] = [];
+const deprecatedRules: string[] = [];
 const prettierRules = [
   ...Object.keys(require('eslint-config-prettier').rules),
   ...Object.keys(require('eslint-config-prettier/@typescript-eslint').rules),

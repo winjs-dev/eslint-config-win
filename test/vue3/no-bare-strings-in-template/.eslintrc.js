@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止 <template> 中使用字符串
      */
-    'vue/no-bare-strings-in-template': 'off',
-  },
+    'vue/no-bare-strings-in-template': 'off'
+  }
 };

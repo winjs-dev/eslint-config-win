@@ -3,8 +3,8 @@ import Foo from 'components/Foo.vue';
 
 export default {
   components: {
-    Foo,
-  },
+    Foo
+  }
 };
 </script>
 

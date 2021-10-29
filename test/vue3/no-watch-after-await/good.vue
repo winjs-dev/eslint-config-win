@@ -5,6 +5,6 @@ export default {
     watch(watchSource, () => {});
 
     await doSomething();
-  },
+  }
 };
 </script>

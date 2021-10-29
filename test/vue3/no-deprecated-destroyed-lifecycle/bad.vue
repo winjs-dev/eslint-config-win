@@ -1,6 +1,6 @@
 <script>
 export default {
   beforeDestroy() {},
-  destroyed() {},
+  destroyed() {}
 };
 </script>

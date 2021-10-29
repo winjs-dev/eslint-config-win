@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    '@typescript-eslint/require-await': 'off',
-  },
+    '@typescript-eslint/require-await': 'off'
+  }
 };

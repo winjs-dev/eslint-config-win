@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    'vue/dot-notation': 'off',
-  },
+    'vue/dot-notation': 'off'
+  }
 };

@@ -2,7 +2,7 @@
 export default {
   model: {
     prop: 'list',
-    events: 'update',
-  },
+    events: 'update'
+  }
 };
 </script>

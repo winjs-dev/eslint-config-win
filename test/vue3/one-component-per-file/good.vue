@@ -1,5 +1,5 @@
 <script>
 export default {
-  name: 'my-component',
+  name: 'my-component'
 };
 </script>

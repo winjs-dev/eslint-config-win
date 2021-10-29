@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止模版中有多个根节点
      */
-    'vue/no-multiple-template-root': 'error',
-  },
+    'vue/no-multiple-template-root': 'error'
+  }
 };

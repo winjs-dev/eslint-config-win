@@ -3,6 +3,6 @@ module.exports = {
     /**
      * <component> 必须有绑定的组件
      */
-    'vue/require-component-is': 'error',
-  },
+    'vue/require-component-is': 'error'
+  }
 };

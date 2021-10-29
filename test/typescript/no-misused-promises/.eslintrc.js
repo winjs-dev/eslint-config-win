@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 避免错误的使用 Promise
      */
-    '@typescript-eslint/no-misused-promises': 'off',
-  },
+    '@typescript-eslint/no-misused-promises': 'off'
+  }
 };

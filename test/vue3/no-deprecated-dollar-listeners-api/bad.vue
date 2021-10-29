@@ -9,9 +9,9 @@ export default {
         ...this.$listeners,
         input() {
           /* */
-        },
+        }
       };
-    },
-  },
+    }
+  }
 };
 </script>

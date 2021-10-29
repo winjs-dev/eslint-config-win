@@ -5,7 +5,7 @@ export default {
       if (this.bar) {
         return this.bar;
       }
-    },
-  },
+    }
+  }
 };
 </script>

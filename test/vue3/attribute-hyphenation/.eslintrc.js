@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 限制自定义组件的属性风格
      */
-    'vue/attribute-hyphenation': 'off',
-  },
+    'vue/attribute-hyphenation': 'off'
+  }
 };

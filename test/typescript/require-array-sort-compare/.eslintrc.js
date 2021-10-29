@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 使用 sort 时必须传入比较函数
      */
-    '@typescript-eslint/require-array-sort-compare': 'off',
-  },
+    '@typescript-eslint/require-array-sort-compare': 'off'
+  }
 };

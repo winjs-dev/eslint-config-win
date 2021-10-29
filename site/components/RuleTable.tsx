@@ -35,7 +35,7 @@ export const RuleTable: React.SFC<RuleTableProps> = ({ namespace, hideOff }) => 
               value === 'off' ? 'site-row-off site-row-wide' : ''
             }`}
             style={
-              value === 'off'
+              value === 'off' && hideOff
                 ? {
                     display: 'none'
                   }

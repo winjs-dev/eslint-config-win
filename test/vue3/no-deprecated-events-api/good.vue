@@ -7,6 +7,6 @@ export default {
       console.log('start');
     });
     emitter.emit('start');
-  },
+  }
 };
 </script>

@@ -45,9 +45,9 @@ module.exports = {
           'private-method',
 
           'instance-method',
-          'method',
-        ],
-      },
-    ],
-  },
+          'method'
+        ]
+      }
+    ]
+  }
 };

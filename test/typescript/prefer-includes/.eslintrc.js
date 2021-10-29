@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 使用 includes 而不是 indexOf
      */
-    '@typescript-eslint/prefer-includes': 'off',
-  },
+    '@typescript-eslint/prefer-includes': 'off'
+  }
 };

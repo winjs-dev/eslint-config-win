@@ -8,8 +8,8 @@ module.exports = {
       'error',
       {
         assertionStyle: 'as',
-        objectLiteralTypeAssertions: 'never',
-      },
-    ],
-  },
+        objectLiteralTypeAssertions: 'never'
+      }
+    ]
+  }
 };

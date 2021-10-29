@@ -9,7 +9,7 @@ export default {
     },
     baz() {
       setTimeout(() => {}, 0);
-    },
-  },
+    }
+  }
 };
 </script>

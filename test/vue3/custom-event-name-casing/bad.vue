@@ -6,7 +6,7 @@ export default {
   methods: {
     onClick() {
       this.$emit('myEvent');
-    },
-  },
+    }
+  }
 };
 </script>

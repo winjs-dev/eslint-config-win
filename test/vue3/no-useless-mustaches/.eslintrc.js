@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止出现无用的 mustache 字符串
      */
-    'vue/no-useless-mustaches': 'error',
-  },
+    'vue/no-useless-mustaches': 'error'
+  }
 };

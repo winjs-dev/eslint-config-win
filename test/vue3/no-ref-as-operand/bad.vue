@@ -12,8 +12,8 @@ export default {
     var msg = ok ? 'yes' : 'no';
 
     return {
-      count,
+      count
     };
-  },
+  }
 };
 </script>

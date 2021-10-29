@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用指定的类型
      */
-    '@typescript-eslint/ban-types': 'off',
-  },
+    '@typescript-eslint/ban-types': 'off'
+  }
 };

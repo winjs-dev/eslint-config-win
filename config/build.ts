@@ -23,7 +23,7 @@ export const NAMESPACE_CONFIG = {
       return `https://stylelint.io/user-guide/rules/${rule}`;
     },
     /** 插件的名称 */
-    pluginName: undefined,
+    pluginName: undefined
   },
   base: {
     /** bad.js good.js 的后缀 */
@@ -37,7 +37,7 @@ export const NAMESPACE_CONFIG = {
     /** 各插件的文档地址 */
     getDocsUrl: (rule: string) => `https://eslint.org/docs/rules/${rule}`,
     /** 插件的名称 */
-    pluginName: undefined,
+    pluginName: undefined
   },
   vue: {
     exampleExtension: 'vue',
@@ -45,7 +45,7 @@ export const NAMESPACE_CONFIG = {
     rulePrefix: 'vue/',
     ruleConfig: require('./rules/vue.json'),
     getDocsUrl: (rule: string) => `https://eslint.vuejs.org/rules/${rule.replace(/.*\//, '')}.html`,
-    pluginName: 'eslint-plugin-vue',
+    pluginName: 'eslint-plugin-vue'
   },
   vue3: {
     exampleExtension: 'vue',
@@ -53,7 +53,7 @@ export const NAMESPACE_CONFIG = {
     rulePrefix: 'vue/',
     ruleConfig: require('./rules/vue3.json'),
     getDocsUrl: (rule: string) => `https://eslint.vuejs.org/rules/${rule.replace(/.*\//, '')}.html`,
-    pluginName: 'eslint-plugin-vue',
+    pluginName: 'eslint-plugin-vue'
   },
   typescript: {
     exampleExtension: 'ts',
@@ -63,10 +63,10 @@ export const NAMESPACE_CONFIG = {
     getDocsUrl: (rule: string) =>
       `https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/${rule.replace(
         /.*\//,
-        '',
+        ''
       )}.md`,
-    pluginName: '@typescript-eslint/eslint-plugin',
-  },
+    pluginName: '@typescript-eslint/eslint-plugin'
+  }
 };
 
 export type Namespace = keyof typeof NAMESPACE_CONFIG;
@@ -84,15 +84,15 @@ export function buildEslintrcMeta() {
  *
  * 依赖版本：
  *   ${[
-    'eslint',
-    '@babel/eslint-parser',
-    'vue-eslint-parser',
-    'eslint-plugin-vue',
-    '@typescript-eslint/parser',
-    '@typescript-eslint/eslint-plugin',
-  ]
-    .map((key) => `${key} ${(pkg as any).devDependencies[key]}`)
-    .join('\n *   ')}
+   'eslint',
+   '@babel/eslint-parser',
+   'vue-eslint-parser',
+   'eslint-plugin-vue',
+   '@typescript-eslint/parser',
+   '@typescript-eslint/eslint-plugin'
+ ]
+   .map((key) => `${key} ${(pkg as any).devDependencies[key]}`)
+   .join('\n *   ')}
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
  */

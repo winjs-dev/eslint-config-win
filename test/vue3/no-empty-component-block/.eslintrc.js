@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止 <template> <script> <style> 为空
      */
-    'vue/no-empty-component-block': 'error',
-  },
+    'vue/no-empty-component-block': 'error'
+  }
 };

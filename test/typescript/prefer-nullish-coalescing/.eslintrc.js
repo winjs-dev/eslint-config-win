@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 使用 ?? 替代 ||
      */
-    '@typescript-eslint/prefer-nullish-coalescing': 'off',
-  },
+    '@typescript-eslint/prefer-nullish-coalescing': 'off'
+  }
 };

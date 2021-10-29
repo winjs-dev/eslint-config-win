@@ -2,8 +2,8 @@
 export default {
   data() {
     return {
-      foo: null,
+      foo: null
     };
-  },
+  }
 };
 </script>

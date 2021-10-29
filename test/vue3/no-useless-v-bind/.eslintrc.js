@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止出现无用的 v-bind
      */
-    'vue/no-useless-v-bind': 'error',
-  },
+    'vue/no-useless-v-bind': 'error'
+  }
 };

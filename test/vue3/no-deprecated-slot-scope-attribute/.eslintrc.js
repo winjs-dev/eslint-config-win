@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁用已废弃的 slot-scope
      */
-    'vue/no-deprecated-slot-scope-attribute': 'error',
-  },
+    'vue/no-deprecated-slot-scope-attribute': 'error'
+  }
 };
