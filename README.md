@@ -13,10 +13,10 @@ yarn add @winner-fed/eslint-config-win -D
 
 ##  依赖版本
 ```bash
-eslint ^7.31.0
-@babel/eslint-parser ^7.14.7
-vue-eslint-parser ^7.9.0
-eslint-plugin-vue ^7.14.0
+eslint ^7.32.0
+@babel/eslint-parser ^7.15.8
+vue-eslint-parser ^7.11.0
+eslint-plugin-vue ^7.20.0
 ```
 *Tips*：如果项目中没有安装此依赖包或者版本不一致，请安装或者升级。 
 
@@ -97,7 +97,6 @@ module.exports = {
 ```
 
 ## Vue3 新增规则
-
 | rule                                                         | 规则描述                                             |
 | ------------------------------------------------------------ | ---------------------------------------------------- |
 | [vue/custom-event-name-casing ](https://eslint.vuejs.org/rules/custom-event-name-casing.html) | 自定义事件名必须用 kebab-case 风格                   |
@@ -119,10 +118,10 @@ module.exports = {
 | [vue/no-deprecated-vue-config-keycodes](https://eslint.vuejs.org/rules/no-deprecated-vue-config-keycodes.html) | 禁止使用已废弃的 Vue.config.keyCodes                 |
 | [vue/no-dupe-v-else-if ](https://eslint.vuejs.org/rules/no-dupe-v-else-if.html) | 禁止在 v-if 和 v-else-if 中出现重复的测试表达式      |
 | [vue/no-duplicate-attr-inheritance](https://eslint.vuejs.org/rules/no-duplicate-attr-inheritance.html) | 使用 v-bind="$attrs" 时 inheritAttrs 必须是 false    |
-| [vue/no-empty-component-block](https://eslint.vuejs.org/rules/no-empty-component-block.html) | 禁止 <template> <script> <style> 为空                |
+| [vue/no-empty-component-block](https://eslint.vuejs.org/rules/no-empty-component-block.html) | 禁止 `<template> <script> <style>` 为空                |
 | [vue/no-invalid-model-keys](https://eslint.vuejs.org/rules/no-invalid-model-keys.html) | 禁止 model 中出现错误的属性                          |
 | [vue/no-lifecycle-after-await](https://eslint.vuejs.org/rules/no-lifecycle-after-await.html) | 禁止异步注册生命周期                                 |
-| [vue/no-lone-template ](https://eslint.vuejs.org/rules/no-lone-template.html) | 禁止出现没必要的 <template>                          |
+| [vue/no-lone-template ](https://eslint.vuejs.org/rules/no-lone-template.html) | 禁止出现没必要的 `<template>`                          |
 | [vue/no-multiple-objects-in-class](https://eslint.vuejs.org/rules/no-multiple-objects-in-class.html) | 禁止 class 中出现复数的对象                          |
 | [vue/no-multiple-slot-args](https://eslint.vuejs.org/rules/no-multiple-slot-args.html) | 禁止给 scoped slots 传递多个参数                     |
 | [vue/no-multiple-template-root ](https://eslint.vuejs.org/rules/no-multiple-template-root.html) | 禁止模版中有多个根节点                               |
@@ -142,8 +141,8 @@ module.exports = {
 | [vue/require-slots-as-functions ](https://eslint.vuejs.org/rules/require-slots-as-functions.html) | this.$slots.default 必须被当作方法使用               |
 | [vue/require-toggle-inside-transition](https://eslint.vuejs.org/rules/require-toggle-inside-transition.html) | transition 内部必须有条件指令                        |
 | [vue/return-in-emits-validator](https://eslint.vuejs.org/rules/this-in-template.html) | emits 中的方法必须有返回值                           |
-| [vue/v-on-event-hyphenation](https://eslint.vuejs.org/rules/v-on-event-hyphenation.html) | 禁止在 v-on 的事件名使用横杠                         |
-| [vue/valid-v-is ](https://eslint.vuejs.org/rules/valid-v-is.html) | v-is 指令必须合法                                    |
+| [vue/v-on-event-hyphenation](https://eslint.vuejs.org/rules/v-on-event-hyphenation.html) | 禁止在 v-on 的事件名使用横杠                         | 
+| [vue/valid-v-is ](https://eslint.vuejs.org/rules/valid-v-is.html) | v-is 指令必须合法                                    | 
 
 ## 参考
 
