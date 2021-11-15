@@ -4,6 +4,6 @@ module.exports = {
      * 禁止在函数参数中出现重复名称的参数
      * @reason 编译阶段就会报错了
      */
-    'no-dupe-args': 'error'
-  }
+    'no-dupe-args': 'error',
+  },
 };

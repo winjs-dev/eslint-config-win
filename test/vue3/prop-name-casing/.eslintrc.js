@@ -3,6 +3,6 @@ module.exports = {
     /**
      * props 必须用驼峰式
      */
-    'vue/prop-name-casing': 'off'
-  }
+    'vue/prop-name-casing': 'off',
+  },
 };

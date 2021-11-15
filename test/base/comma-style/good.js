@@ -9,6 +9,6 @@ var foo = ['apples', 'oranges'];
 function bar() {
   return {
     a: 1,
-    'b:': 2
+    'b:': 2,
   };
 }

@@ -13,12 +13,12 @@ module.exports = {
       globalReturn: false,
       // 开启全局 script 模式
       impliedStrict: true,
-      jsx: true
+      jsx: true,
     },
     // 即使没有 babelrc 配置文件，也使用 @babel/eslint-parser 来解析
     requireConfigFile: false,
     // 仅允许 import export 语句出现在模块的顶层
-    allowImportExportEverywhere: false
+    allowImportExportEverywhere: false,
   },
-  plugins: ['vue']
+  plugins: ['vue'],
 };

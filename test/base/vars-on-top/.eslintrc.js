@@ -3,6 +3,6 @@ module.exports = {
     /**
      * var 必须在作用域的最前面
      */
-    'vars-on-top': 'off'
-  }
+    'vars-on-top': 'off',
+  },
 };

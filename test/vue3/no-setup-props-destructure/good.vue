@@ -8,6 +8,6 @@ export default {
     return () => {
       return h('div', props.count);
     };
-  }
+  },
 };
 </script>

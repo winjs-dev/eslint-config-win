@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    'vue/prefer-template': 'off'
-  }
+    'vue/prefer-template': 'off',
+  },
 };

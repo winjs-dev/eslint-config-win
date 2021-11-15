@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 continue
      */
-    'no-continue': 'off'
-  }
+    'no-continue': 'off',
+  },
 };

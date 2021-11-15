@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止在构造函数中返回值
      */
-    'no-constructor-return': 'error'
-  }
+    'no-constructor-return': 'error',
+  },
 };

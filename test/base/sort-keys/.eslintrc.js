@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 对象字面量的键名必须排好序
      */
-    'sort-keys': 'off'
-  }
+    'sort-keys': 'off',
+  },
 };

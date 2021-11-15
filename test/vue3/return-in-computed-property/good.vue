@@ -6,7 +6,7 @@ export default {
         return this.bar;
       }
       return this.baz;
-    }
-  }
+    },
+  },
 };
 </script>

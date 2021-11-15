@@ -6,8 +6,8 @@ module.exports = {
     '@typescript-eslint/no-this-alias': [
       'error',
       {
-        allowDestructuring: true
-      }
-    ]
-  }
+        allowDestructuring: true,
+      },
+    ],
+  },
 };

@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 必须使用 === 或 !==，禁止使用 == 或 !=
      */
-    'vue/eqeqeq': ['error', 'always']
-  }
+    'vue/eqeqeq': ['error', 'always'],
+  },
 };

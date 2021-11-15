@@ -6,8 +6,8 @@ module.exports = {
     'no-empty': [
       'error',
       {
-        allowEmptyCatch: true
-      }
-    ]
-  }
+        allowEmptyCatch: true,
+      },
+    ],
+  },
 };

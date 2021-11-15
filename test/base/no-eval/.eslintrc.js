@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 eval
      */
-    'no-eval': 'error'
-  }
+    'no-eval': 'error',
+  },
 };

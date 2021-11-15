@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止解构赋值中出现空 {} 或 []
      */
-    'no-empty-pattern': 'error'
-  }
+    'no-empty-pattern': 'error',
+  },
 };

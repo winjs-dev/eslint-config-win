@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止在模版中使用指定的 block
      */
-    'vue/no-restricted-block': 'off'
-  }
+    'vue/no-restricted-block': 'off',
+  },
 };

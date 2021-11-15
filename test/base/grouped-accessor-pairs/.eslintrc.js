@@ -3,6 +3,6 @@ module.exports = {
     /**
      * setter 和 getter 必须写在一起
      */
-    'grouped-accessor-pairs': 'error'
-  }
+    'grouped-accessor-pairs': 'error',
+  },
 };

@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 必须使用 x = x + y 而不是 x += y
      */
-    'operator-assignment': 'off'
-  }
+    'operator-assignment': 'off',
+  },
 };

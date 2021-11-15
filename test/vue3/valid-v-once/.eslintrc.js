@@ -3,6 +3,6 @@ module.exports = {
     /**
      * v-once 指令必须合法
      */
-    'vue/valid-v-once': 'error'
-  }
+    'vue/valid-v-once': 'error',
+  },
 };

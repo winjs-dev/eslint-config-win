@@ -5,8 +5,8 @@ export default {
     b: {
       default() {
         return this.a;
-      }
-    }
-  }
+      },
+    },
+  },
 };
 </script>

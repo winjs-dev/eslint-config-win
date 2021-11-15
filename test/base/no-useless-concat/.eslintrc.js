@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止没必要的字符拼接
      */
-    'no-useless-concat': 'error'
-  }
+    'no-useless-concat': 'error',
+  },
 };

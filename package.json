@@ -52,6 +52,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/eslint-parser": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
     "@types/cookie": "^0.4.1",
     "@types/doctrine": "^0.0.4",
     "@types/eslint": "^7.28.0",

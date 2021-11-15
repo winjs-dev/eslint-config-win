@@ -5,5 +5,5 @@ const foo = {
   get bar() {
     return this.barValue;
   },
-  baz: 1
+  baz: 1,
 };

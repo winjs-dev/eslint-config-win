@@ -3,6 +3,6 @@ module.exports = {
     /**
      * switch 语句必须有 default
      */
-    'default-case': 'off'
-  }
+    'default-case': 'off',
+  },
 };

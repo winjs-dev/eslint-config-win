@@ -10,8 +10,8 @@ module.exports = {
         skipComments: false,
         skipRegExps: true,
         skipTemplates: true,
-        skipHTMLTextContents: true
-      }
-    ]
-  }
+        skipHTMLTextContents: true,
+      },
+    ],
+  },
 };

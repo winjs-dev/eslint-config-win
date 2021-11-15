@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用已废弃的 this
      */
-    'vue/no-deprecated-props-default-this': 'error'
-  }
+    'vue/no-deprecated-props-default-this': 'error',
+  },
 };

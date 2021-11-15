@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 使用 v-slot 替代已废弃的 slot
      */
-    'vue/no-deprecated-slot-attribute': 'error'
-  }
+    'vue/no-deprecated-slot-attribute': 'error',
+  },
 };

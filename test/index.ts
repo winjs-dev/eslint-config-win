@@ -11,7 +11,7 @@ async function main() {
     './**/good.js',
     // './**/good.jsx',
     './**/good.ts',
-    './**/good.vue'
+    './**/good.vue',
   ]);
 
   goodResults.forEach((goodReportForOneFile) => {
@@ -23,7 +23,7 @@ async function main() {
     './**/bad.js',
     // './**/bad.jsx',
     './**/bad.ts',
-    './**/bad.vue'
+    './**/bad.vue',
   ]);
 
   // 忽略这些规则的报错信息
@@ -31,12 +31,11 @@ async function main() {
     'react/jsx-uses-react',
     'react/jsx-uses-vars',
     'vue/jsx-uses-vars',
-    'vue/experimental-script-setup-vars'
+    'vue/experimental-script-setup-vars',
   ];
 
   badResults.forEach((badReportForOneFile) => {
     const { errorCount, filePath, messages } = badReportForOneFile;
-
     const dirList = path.dirname(filePath).split(path.sep);
     const ruleName = dirList.pop();
     const namespace = dirList.pop() as Namespace;
@@ -52,7 +51,7 @@ async function main() {
         assert.strictEqual(
           message.ruleId,
           fullRuleName,
-          `${filePath} should only have error ${fullRuleName}, but got ${message.ruleId}`
+          `${filePath} should only have error ${fullRuleName}, but got ${message.ruleId}`,
         );
       }
     });

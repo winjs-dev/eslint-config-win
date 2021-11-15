@@ -3,6 +3,6 @@ module.exports = {
     /**
      * v-cloak 指令必须合法
      */
-    'vue/valid-v-cloak': 'error'
-  }
+    'vue/valid-v-cloak': 'error',
+  },
 };

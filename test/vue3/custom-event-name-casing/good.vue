@@ -7,7 +7,7 @@ export default {
     onClick() {
       this.$emit('my-event');
       this.$emit('update:myProp', myProp);
-    }
-  }
+    },
+  },
 };
 </script>

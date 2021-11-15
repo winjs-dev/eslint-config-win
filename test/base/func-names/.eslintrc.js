@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 函数必须有名字
      */
-    'func-names': 'off'
-  }
+    'func-names': 'off',
+  },
 };

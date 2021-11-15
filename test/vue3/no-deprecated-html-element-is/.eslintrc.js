@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用已废弃的 is 属性
      */
-    'vue/no-deprecated-html-element-is': 'error'
-  }
+    'vue/no-deprecated-html-element-is': 'error',
+  },
 };

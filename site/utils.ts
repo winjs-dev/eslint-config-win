@@ -105,7 +105,7 @@ export function newUrl({ path, query }: UrlOptions) {
 
   const newUrlObject = {
     pathname: parsedUrl.pathname || '',
-    query: parsedUrl.query
+    query: parsedUrl.query,
   };
   if (path) {
     newUrlObject.pathname = url.resolve(newUrlObject.pathname, path);

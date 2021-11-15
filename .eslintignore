@@ -1,9 +1,14 @@
 dist
 site/public
-test/vue3
-test/base/comma-dangle/bad.js
+test/base/comma-dangle/*.js
+test/base/eol-last/bad.js
+test/base/no-dupe-args/bad.js
+test/base/prefer-object-spread/bad.js
 test/base/comma-style/good.js
 test/base/generator-star-spacing/good.js
 test/base/no-useless-escape/good.js
 test/base/space-infix-ops/good.js
 test/vue/jsx-uses-vars/good.js
+/test/vue/no-deprecated-scope-attribute/bad.vue
+/test/vue/no-deprecated-slot-attribute/bad.vue
+/test/vue/no-deprecated-slot-scope-attribute/bad.vue

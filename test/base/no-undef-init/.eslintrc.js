@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止将 undefined 赋值给变量
      */
-    'no-undef-init': 'error'
-  }
+    'no-undef-init': 'error',
+  },
 };

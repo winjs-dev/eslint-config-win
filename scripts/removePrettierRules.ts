@@ -15,14 +15,14 @@ const prettierRules = {
   index: prettier.rules,
   react: prettierReact.rules,
   vue: prettierVue.rules,
-  typescript: prettierTypeScript.rules
+  typescript: prettierTypeScript.rules,
 };
 
 const RULE_PREFIX_MAP = {
   index: '',
   react: 'react/',
   vue: 'vue/',
-  typescript: '@typescript-eslint/'
+  typescript: '@typescript-eslint/',
 };
 type RulePrefix = keyof typeof RULE_PREFIX_MAP;
 const namespaces: RulePrefix[] = ['index', 'react', 'vue', 'typescript'];

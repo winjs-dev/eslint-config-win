@@ -7,8 +7,8 @@ module.exports = {
       'error',
       'never',
       {
-        onlyEquality: true
-      }
-    ]
-  }
+        onlyEquality: true,
+      },
+    ],
+  },
 };

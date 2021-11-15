@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 alert
      */
-    'no-alert': 'off'
-  }
+    'no-alert': 'off',
+  },
 };

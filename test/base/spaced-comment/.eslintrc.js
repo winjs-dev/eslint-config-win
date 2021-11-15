@@ -9,9 +9,9 @@ module.exports = {
       {
         block: {
           exceptions: ['*'],
-          balanced: true
-        }
-      }
-    ]
-  }
+          balanced: true,
+        },
+      },
+    ],
+  },
 };

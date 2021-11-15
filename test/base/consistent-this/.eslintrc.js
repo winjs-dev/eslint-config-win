@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 限制 this 的别名
      */
-    'consistent-this': 'off'
-  }
+    'consistent-this': 'off',
+  },
 };

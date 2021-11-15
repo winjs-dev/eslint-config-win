@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止出现没必要的 bind
      */
-    'no-extra-bind': 'error'
-  }
+    'no-extra-bind': 'error',
+  },
 };

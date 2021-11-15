@@ -8,8 +8,8 @@ module.exports = {
       {
         variables: false,
         functions: true,
-        classes: false
-      }
-    ]
-  }
+        classes: false,
+      },
+    ],
+  },
 };

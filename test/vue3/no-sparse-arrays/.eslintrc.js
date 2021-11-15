@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    'vue/no-sparse-arrays': 'error'
-  }
+    'vue/no-sparse-arrays': 'error',
+  },
 };

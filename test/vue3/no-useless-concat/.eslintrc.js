@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    'vue/no-useless-concat': 'error'
-  }
+    'vue/no-useless-concat': 'error',
+  },
 };

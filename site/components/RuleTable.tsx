@@ -26,7 +26,7 @@ export const RuleTable: React.SFC<RuleTableProps> = ({ namespace, hideOff }) => 
           goodExample,
           fixable,
           extendsBaseRule,
-          requiresTypeChecking
+          requiresTypeChecking,
         }) => (
           <div
             id={name}
@@ -37,7 +37,7 @@ export const RuleTable: React.SFC<RuleTableProps> = ({ namespace, hideOff }) => 
             style={
               value === 'off' && hideOff
                 ? {
-                    display: 'none'
+                    display: 'none',
                   }
                 : {}
             }
@@ -60,7 +60,7 @@ export const RuleTable: React.SFC<RuleTableProps> = ({ namespace, hideOff }) => 
               <p
                 className="top-gap-0"
                 dangerouslySetInnerHTML={{
-                  __html: parseDescription(t(description))
+                  __html: parseDescription(t(description)),
                 }}
               />
               {reason && (
@@ -68,7 +68,7 @@ export const RuleTable: React.SFC<RuleTableProps> = ({ namespace, hideOff }) => 
                   className="text-muted text-small"
                   style={{ marginTop: 5 }}
                   dangerouslySetInnerHTML={{
-                    __html: parseDescription(reason)
+                    __html: parseDescription(reason),
                   }}
                 />
               )}
@@ -90,7 +90,7 @@ export const RuleTable: React.SFC<RuleTableProps> = ({ namespace, hideOff }) => 
                 <pre className={`language-${NAMESPACE_CONFIG[namespace].prismLanguage} site-code`}>
                   <code
                     dangerouslySetInnerHTML={{
-                      __html: badExample
+                      __html: badExample,
                     }}
                   />
                 </pre>
@@ -101,14 +101,14 @@ export const RuleTable: React.SFC<RuleTableProps> = ({ namespace, hideOff }) => 
                 <pre className={`language-${NAMESPACE_CONFIG[namespace].prismLanguage}  site-code`}>
                   <code
                     dangerouslySetInnerHTML={{
-                      __html: goodExample
+                      __html: goodExample,
                     }}
                   />
                 </pre>
               )}
             </div>
           </div>
-        )
+        ),
       )}
     </div>
   );

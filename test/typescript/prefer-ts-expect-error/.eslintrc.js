@@ -5,6 +5,6 @@ module.exports = {
      * @reason 使用 @ts-expect-error 可以避免对不会报错的代码设置了 @ts-ignore
      * @TODO TypeScript 3.9 发布后开启
      */
-    '@typescript-eslint/prefer-ts-expect-error': 'off'
-  }
+    '@typescript-eslint/prefer-ts-expect-error': 'off',
+  },
 };

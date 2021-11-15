@@ -8,31 +8,31 @@ module.exports = {
   entry: './site/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js'
+    filename: 'index.js',
   },
   devtool: 'source-map',
   mode: isDevelopment ? 'development' : 'production',
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
   },
   externals: {
     react: 'React',
-    'react-dom': 'ReactDOM'
+    'react-dom': 'ReactDOM',
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   devServer: {
     static: './dist',
     devMiddleware: {
-      writeToDisk: true
-    }
+      writeToDisk: true,
+    },
   },
-  plugins: [new HtmlWebpackPlugin({ template: './site/index.html' })]
+  plugins: [new HtmlWebpackPlugin({ template: './site/index.html' })],
 };

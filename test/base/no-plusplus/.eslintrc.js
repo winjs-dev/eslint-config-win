@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 ++ 或 --
      */
-    'no-plusplus': 'off'
-  }
+    'no-plusplus': 'off',
+  },
 };

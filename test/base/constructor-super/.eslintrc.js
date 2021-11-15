@@ -3,6 +3,6 @@ module.exports = {
     /**
      * constructor 中必须有 super
      */
-    'constructor-super': 'error'
-  }
+    'constructor-super': 'error',
+  },
 };

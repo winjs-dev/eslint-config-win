@@ -3,6 +3,6 @@ module.exports = {
     /**
      * v-is 指令必须合法
      */
-    'vue/valid-v-is': 'error'
-  }
+    'vue/valid-v-is': 'error',
+  },
 };

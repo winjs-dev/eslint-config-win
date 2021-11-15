@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止修改组件的 props
      */
-    'vue/no-mutating-props': 'error'
-  }
+    'vue/no-mutating-props': 'error',
+  },
 };

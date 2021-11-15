@@ -6,8 +6,8 @@ module.exports = {
     'no-implicit-coercion': [
       'error',
       {
-        allow: ['!!']
-      }
-    ]
-  }
+        allow: ['!!'],
+      },
+    ],
+  },
 };

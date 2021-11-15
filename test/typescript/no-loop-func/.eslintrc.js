@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    '@typescript-eslint/no-loop-func': 'off'
-  }
+    '@typescript-eslint/no-loop-func': 'off',
+  },
 };

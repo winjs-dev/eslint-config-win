@@ -1,4 +1,4 @@
 let obj = {
-  a: 1
+  a: 1,
 };
 delete obj.a;

@@ -8,8 +8,8 @@ module.exports = {
       {
         newIsCap: true,
         capIsNew: false,
-        properties: true
-      }
-    ]
-  }
+        properties: true,
+      },
+    ],
+  },
 };

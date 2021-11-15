@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    '@typescript-eslint/lines-between-class-members': 'off'
-  }
+    '@typescript-eslint/lines-between-class-members': 'off',
+  },
 };

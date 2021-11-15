@@ -44,9 +44,13 @@ test/base/operator-linebreak/bad.js
 test/base/quote-props/bad.js
 test/base/quotes/bad.js
 test/base/space-in-parens/bad.js
+test/base/space-infix-ops/bad.js
 test/base/space-unary-ops/bad.js
+test/base/semi/bad.js
 test/vue/no-irregular-whitespace/bad.vue
 test/vue/no-irregular-whitespace/good.vue
+test/vue3/no-irregular-whitespace/bad.vue
+test/vue3/no-irregular-whitespace/good.vue
 
 test/base/.eslintrc.js
 test/typescript/.eslintrc.js

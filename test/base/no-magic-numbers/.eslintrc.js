@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用 magic numbers
      */
-    'no-magic-numbers': 'off'
-  }
+    'no-magic-numbers': 'off',
+  },
 };

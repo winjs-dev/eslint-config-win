@@ -3,6 +3,6 @@ module.exports = {
     /**
      * switch 语句中的 default 必须在最后
      */
-    'default-case-last': 'error'
-  }
+    'default-case-last': 'error',
+  },
 };

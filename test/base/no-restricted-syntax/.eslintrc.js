@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用指定的语法
      */
-    'no-restricted-syntax': 'off'
-  }
+    'no-restricted-syntax': 'off',
+  },
 };

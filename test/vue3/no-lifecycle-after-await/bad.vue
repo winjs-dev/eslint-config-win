@@ -5,6 +5,6 @@ export default {
     await doSomething();
 
     onMounted(() => {});
-  }
+  },
 };
 </script>

@@ -9,8 +9,8 @@ module.exports = {
       'error',
       {
         allowDeclarations: true,
-        allowDefinitionFiles: true
-      }
-    ]
-  }
+        allowDefinitionFiles: true,
+      },
+    ],
+  },
 };

@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用指定的语法
      */
-    'vue/no-restricted-syntax': 'off'
-  }
+    'vue/no-restricted-syntax': 'off',
+  },
 };

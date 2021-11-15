@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止在模版中用 this
      */
-    'vue/this-in-template': 'error'
-  }
+    'vue/this-in-template': 'error',
+  },
 };

@@ -9,8 +9,8 @@ module.exports = {
         vars: 'all',
         args: 'none',
         ignoreRestSiblings: false,
-        caughtErrors: 'none'
-      }
-    ]
-  }
+        caughtErrors: 'none',
+      },
+    ],
+  },
 };

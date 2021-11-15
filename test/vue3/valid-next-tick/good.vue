@@ -6,6 +6,6 @@ export default {
     await nt();
     await Vue.nextTick();
     await this.$nextTick();
-  }
+  },
 };
 </script>

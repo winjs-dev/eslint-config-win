@@ -3,6 +3,6 @@
 </template>
 <script>
 export default {
-  emits: ['good']
+  emits: ['good'],
 };
 </script>

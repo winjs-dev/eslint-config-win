@@ -7,8 +7,8 @@ module.exports = {
       'error',
       'always',
       {
-        includeCommonJSModuleExports: false
-      }
-    ]
-  }
+        includeCommonJSModuleExports: false,
+      },
+    ],
+  },
 };

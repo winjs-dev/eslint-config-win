@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止没必要的 return
      */
-    'no-useless-return': 'off'
-  }
+    'no-useless-return': 'off',
+  },
 };

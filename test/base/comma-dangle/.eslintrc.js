@@ -10,8 +10,8 @@ module.exports = {
         objects: 'never',
         imports: 'never',
         exports: 'never',
-        functions: 'never'
-      }
-    ]
-  }
+        functions: 'never',
+      },
+    ],
+  },
 };

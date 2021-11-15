@@ -32,7 +32,7 @@ class Builder {
   private ruleList: Rule[] = [];
   /** 当前 namespace 的所有规则合并后的文本，包含注释 */
   private rulesContent = '';
-  /** 插件初始配置的内容，如 test/react/.eslintrc.js */
+  /** 插件初始配置的内容，如 test/base/.eslintrc.js */
   private initialEslintrcContent = '';
   /** build base 时，暂存当前 ruleConfig，供后续继承用 */
   private baseRuleConfig: {
@@ -68,7 +68,7 @@ class Builder {
           meta.docs.extensionRule === true || meta.docs.extendsBaseRule === true
             ? ruleName.replace(NAMESPACE_CONFIG[this.namespace].rulePrefix, '')
             : meta.docs.extendsBaseRule ?? '',
-        requiresTypeChecking: meta.docs.requiresTypeChecking ?? false
+        requiresTypeChecking: meta.docs.requiresTypeChecking ?? false,
       };
       return prev;
     }, {});
@@ -81,7 +81,7 @@ class Builder {
         .readdirSync(path.resolve(__dirname, '../test', this.namespace))
         .filter((ruleName) => fs.lstatSync(path.resolve(__dirname, '../test', this.namespace, ruleName)).isDirectory())
         // .filter((ruleName) => DEBUT_WHITELIST.includes(ruleName))
-        .map((ruleName) => this.getRule(ruleName))
+        .map((ruleName) => this.getRule(ruleName)),
     );
   }
 
@@ -99,7 +99,7 @@ class Builder {
       reason: '',
       badExample: '',
       goodExample: '',
-      ...this.ruleMetaMap[fullRuleName]
+      ...this.ruleMetaMap[fullRuleName],
     };
     if (comments !== null) {
       // 通过 doctrine 解析注释
@@ -128,11 +128,11 @@ class Builder {
     }
     const badFilePath = path.resolve(
       path.dirname(filePath),
-      `bad.${NAMESPACE_CONFIG[this.namespace].exampleExtension}`
+      `bad.${NAMESPACE_CONFIG[this.namespace].exampleExtension}`,
     );
     const goodFilePath = path.resolve(
       path.dirname(filePath),
-      `good.${NAMESPACE_CONFIG[this.namespace].exampleExtension}`
+      `good.${NAMESPACE_CONFIG[this.namespace].exampleExtension}`,
     );
 
     if (fs.existsSync(badFilePath)) {
@@ -142,16 +142,16 @@ class Builder {
         Prism.highlight(
           fs.readFileSync(badFilePath, 'utf-8'),
           Prism.languages[NAMESPACE_CONFIG[this.namespace].prismLanguage],
-          NAMESPACE_CONFIG[this.namespace].prismLanguage
+          NAMESPACE_CONFIG[this.namespace].prismLanguage,
         ),
-        results[0].messages
+        results[0].messages,
       ).trim();
     }
     if (fs.existsSync(goodFilePath)) {
       rule.goodExample = Prism.highlight(
         fs.readFileSync(goodFilePath, 'utf-8'),
         Prism.languages[NAMESPACE_CONFIG[this.namespace].prismLanguage],
-        NAMESPACE_CONFIG[this.namespace].prismLanguage
+        NAMESPACE_CONFIG[this.namespace].prismLanguage,
       ).trim();
     }
     return rule;
@@ -174,7 +174,7 @@ class Builder {
         if (rule.reason) {
           content = [
             ...content,
-            ...rule.reason.split('\n').map((line, index) => (index === 0 ? ` * @reason ${line}` : ` * ${line}`))
+            ...rule.reason.split('\n').map((line, index) => (index === 0 ? ` * @reason ${line}` : ` * ${line}`)),
           ];
         }
         content.push(' */');
@@ -205,7 +205,7 @@ class Builder {
     this.writeWithPrettier(
       path.resolve(__dirname, `../config/rules/${this.namespace}.json`),
       JSON.stringify(ruleConfig),
-      'json'
+      'json',
     );
   }
 
@@ -217,7 +217,7 @@ class Builder {
         // 去掉 extends
         .replace(/extends:.*],/, '')
         // 将 rulesContent 写入 rules
-        // 必须具有尾逗号，否则写不进去
+        // test/*/.eslintrc.js 必须具有尾逗号，否则写不进去
         .replace(/(,\s*rules: {([\s\S]*?)})?,\s*};/, (_match, _p1, p2) => {
           const rules = p2 ? `${p2}${this.rulesContent}` : this.rulesContent;
           return `,rules:{${rules}}};`;
@@ -233,9 +233,9 @@ class Builder {
       // 使用 prettier 格式化文件内容
       prettier.format(content, {
         ...require('../.prettierrc'),
-        parser
+        parser,
       }),
-      'utf-8'
+      'utf-8',
     );
   }
 
@@ -253,9 +253,9 @@ class Builder {
       insertedBadExample = insertTag(
         insertedBadExample,
         `<mark class="eslint-error" data-tip="${`${xmlEscape(
-          xmlEscape(message)
+          xmlEscape(message),
         )}&lt;br/&gt;&lt;span class='eslint-error-rule-id'&gt;eslint(${ruleId})&lt;/span&gt;`}">`,
-        [insertLine, insertColumn, insertLineEnd, insertColumnEnd]
+        [insertLine, insertColumn, insertLineEnd, insertColumnEnd],
       );
     });
     return insertedBadExample;

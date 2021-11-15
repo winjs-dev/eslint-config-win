@@ -6,8 +6,8 @@ module.exports = {
      * https://github.com/eslint/eslint/issues/11899
      * 在上面 issue 修复之前，关闭此规则
      */
-    'require-atomic-updates': 'off'
-  }
+    'require-atomic-updates': 'off',
+  },
 };
 
 // // bad

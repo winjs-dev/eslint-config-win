@@ -7,8 +7,8 @@ module.exports = {
       'error',
       {
         setWithoutGet: true,
-        getWithoutSet: false
-      }
-    ]
-  }
+        getWithoutSet: false,
+      },
+    ],
+  },
 };

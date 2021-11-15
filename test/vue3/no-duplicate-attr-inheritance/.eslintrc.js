@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 使用 v-bind="$attrs" 时 inheritAttrs 必须是 false
      */
-    'vue/no-duplicate-attr-inheritance': 'error'
-  }
+    'vue/no-duplicate-attr-inheritance': 'error',
+  },
 };

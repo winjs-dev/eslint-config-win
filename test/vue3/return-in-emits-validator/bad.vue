@@ -6,7 +6,7 @@ export default {
       if (!evt) {
         return false;
       }
-    }
-  }
+    },
+  },
 };
 </script>

@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用指定的全局变量
      */
-    'no-restricted-globals': 'off'
-  }
+    'no-restricted-globals': 'off',
+  },
 };

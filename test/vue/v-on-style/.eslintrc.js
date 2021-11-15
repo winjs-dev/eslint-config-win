@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 使用缩写的 @click 而不是 v-on:click
      */
-    'vue/v-on-style': 'error'
-  }
+    'vue/v-on-style': 'error',
+  },
 };

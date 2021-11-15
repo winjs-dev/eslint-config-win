@@ -5,6 +5,6 @@ export default {
       console.log('start');
     });
     this.$emit('start');
-  }
+  },
 };
 </script>

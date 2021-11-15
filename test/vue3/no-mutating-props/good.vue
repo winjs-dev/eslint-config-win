@@ -8,13 +8,13 @@ export default {
   props: {
     value: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   methods: {
     openModal() {
       this.$emit('input', 'test');
-    }
-  }
+    },
+  },
 };
 </script>

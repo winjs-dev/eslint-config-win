@@ -9,8 +9,8 @@ module.exports = {
         skipStrings: true,
         skipComments: false,
         skipRegExps: true,
-        skipTemplates: true
-      }
-    ]
-  }
+        skipTemplates: true,
+      },
+    ],
+  },
 };

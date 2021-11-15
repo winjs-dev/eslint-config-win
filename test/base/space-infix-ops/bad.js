@@ -1,11 +1,11 @@
-a + b;
+a+b;
 
-a + b;
+a +b;
 
-a + b;
+a+ b;
 
-a ? b : c;
+a?b:c;
 
-const a = { b: 1 };
+const a={ b: 1 };
 
-function foo(a = 0) {}
+function foo(a=0) {}

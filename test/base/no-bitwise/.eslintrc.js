@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止使用位运算
      */
-    'no-bitwise': 'off'
-  }
+    'no-bitwise': 'off',
+  },
 };

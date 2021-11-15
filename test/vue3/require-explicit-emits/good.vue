@@ -4,7 +4,7 @@ export default {
   methods: {
     foo() {
       this.$emit('good');
-    }
-  }
+    },
+  },
 };
 </script>

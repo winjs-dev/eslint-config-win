@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁用已废弃的 scope 属性
      */
-    'vue/no-deprecated-scope-attribute': 'error'
-  }
+    'vue/no-deprecated-scope-attribute': 'error',
+  },
 };
