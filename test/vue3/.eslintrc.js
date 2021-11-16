@@ -2,9 +2,9 @@ module.exports = {
   extends: ['../base/.eslintrc.js'],
   parser: 'vue-eslint-parser',
   parserOptions: {
-    // 设置 js 的解析器为 @babel/eslint-parser
+    // 设置 js 的解析器为 babel-eslint
     // https://github.com/vuejs/vue-eslint-parser#-options
-    parser: '@babel/eslint-parser',
+    parser: 'babel-eslint',
     ecmaVersion: 2019,
     // ECMAScript modules 模式
     sourceType: 'module',
@@ -15,7 +15,7 @@ module.exports = {
       impliedStrict: true,
       jsx: true,
     },
-    // 即使没有 babelrc 配置文件，也使用 @babel/eslint-parser 来解析
+    // 即使没有 babelrc 配置文件，也使用 babel-eslint 来解析
     requireConfigFile: false,
     // 仅允许 import export 语句出现在模块的顶层
     allowImportExportEverywhere: false,

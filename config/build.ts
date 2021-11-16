@@ -85,7 +85,7 @@ export function buildEslintrcMeta() {
  * 依赖版本：
  *   ${[
    'eslint',
-   '@babel/eslint-parser',
+   'babel-eslint',
    'vue-eslint-parser',
    'eslint-plugin-vue',
    '@typescript-eslint/parser',

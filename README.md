@@ -14,7 +14,7 @@ yarn add @winner-fed/eslint-config-win -D
 ##  依赖版本
 ```bash
 eslint ^7.32.0
-@babel/eslint-parser ^7.15.8
+babel-eslint ^10.1.0
 vue-eslint-parser ^7.11.0
 eslint-plugin-vue ^7.20.0
 ```

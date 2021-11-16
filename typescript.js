@@ -7,7 +7,7 @@
  *
  * 依赖版本：
  *   eslint ^7.32.0
- *   @babel/eslint-parser ^7.15.8
+ *   babel-eslint ^10.1.0
  *   vue-eslint-parser ^7.11.0
  *   eslint-plugin-vue ^7.20.0
  *   @typescript-eslint/parser ^5.0.0

@@ -21,8 +21,8 @@
     "prettier": "prettier -l \"./**/*\"",
     "prettier:fix": "prettier --write -l \"./**/*\"",
     "prepare": "husky install",
-    "update": "npm install --save-dev @babel/eslint-parser@latest @babel/preset-react@latest @types/cookie@latest @types/doctrine@latest @types/eslint@latest @types/node@latest @types/prettier@latest @types/eslint@latest @types/rimraf@latest @types/xml-escape@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest chokidar-cli@latest copyfiles@latest doctrine@latest eslint@7 eslint-config-prettier@latest eslint-plugin-vue@latest html-webpack-plugin@latest mobi-plugin-color@latest mobi.css@latest nodemon@latest npm-run-all@latest prettier@latest husky@latest rimraf@latest ts-loader@latest ts-node@latest typescript@latest vue-eslint-parser@latest webpack@latest webpack-cli@latest webpack-dev-server@latest xml-escape@latest",
-    "release": "release-it"
+    "update": "npm install --save-dev @types/cookie@latest @types/doctrine@latest @types/eslint@latest @types/node@latest @types/prettier@latest @types/eslint@latest @types/rimraf@latest @types/xml-escape@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest babel-eslint@latest chokidar-cli@latest copyfiles@latest doctrine@latest eslint@7 eslint-config-prettier@latest eslint-plugin-vue@latest html-webpack-plugin@latest mobi-plugin-color@latest mobi.css@latest nodemon@latest npm-run-all@latest prettier@latest husky@latest rimraf@latest ts-loader@latest ts-node@latest typescript@latest vue-eslint-parser@latest webpack@latest webpack-cli@latest webpack-dev-server@latest xml-escape@latest",
+    "release": "np"
   },
   "keywords": [
     "eslint",
@@ -50,9 +50,6 @@
     "url": "git+https://github.com/cloud-templates/eslint-config-win.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/eslint-parser": "^7.15.8",
-    "@babel/preset-react": "^7.14.5",
     "@types/cookie": "^0.4.1",
     "@types/doctrine": "^0.0.4",
     "@types/eslint": "^7.28.0",
@@ -64,6 +61,7 @@
     "@types/xml-escape": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "babel-eslint": "^10.1.0",
     "chokidar-cli": "^3.0.0",
     "cookie": "^0.4.1",
     "copyfiles": "^2.4.1",
@@ -77,12 +75,12 @@
     "mobi-plugin-color": "^1.0.0",
     "mobi.css": "^3.1.1",
     "nodemon": "^2.0.12",
+    "np": "^7.5.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-tooltip": "^4.2.21",
-    "release-it": "*",
     "rimraf": "^3.0.2",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.1.0",
