@@ -96,6 +96,7 @@
   },
   "homepage": "https://github.com/cloud-templates/eslint-config-win#readme",
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   }
 }
