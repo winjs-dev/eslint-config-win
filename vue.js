@@ -8,8 +8,8 @@
  * 依赖版本：
  *   eslint ^7.32.0
  *   babel-eslint ^10.1.0
- *   vue-eslint-parser ^7.11.0
- *   eslint-plugin-vue ^7.20.0
+ *   vue-eslint-parser ^8.2.0
+ *   eslint-plugin-vue ^8.4.1
  *   @typescript-eslint/parser ^5.0.0
  *   @typescript-eslint/eslint-plugin ^5.0.0
  *

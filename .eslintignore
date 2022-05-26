@@ -12,3 +12,4 @@ test/vue/jsx-uses-vars/good.js
 /test/vue/no-deprecated-scope-attribute/bad.vue
 /test/vue/no-deprecated-slot-attribute/bad.vue
 /test/vue/no-deprecated-slot-scope-attribute/bad.vue
+/test/vue3/script-setup-uses-vars/bad.vue

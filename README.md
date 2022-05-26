@@ -101,7 +101,6 @@ module.exports = {
 | ------------------------------------------------------------ | ---------------------------------------------------- |
 | [vue/custom-event-name-casing ](https://eslint.vuejs.org/rules/custom-event-name-casing.html) | 自定义事件名必须用 kebab-case 风格                   |
 | [vue/no-arrow-functions-in-watch](https://eslint.vuejs.org/rules/no-arrow-functions-in-watch.html) | watch 中禁止使用箭头函数                             |
-| [vue/no-custom-modifiers-on-v-model](https://eslint.vuejs.org/rules/no-custom-modifiers-on-v-model.html) | 禁止自定义的 v-modal 修饰语                          |
 | [vue/no-deprecated-data-object-declaration ](https://eslint.vuejs.org/rules/no-deprecated-data-object-declaration.html) | 禁止在 data 中使用已废弃的对象定义                   |
 | [vue/no-deprecated-destroyed-lifecycle](https://eslint.vuejs.org/rules/no-deprecated-destroyed-lifecycle.html) | 禁止使用已废弃的 destroyed 和 beforeDestroy 生命周期 |
 | [vue/no-deprecated-dollar-listeners-api](https://eslint.vuejs.org/rules/no-deprecated-dollar-listeners-api.html) | 禁止使用已废弃的 $listeners                          |
@@ -132,8 +131,6 @@ module.exports = {
 | [vue/no-useless-concat ](https://eslint.vuejs.org/rules/no-useless-concat.html) | 禁止没必要的字符拼接                                 |
 | [vue/no-useless-mustaches ](https://eslint.vuejs.org/rules/no-useless-mustaches.html) | 禁止出现无用的 mustache 字符串                       |
 | [vue/no-useless-v-bind ](https://eslint.vuejs.org/rules/no-useless-v-bind.html) | 禁止出现无用的 v-bind                                |
-| [vue/no-v-for-template-key ](https://eslint.vuejs.org/rules/no-v-for-template-key.html) | 禁止 template 有 v-for 属性时又有 key 属性           |
-| [vue/no-v-for-template-key-on-child ](https://eslint.vuejs.org/rules/no-v-for-template-key-on-child.html) | 禁止 template v-for 属性的子节点有 key 属性          |
 | [vue/no-watch-after-await ](https://eslint.vuejs.org/rules/no-watch-after-await.html) | 禁止在 await 之后调用 watch                          |
 | [vue/one-component-per-file ](https://eslint.vuejs.org/rules/one-component-per-file.html) | 一个文件必须仅包含一个组件                           |
 | [vue/order-in-components ](https://eslint.vuejs.org/rules/order-in-components.html) | 组件的属性必须为一定的顺序                           |
