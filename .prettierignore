@@ -1,8 +1,11 @@
 ## OS
 .DS_Store
 .idea
+.github
+.husky
 .editorconfig
 package-lock.json
+pnpm-lock.yaml
 .npmrc
 
 # Ignored suffix
@@ -55,8 +58,6 @@ test/vue3/no-irregular-whitespace/good.vue
 test/base/.eslintrc.js
 test/typescript/.eslintrc.js
 test/vue/.eslintrc.js
-
-.husky
 
 ## Built-files
 .cache
