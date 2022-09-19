@@ -23,7 +23,7 @@
     "prettier:fix": "prettier --write -l \"./**/*\"",
     "prepare": "husky install",
     "update": "pnpm up --latest",
-    "release": "np --yolo --no-release-draft  --any-branch"
+    "release": "np --no-release-draft --any-branch"
   },
   "keywords": [
     "eslint",
