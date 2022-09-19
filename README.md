@@ -13,10 +13,13 @@ yarn add @winner-fed/eslint-config-win -D
 
 ##  依赖版本
 ```bash
-eslint ^7.32.0
-babel-eslint ^10.1.0
-vue-eslint-parser ^7.11.0
-eslint-plugin-vue ^7.20.0
+  eslint ^8.18.0
+  @babel/core ^7.18.5
+  @babel/eslint-parser ^7.18.2
+  vue-eslint-parser ^9.0.3
+  eslint-plugin-vue ^9.1.1
+  @typescript-eslint/parser ^5.29.0
+  @typescript-eslint/eslint-plugin ^5.29.0
 ```
 *Tips*：如果项目中没有安装此依赖包或者版本不一致，请安装或者升级。 
 
@@ -62,7 +65,7 @@ module.exports = {
 ### Vue
 
 ```bash
-npm install --save-dev eslint babel-eslint vue-eslint-parser eslint-plugin-vue @winner-fed/eslint-config-win
+npm install --save-dev eslint @babel/eslint-parser vue-eslint-parser eslint-plugin-vue @winner-fed/eslint-config-win
 ```
 
 在你的项目的根目录下创建一个 `.eslintrc.js` 文件，并将以下内容复制进去：
