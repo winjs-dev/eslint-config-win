@@ -5,3 +5,4 @@
 2. 移除 babel-eslint，更改为 @babel/eslint-parser
 3. 升级相关依赖
 4. eslint 由 7.x 升级到 8.x
+5. vue2 移除 valid-v-bind-async

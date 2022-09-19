@@ -6,21 +6,22 @@
  *   winner-fed
  *
  * 依赖版本：
- *   eslint ^7.32.0
- *   babel-eslint ^10.1.0
- *   vue-eslint-parser ^8.2.0
- *   eslint-plugin-vue ^8.4.1
- *   @typescript-eslint/parser ^5.0.0
- *   @typescript-eslint/eslint-plugin ^5.0.0
+ *   eslint ^8.18.0
+ *   @babel/core ^7.18.5
+ *   @babel/eslint-parser ^7.18.2
+ *   vue-eslint-parser ^9.0.3
+ *   eslint-plugin-vue ^9.1.1
+ *   @typescript-eslint/parser ^5.29.0
+ *   @typescript-eslint/eslint-plugin ^5.29.0
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
  */
 module.exports = {
   parser: 'vue-eslint-parser',
   parserOptions: {
-    // 设置 js 的解析器为 babel-eslint
-    // https://github.com/vuejs/vue-eslint-parser#-options
-    parser: 'babel-eslint',
+    // 设置 js 的解析器为 @babel/eslint-parser
+    // https://github.com/mysticatea/vue-eslint-parser#-options
+    parser: '@babel/eslint-parser',
     ecmaVersion: 2019,
     // ECMAScript modules 模式
     sourceType: 'module',
@@ -88,7 +89,7 @@ module.exports = {
       },
     ],
     /**
-     * 自定义事件名必须用 kebab-case 风格
+     * 自定义事件名必须用 camelCase 风格
      */
     'vue/custom-event-name-casing': 'error',
     /**

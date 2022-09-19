@@ -697,7 +697,7 @@
     "reason": "",
     "badExample": "<span class=\"token keyword\">interface</span> <span class=\"token class-name\">FooAny</span><span class=\"token operator\">&lt;</span><mark class=\"eslint-error\" data-tip=\"Constraining the generic type `T` to `any` does nothing and is unnecessary.&lt;br/&gt;&lt;span class='eslint-error-rule-id'&gt;eslint(@typescript-eslint/no-unnecessary-type-constraint)&lt;/span&gt;\"><span class=\"token constant\">T</span> <span class=\"token keyword\">extends</span> <span class=\"token class-name\">any</span></mark><span class=\"token operator\">></span> <span class=\"token punctuation\">{</span><span class=\"token punctuation\">}</span>\n<span class=\"token keyword\">interface</span> <span class=\"token class-name\">FooUnknown</span><span class=\"token operator\">&lt;</span><mark class=\"eslint-error\" data-tip=\"Constraining the generic type `T` to `unknown` does nothing and is unnecessary.&lt;br/&gt;&lt;span class='eslint-error-rule-id'&gt;eslint(@typescript-eslint/no-unnecessary-type-constraint)&lt;/span&gt;\"><span class=\"token constant\">T</span> <span class=\"token keyword\">extends</span> <span class=\"token class-name\">unknown</span></mark><span class=\"token operator\">></span> <span class=\"token punctuation\">{</span><span class=\"token punctuation\">}</span>",
     "goodExample": "<span class=\"token keyword\">interface</span> <span class=\"token class-name\">Foo</span><span class=\"token operator\">&lt;</span><span class=\"token constant\">T</span><span class=\"token operator\">></span> <span class=\"token punctuation\">{</span><span class=\"token punctuation\">}</span>",
-    "fixable": true,
+    "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
   },

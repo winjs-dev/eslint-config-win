@@ -1,7 +1,7 @@
 <script>
 export default {
   model: {
-    prop: 'list',
+    props: 'list',
     events: 'update',
   },
 };

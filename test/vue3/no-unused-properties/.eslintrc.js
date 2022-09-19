@@ -1,7 +1,7 @@
 module.exports = {
   rules: {
     /**
-     * 禁止属性定义了却未使用
+     * 禁止定义了属性却未使用
      */
     'vue/no-unused-properties': 'off',
   },

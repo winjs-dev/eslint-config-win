@@ -6,17 +6,18 @@
  *   winner-fed
  *
  * 依赖版本：
- *   eslint ^7.32.0
- *   babel-eslint ^10.1.0
- *   vue-eslint-parser ^8.2.0
- *   eslint-plugin-vue ^8.4.1
- *   @typescript-eslint/parser ^5.0.0
- *   @typescript-eslint/eslint-plugin ^5.0.0
+ *   eslint ^8.18.0
+ *   @babel/core ^7.18.5
+ *   @babel/eslint-parser ^7.18.2
+ *   vue-eslint-parser ^9.0.3
+ *   eslint-plugin-vue ^9.1.1
+ *   @typescript-eslint/parser ^5.29.0
+ *   @typescript-eslint/eslint-plugin ^5.29.0
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
  */
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2019,
     // ECMAScript modules 模式
