@@ -5,6 +5,14 @@ module.exports = {
     // 设置 js 的解析器为 @babel/eslint-parser
     // https://github.com/mysticatea/vue-eslint-parser#-options
     parser: '@babel/eslint-parser',
+    // FIXME
+    // ESLint: Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): "jsx", "flow", "typescript".
+    // details: https://github.com/babel/babel/issues/14546
+    babelOptions: {
+      parserOpts: {
+        plugins: ['jsx'],
+      },
+    },
     ecmaVersion: 2019,
     // ECMAScript modules 模式
     sourceType: 'module',
