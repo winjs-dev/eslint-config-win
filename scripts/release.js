@@ -188,6 +188,7 @@ async function publishPackage(version, runIfNotDry) {
     'publish',
     '--access',
     'public',
+    '--registry',
     'https://registry.npmjs.org/',
     '--no-git-checks'
   ];
