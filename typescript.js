@@ -6,13 +6,13 @@
  *   winner-fed
  *
  * 依赖版本：
- *   eslint ^8.18.0
- *   @babel/core ^7.18.5
- *   @babel/eslint-parser ^7.18.2
- *   vue-eslint-parser ^9.0.3
- *   eslint-plugin-vue ^9.1.1
- *   @typescript-eslint/parser ^5.29.0
- *   @typescript-eslint/eslint-plugin ^5.29.0
+ *   eslint ^8.45.0
+ *   @babel/core ^7.22.9
+ *   @babel/eslint-parser ^7.22.9
+ *   vue-eslint-parser ^9.3.1
+ *   eslint-plugin-vue ^9.15.1
+ *   @typescript-eslint/parser ^6.2.0
+ *   @typescript-eslint/eslint-plugin ^6.2.0
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
  */
@@ -54,6 +54,15 @@ module.exports = {
      */
     '@typescript-eslint/class-literal-property-style': ['error', 'fields'],
     /**
+     * 在类的非静态方法中，必须存在对 this 的引用
+     */
+    'class-methods-use-this': 'off',
+    '@typescript-eslint/class-methods-use-this': 'off',
+    /**
+     * 使用 Map 或 Set 时，必须在构造函数上用泛型定义类型
+     */
+    '@typescript-eslint/consistent-generic-constructors': 'off',
+    /**
      * 必须使用内置的 Record<K, T> 来描述仅包含可索引成员的接口
      */
     '@typescript-eslint/consistent-indexed-object-style': 'off',
@@ -74,6 +83,10 @@ module.exports = {
      */
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     /**
+     * 一致的类型导出语法
+     */
+    '@typescript-eslint/consistent-type-exports': 'off',
+    /**
      * 必须使用 import type 导入类型
      */
     '@typescript-eslint/consistent-type-imports': 'off',
@@ -90,7 +103,7 @@ module.exports = {
     '@typescript-eslint/dot-notation': 'off',
     /**
      * 函数返回值必须与声明的类型一致
-     * @reason 编译阶段检查就足够了
+     * @reason 返回值类型可以推导出来
      */
     '@typescript-eslint/explicit-function-return-type': 'off',
     /**
@@ -184,10 +197,13 @@ module.exports = {
     'no-dupe-class-members': 'off',
     '@typescript-eslint/no-dupe-class-members': 'off',
     /**
-     * 禁止重复导入模块
+     * 禁止枚举类型存在两个相同的值
      */
-    'no-duplicate-imports': 'off',
-    '@typescript-eslint/no-duplicate-imports': 'error',
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
+    /**
+     * 不允许枚举同时具有数字和字符串成员
+     */
+    '@typescript-eslint/no-duplicate-type-constituents': 'off',
     /**
      * 禁止 delete 时传入的 key 是动态的
      */
@@ -232,12 +248,17 @@ module.exports = {
     'no-implied-eval': 'off',
     '@typescript-eslint/no-implied-eval': 'off',
     /**
+     * 强制要求在只有内联类型限定符的情况下使用顶级导入类型限定符
+     */
+    '@typescript-eslint/no-import-type-side-effects': 'error',
+    /**
      * 禁止给一个初始化时直接赋值为 number, string 的变量显式的声明类型
      * @reason 可以简化代码
      */
     '@typescript-eslint/no-inferrable-types': 'error',
     /**
-     * 禁止无效的this，只能用在构造器，类，对象字面量
+     * 禁止在类之外的地方使用 this
+     * @reason 只允许在 class 中使用 this
      */
     'no-invalid-this': 'off',
     '@typescript-eslint/no-invalid-this': 'error',
@@ -263,6 +284,10 @@ module.exports = {
     'no-magic-numbers': 'off',
     '@typescript-eslint/no-magic-numbers': 'off',
     /**
+     * 禁止 void 抛出空
+     */
+    '@typescript-eslint/no-meaningless-void-operator': 'off',
+    /**
      * 禁止在接口中定义 constructor，或在类中定义 new
      */
     '@typescript-eslint/no-misused-new': 'off',
@@ -270,6 +295,10 @@ module.exports = {
      * 避免错误的使用 Promise
      */
     '@typescript-eslint/no-misused-promises': 'off',
+    /**
+     * 不允许枚举同时具有数字和字符串成员
+     */
+    '@typescript-eslint/no-mixed-enums': 'off',
     /**
      * 禁止使用 namespace 来定义命名空间
      * @reason 使用 es6 引入模块，才是更标准的方式。
@@ -283,6 +312,10 @@ module.exports = {
       },
     ],
     /**
+     * 禁止非空断言后面跟着双问号
+     */
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
+    /**
      * 禁止在 optional chaining 之后使用 non-null 断言（感叹号）
      * @reason optional chaining 后面的属性一定是非空的
      */
@@ -293,20 +326,24 @@ module.exports = {
      */
     '@typescript-eslint/no-non-null-assertion': 'off',
     /**
-     * 禁止给类的构造函数的参数添加修饰符
-     * @reason 强制所有属性都定义到类里面，比较统一
-     */
-    '@typescript-eslint/no-parameter-properties': 'error',
-    /**
      * 禁止重复定义变量
      */
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': 'off',
     /**
+     * 禁止无用的联合类型或交叉类型
+     */
+    '@typescript-eslint/no-redundant-type-constituents': 'off',
+    /**
      * 禁止使用 require
      * @reason 统一使用 import 来引入模块，特殊情况使用单行注释允许 require 引入
      */
     '@typescript-eslint/no-require-imports': 'error',
+    /**
+     * 禁止导入指定的模块
+     */
+    'no-restricted-imports': 'off',
+    '@typescript-eslint/no-restricted-imports': 'off',
     /**
      * 禁止变量名与上层作用域内的已定义的变量重复
      * @reason 很多时候函数的形参和传参是同名的
@@ -368,6 +405,14 @@ module.exports = {
      */
     '@typescript-eslint/no-unsafe-call': 'off',
     /**
+     * 禁止 class 和 interface 合并类型
+     */
+    '@typescript-eslint/no-unsafe-declaration-merging': 'off',
+    /**
+     * 禁止将枚举值与非枚举值进行比较
+     */
+    '@typescript-eslint/no-unsafe-enum-comparison': 'off',
+    /**
      * 禁止获取 any 类型的变量中的属性
      */
     '@typescript-eslint/no-unsafe-member-access': 'off',
@@ -389,7 +434,6 @@ module.exports = {
     ],
     /**
      * 已定义的变量必须使用
-     * @reason 编译阶段检查就足够了
      */
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
@@ -405,6 +449,10 @@ module.exports = {
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
     /**
+     * 禁止导出空对象
+     */
+    '@typescript-eslint/no-useless-empty-export': 'off',
+    /**
      * 禁止使用 require 来引入模块
      * @reason no-require-imports 规则已经约束了 require
      */
@@ -413,6 +461,15 @@ module.exports = {
      * 必须使用 ! 而不是 as
      */
     '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+    /**
+     * 限制语句之间的空行规则，比如变量定义完之后必须要空行
+     */
+    'padding-line-between-statements': 'off',
+    '@typescript-eslint/padding-line-between-statements': 'off',
+    /**
+     * 类的构造函数参数作为类属性时，必须加上可访问性修饰符
+     */
+    '@typescript-eslint/parameter-properties': 'off',
     /**
      * 使用 as const 替代 as 'bar'
      * @reason as const 是新语法，不是很常见
@@ -452,7 +509,7 @@ module.exports = {
     /**
      * 使用 optional chaining 替代 &&
      */
-    '@typescript-eslint/prefer-optional-chain': 'error',
+    '@typescript-eslint/prefer-optional-chain': 'off',
     /**
      * 私有变量如果没有在构造函数外被赋值，则必须设为 readonly
      */
@@ -469,6 +526,10 @@ module.exports = {
      * 使用 RegExp#exec 而不是 String#match
      */
     '@typescript-eslint/prefer-regexp-exec': 'off',
+    /**
+     * 类的方法返回值是 this 时，类型必须设置为 this
+     */
+    '@typescript-eslint/prefer-return-this-type': 'off',
     /**
      * 使用 String#startsWith 而不是其他方式
      */
@@ -504,6 +565,10 @@ module.exports = {
      */
     'no-return-await': 'off',
     '@typescript-eslint/return-await': 'off',
+    /**
+     * 联合类型和交叉类型必须排序
+     */
+    '@typescript-eslint/sort-type-constituents': 'off',
     /**
      * 联合类型和交叉类型的每一项必须按字母排序
      */

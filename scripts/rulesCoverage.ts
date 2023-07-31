@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 import fs from 'fs';
 import path from 'path';
-import rimraf from 'rimraf';
+import { rimrafSync } from 'rimraf';
 
 import { NAMESPACE_CONFIG, NAMESPACES } from '../config';
 
@@ -11,12 +11,19 @@ const activeRules: string[] = [];
 const deprecatedRules: string[] = [];
 // https://github.com/prettier/eslint-config-prettier/pull/217
 const prettierRules = [...Object.keys(require('eslint-config-prettier').rules), 'vue/quote-props'];
-
+const vue2Rules = [
+  'vue/no-custom-modifiers-on-v-model',
+  'vue/no-multiple-template-root',
+  'vue/no-v-for-template-key',
+  'vue/no-v-for-template-key-on-child',
+  'vue/no-v-model-argument',
+  'vue/valid-v-bind-sync',
+];
 // 填充 deprecatedRules 和 activeRules
 Object.values(NAMESPACE_CONFIG).forEach(({ rulePrefix, pluginName }) => {
   const ruleEntries = pluginName
     ? Object.entries<any>(require(pluginName).rules)
-    : Array.from<any>(require('eslint/use-at-your-own-risk').entries());
+    : Array.from<any>(require('eslint/use-at-your-own-risk').builtinRules.entries());
   ruleEntries.forEach(([ruleName, ruleValue]) => {
     const fullRuleName = rulePrefix + ruleName;
     allRuleMap.set(fullRuleName, ruleValue);
@@ -25,6 +32,9 @@ Object.values(NAMESPACE_CONFIG).forEach(({ rulePrefix, pluginName }) => {
       return;
     }
     if (prettierRules.includes(fullRuleName)) {
+      return;
+    }
+    if (vue2Rules.includes(fullRuleName)) {
       return;
     }
     activeRules.push(fullRuleName);
@@ -50,15 +60,14 @@ NAMESPACES.forEach((namespace) => {
       if (deprecatedRules.includes(fullRuleName)) {
         const errorMessage = `${fullRuleName} 是已废弃的规则，请删除`;
         errors.push(errorMessage);
-        errors.push(errorMessage);
-        rimraf.sync(fullRuleDir);
+        rimrafSync(fullRuleDir);
         console.error(errorMessage);
         return;
       }
       if (prettierRules.includes(fullRuleName)) {
         const errorMessage = `${fullRuleName} 是 Prettier 已忽略的规则，会自动删除`;
         errors.push(errorMessage);
-        rimraf.sync(fullRuleDir);
+        rimrafSync(fullRuleDir);
         console.error(errorMessage);
         return;
       }

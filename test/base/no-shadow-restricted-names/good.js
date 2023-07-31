@@ -1,2 +1,3 @@
-var a;
-function func() {}
+console.log(undefined);
+console.log(NaN);
+console.log(Infinity);

@@ -3,6 +3,6 @@ module.exports = {
     /**
      * 禁止变量申明时用逗号一次申明多个
      */
-    'one-var': 'off',
+    'one-var': ['error', 'never'],
   },
 };

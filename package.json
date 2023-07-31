@@ -2,7 +2,36 @@
   "name": "@winner-fed/eslint-config-win",
   "version": "2.0.1",
   "description": "winner-fed 前端编码规范文档",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "cloudwin",
+    "javascript",
+    "styleguide",
+    "vue",
+    "vue3"
+  ],
+  "homepage": "https://github.com/cloud-templates/eslint-config-win#readme",
+  "bugs": {
+    "url": "https://github.com/cloud-templates/eslint-config-win/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloud-templates/eslint-config-win.git"
+  },
+  "license": "MIT",
+  "author": "winner-fed",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "base.js",
+    "vue.js",
+    "typescript.js",
+    "vue3.js",
+    "README.md",
+    "package.json"
+  ],
   "scripts": {
     "start": "pnpm run dev",
     "dev": "run-p dev:*",
@@ -25,85 +54,66 @@
     "update": "pnpm up --latest",
     "release": "np --no-release-draft --any-branch"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "config",
-    "cloudwin",
-    "javascript",
-    "styleguide",
-    "vue",
-    "vue3"
-  ],
-  "author": "winner-fed",
-  "license": "MIT",
-  "files": [
-    "index.js",
-    "base.js",
-    "vue.js",
-    "typescript.js",
-    "vue3.js",
-    "README.md",
-    "package.json"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cloud-templates/eslint-config-win.git"
+  "lint-staged": {
+    "package.json": "sort-package-json"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.5",
-    "@babel/eslint-parser": "^7.18.2",
-    "@babel/preset-react": "^7.17.12",
-    "@types/cookie": "^0.4.1",
-    "@types/doctrine": "^0.0.4",
-    "@types/eslint": "^8.4.3",
-    "@types/node": "^18.0.0",
-    "@types/prettier": "^2.6.3",
-    "@types/react": "^18.0.14",
-    "@types/react-dom": "^18.0.5",
-    "@types/rimraf": "^3.0.2",
-    "@types/xml-escape": "^1.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.29.0",
-    "@typescript-eslint/parser": "^5.29.0",
+    "@babel/core": "^7.22.9",
+    "@babel/eslint-parser": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@types/cookie": "^0.5.1",
+    "@types/doctrine": "^0.0.5",
+    "@types/eslint": "^8.44.1",
+    "@types/node": "^20.4.5",
+    "@types/prettier": "^2.7.3",
+    "@types/react": "^18.2.16",
+    "@types/react-dom": "^18.2.7",
+    "@types/rimraf": "^4.0.5",
+    "@types/xml-escape": "^1.1.1",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
     "chokidar-cli": "^3.0.0",
     "cookie": "^0.5.0",
     "copyfiles": "^2.4.1",
     "doctrine": "^3.0.0",
-    "eslint": "^8.18.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-vue": "^9.1.1",
-    "html-webpack-plugin": "^5.5.0",
-    "husky": "^8.0.1",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
     "insert-tag": "^0.1.2",
+    "lint-staged": "^13.2.3",
     "mobi-plugin-color": "^1.0.0",
     "mobi.css": "^3.1.1",
-    "nodemon": "^2.0.18",
-    "np": "^7.5.0",
+    "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.7.1",
+    "prettier": "^3.0.0",
     "querystring": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-tooltip": "^4.2.21",
-    "rimraf": "^3.0.2",
-    "ts-loader": "^9.3.1",
-    "ts-node": "^10.8.1",
-    "typescript": "^4.7.4",
-    "url": "^0.11.0",
-    "vue-eslint-parser": "^9.0.3",
-    "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.9.2",
+    "react-tooltip": "4.5.1",
+    "rimraf": "^5.0.1",
+    "sort-package-json": "^2.5.1",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "url": "^0.11.1",
+    "vue-eslint-parser": "^9.3.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
     "xml-escape": "^1.1.0"
   },
   "peerDependencies": {
     "@babel/eslint-parser": "7.x",
     "@babel/preset-react": "7.x",
-    "@typescript-eslint/eslint-plugin": ">=5.29.0",
-    "@typescript-eslint/parser": "5.x",
-    "eslint": ">=8.18.0",
-    "eslint-plugin-vue": ">=9.1.1",
-    "typescript": "4.x",
+    "@typescript-eslint/eslint-plugin": ">=5.55.0",
+    "@typescript-eslint/parser": ">=5.0.0",
+    "eslint": ">=8.24.0",
+    "eslint-plugin-react": ">=7.31.8",
+    "eslint-plugin-vue": ">=9.5.1",
+    "typescript": "5.x",
     "vue-eslint-parser": "9.x"
   },
   "peerDependenciesMeta": {
@@ -119,6 +129,9 @@
     "@typescript-eslint/parser": {
       "optional": true
     },
+    "eslint-plugin-react": {
+      "optional": true
+    },
     "eslint-plugin-vue": {
       "optional": true
     },
@@ -129,12 +142,9 @@
       "optional": true
     }
   },
-  "bugs": {
-    "url": "https://github.com/cloud-templates/eslint-config-win/issues"
-  },
-  "homepage": "https://github.com/cloud-templates/eslint-config-win#readme",
+  "packageManager": "pnpm@8.0.0",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

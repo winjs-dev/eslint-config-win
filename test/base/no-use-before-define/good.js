@@ -1,16 +1,14 @@
-var a;
-a = 10;
-alert(a);
+(() => {
+  console.log(foo);
+})();
+const foo = 1;
+console.log(foo);
 
-function f() {}
-f(1);
+bar();
+function bar() {}
 
-var b = 1;
-function g() {
-  return b;
-}
-
-{
-  let c;
-  c++;
-}
+(() => {
+  new Baz();
+})();
+class Baz {}
+new Baz();

@@ -119,12 +119,17 @@ class Builder {
       }
     }
     // 若没有原因，并且有继承的规则，并且本规则的配置项与继承的规则的配置项一致，则使用继承的规则的原因
-    if (
-      !rule.reason &&
-      rule.extendsBaseRule &&
-      JSON.stringify(rule.value) === JSON.stringify(this.baseRuleConfig[rule.extendsBaseRule].value)
-    ) {
-      rule.reason = this.baseRuleConfig[rule.extendsBaseRule].reason;
+    try {
+      if (
+        !rule.reason &&
+        rule.extendsBaseRule &&
+        JSON.stringify(rule.value) === JSON.stringify(this.baseRuleConfig[rule.extendsBaseRule].value)
+      ) {
+        rule.reason = this.baseRuleConfig[rule.extendsBaseRule].reason;
+      }
+    } catch (e) {
+      console.log(e);
+      console.log(rule.extendsBaseRule);
     }
     const badFilePath = path.resolve(
       path.dirname(filePath),
@@ -227,11 +232,11 @@ class Builder {
   }
 
   /** 经过 Prettier 格式化后写入文件 */
-  private writeWithPrettier(filePath: string, content: string, parser = 'babel') {
+  private async writeWithPrettier(filePath: string, content: string, parser = 'babel') {
     fs.writeFileSync(
       filePath,
       // 使用 prettier 格式化文件内容
-      prettier.format(content, {
+      await prettier.format(content, {
         ...require('../.prettierrc'),
         parser,
       }),

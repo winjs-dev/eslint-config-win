@@ -6,13 +6,13 @@
  *   winner-fed
  *
  * 依赖版本：
- *   eslint ^8.18.0
- *   @babel/core ^7.18.5
- *   @babel/eslint-parser ^7.18.2
- *   vue-eslint-parser ^9.0.3
- *   eslint-plugin-vue ^9.1.1
- *   @typescript-eslint/parser ^5.29.0
- *   @typescript-eslint/eslint-plugin ^5.29.0
+ *   eslint ^8.45.0
+ *   @babel/core ^7.22.9
+ *   @babel/eslint-parser ^7.22.9
+ *   vue-eslint-parser ^9.3.1
+ *   eslint-plugin-vue ^9.15.1
+ *   @typescript-eslint/parser ^6.2.0
+ *   @typescript-eslint/eslint-plugin ^6.2.0
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
  */
@@ -229,7 +229,7 @@ module.exports = {
     /**
      * 禁止使用指定的标识符
      */
-    'id-blacklist': 'off',
+    'id-denylist': 'off',
     /**
      * 限制变量名长度
      */
@@ -287,6 +287,10 @@ module.exports = {
         exceptAfterSingleLine: true,
       },
     ],
+    /**
+     * 使用 a ||= b 替代 a = a || b
+     */
+    'logical-assignment-operators': 'off',
     /**
      * 限制一个文件中类的数量
      */
@@ -381,7 +385,7 @@ module.exports = {
      */
     'no-compare-neg-zero': 'error',
     /**
-     * 禁止在if， else if， while等表达式中使用赋值语句，除非这个赋值语句被括号包起来了
+     * 禁止在测试表达式中使用赋值语句，除非这个赋值语句被括号包起来了
      */
     'no-cond-assign': ['error', 'except-parens'],
     /**
@@ -392,6 +396,10 @@ module.exports = {
      * 禁止对使用 const 定义的常量重新赋值
      */
     'no-const-assign': 'error',
+    /**
+     * 禁止出现不影响值的表达式
+     */
+    'no-constant-binary-expression': 'error',
     /**
      * 禁止将常量作为分支条件判断中的测试表达式，但允许作为循环条件判断中的测试表达式
      */
@@ -541,7 +549,7 @@ module.exports = {
      */
     'no-implicit-globals': 'off',
     /**
-     * 禁用隐式的eval()
+     * 禁止在 setTimeout 或 setInterval 中传入字符串
      */
     'no-implied-eval': 'error',
     /**
@@ -555,15 +563,16 @@ module.exports = {
     /**
      * 禁止在 if 代码块内出现函数声明
      */
-    'no-inner-declarations': ['error', 'functions'],
+    'no-inner-declarations': ['error', 'both'],
     /**
      * 禁止在 RegExp 构造函数中出现非法的正则表达式
      */
     'no-invalid-regexp': 'error',
     /**
-     * 禁止无效的this，只能用在构造器，类，对象字面量
+     * 禁止在类之外的地方使用 this
+     * @reason 只允许在 class 中使用 this
      */
-    'no-invalid-this': 'off',
+    'no-invalid-this': 'error',
     /**
      * 禁止使用特殊空白符（比如全角空格），除非是出现在字符串、正则表达式或模版字符串中
      */
@@ -660,6 +669,10 @@ module.exports = {
      */
     'no-new-func': 'error',
     /**
+     * 禁止错误的使用 new 来实例化一个非构造函数
+     */
+    'no-new-native-nonconstructor': 'error',
+    /**
      * 禁止直接 new Object
      */
     'no-new-object': 'error',
@@ -675,6 +688,11 @@ module.exports = {
      * 禁止使用 new 来生成 String, Number 或 Boolean
      */
     'no-new-wrappers': 'error',
+    /**
+     * 禁止在字符串中使用 \8 \9
+     * @reason 代码格式问题，最好由 Prettier 解决
+     */
+    'no-nonoctal-decimal-escape': 'off',
     /**
      * 禁止将 Math, JSON 或 Reflect 直接作为函数调用
      */
@@ -698,6 +716,10 @@ module.exports = {
      */
     'no-plusplus': 'off',
     /**
+     * 禁止在 Promise 的回调函数中直接 return
+     */
+    'no-promise-executor-return': 'error',
+    /**
      * 禁止使用 __proto__
      * @reason __proto__ 是已废弃的语法
      */
@@ -709,6 +731,7 @@ module.exports = {
     'no-prototype-builtins': 'off',
     /**
      * 禁止重复定义变量
+     * @reason 禁用 var 之后，编译阶段就会报错了
      */
     'no-redeclare': 'error',
     /**
@@ -736,9 +759,9 @@ module.exports = {
      */
     'no-restricted-syntax': 'off',
     /**
-     * 禁止在 return 语句里赋值，除非用小括号包裹
+     * 禁止在 return 语句里赋值
      */
-    'no-return-assign': ['error', 'except-parens'],
+    'no-return-assign': ['error', 'always'],
     /**
      * 禁止在 return 语句里使用 await
      */
@@ -827,6 +850,10 @@ module.exports = {
      */
     'no-unreachable': 'error',
     /**
+     * 禁止在第一轮循环时就一定会退出循环的情况出现
+     */
+    'no-unreachable-loop': 'error',
+    /**
      * 禁止在 finally 中出现 return, throw, break 或 continue
      * @reason finally 中的语句会在 try 之前执行
      */
@@ -835,6 +862,10 @@ module.exports = {
      * 禁止在 in 或 instanceof 操作符的左侧变量前使用感叹号
      */
     'no-unsafe-negation': 'error',
+    /**
+     * 禁止使用不安全的 optional chaining
+     */
+    'no-unsafe-optional-chaining': 'error',
     /**
      * 禁止无用的表达式
      */
@@ -852,6 +883,10 @@ module.exports = {
      */
     'no-unused-labels': 'off',
     /**
+     * 禁止类出现未使用的私有成员
+     */
+    'no-unused-private-class-members': 'error',
+    /**
      * 已定义的变量必须使用
      */
     'no-unused-vars': [
@@ -864,13 +899,13 @@ module.exports = {
       },
     ],
     /**
-     * 变量必须先定义后使用, 方法除外（考虑到递归的情况）
+     * 变量必须先定义后使用
      */
     'no-use-before-define': [
       'error',
       {
         variables: false,
-        functions: true,
+        functions: false,
         classes: false,
       },
     ],
@@ -914,7 +949,7 @@ module.exports = {
      */
     'no-useless-return': 'off',
     /**
-     * 定义变量时禁止使用 var
+     * 禁止使用 var
      */
     'no-var': 'error',
     /**
@@ -946,7 +981,7 @@ module.exports = {
     /**
      * 禁止变量申明时用逗号一次申明多个
      */
-    'one-var': 'off',
+    'one-var': ['error', 'never'],
     /**
      * 必须使用 x = x + y 而不是 x += y
      */
@@ -969,6 +1004,10 @@ module.exports = {
      * 限制语句之间的空行规则，比如变量定义完之后必须要空行
      */
     'padding-line-between-statements': 'off',
+    /**
+     * 回调函数必须使用箭头函数
+     */
+    'prefer-arrow-callback': 'error',
     /**
      * 申明后不再被修改的变量必须使用 const 来申明
      */
@@ -995,6 +1034,10 @@ module.exports = {
      * 必须使用 0b11111011 而不是 parseInt()
      */
     'prefer-numeric-literals': 'off',
+    /**
+     * 使用 Object.hasOwn() 而不是 Object.prototype.hasOwnProperty.call()
+     */
+    'prefer-object-has-own': 'error',
     /**
      * 建议使用 ... 而不是 Object.assign，除非 Object.assign 的第一个参数是一个变量
      */
@@ -1102,6 +1145,7 @@ module.exports = {
       'error',
       'always',
       {
+        markers: ['/'],
         block: {
           exceptions: ['*'],
           balanced: true,
