@@ -184,14 +184,7 @@ function updateVersion(version) {
  * @param {Function} runIfNotDry
  */
 async function publishPackage(version, runIfNotDry) {
-  const publicArgs = [
-    'publish',
-    '--access',
-    'public',
-    '--registry',
-    'https://registry.npmjs.org/',
-    '--no-git-checks'
-  ];
+  const publicArgs = ['publish', '--access', 'public', '--registry', 'https://registry.npmjs.org/', '--no-git-checks'];
   if (args.tag) {
     publicArgs.push(`--tag`, args.tag);
   }
