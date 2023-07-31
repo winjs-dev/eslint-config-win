@@ -60,8 +60,8 @@ importers:
         specifier: ^6.2.0
         version: 6.2.0(eslint@8.45.0)(typescript@5.1.6)
       chalk:
-        specifier: ^5.3.0
-        version: 5.3.0
+        specifier: ^4.1.2
+        version: 4.1.2
       chokidar-cli:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2013,11 +2013,6 @@ packages:
 
   /chalk@5.2.0:
     resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-    dev: true
-
-  /chalk@5.3.0:
-    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 

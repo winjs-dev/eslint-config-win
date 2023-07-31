@@ -138,13 +138,13 @@ async function main() {
 
   step('\nBuilding package...');
   if (!skipBuild && !isDryRun) {
-    await run('yarn', ['build']);
+    await run('pnpm', ['build']);
   } else {
     console.log(`(skipped)`);
   }
 
-  step('\nGenerating changelog...');
-  await run('yarn', ['changelog']);
+  // step('\nGenerating changelog...');
+  // await run('yarn', ['changelog']);
 
   const { stdout } = await run('git', ['diff'], { stdio: 'pipe' });
   if (stdout) {
