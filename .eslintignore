@@ -1,4 +1,5 @@
 dist
+scripts
 site/public
 test/base/comma-dangle/*.js
 test/base/eol-last/bad.js
