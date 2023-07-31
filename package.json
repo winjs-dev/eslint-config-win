@@ -143,6 +143,9 @@
     }
   },
   "packageManager": "pnpm@8.0.0",
+  "engines": {
+    "node": ">= 14.x"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
