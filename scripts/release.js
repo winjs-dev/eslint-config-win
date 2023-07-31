@@ -186,17 +186,16 @@ function updateVersion(version) {
 async function publishPackage(version, runIfNotDry) {
   const publicArgs = [
     'publish',
-    '--no-git-tag-version',
-    // '--new-version',
-    // version,
     '--access',
     'public',
+    'https://registry.npmjs.org/',
+    '--no-git-checks'
   ];
   if (args.tag) {
     publicArgs.push(`--tag`, args.tag);
   }
   try {
-    await runIfNotDry('npm', publicArgs, {
+    await runIfNotDry('pnpm', publicArgs, {
       stdio: 'pipe',
     });
     console.log(chalk.green(`Successfully published ${pkgName}@${version}`));
