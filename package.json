@@ -1,6 +1,6 @@
 {
   "name": "@winner-fed/eslint-config-win",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "winner-fed 前端编码规范文档",
   "keywords": [
     "eslint",
