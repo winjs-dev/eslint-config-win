@@ -33,7 +33,6 @@
     "package.json"
   ],
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "start": "pnpm run dev",
     "dev": "run-p dev:*",
     "dev:eslintrc": "nodemon",
